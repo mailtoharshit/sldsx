@@ -1,0 +1,24 @@
+<aura:component access="GLOBAL">
+    <ltng:require styles="/resource/sdsx__sds/assets/styles/salesforce-design-system-sds.css"/>
+    <aura:attribute name="heading" type="String" access="GLOBAL" description="The title to display for the tab."/>
+    <aura:attribute name="active" type="Boolean" access="GLOBAL" default="false" description="Indicates that the dialog is active (open)."/>
+    <aura:attribute name="class" type="String" access="GLOBAL" description="The class(es) to add."/>	
+    <aura:attribute name="style" type="String" access="GLOBAL" description="The style(s) to add."/>	
+    <aura:attribute name="dialogClass" type="String" access="GLOBAL" description="Override class(es)."/>
+    
+    <aura:attribute name="gen_class" type="String" description="Generated class for the tab."/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    
+    <div class="{!v.gen_class}" style="{!v.style}" role="dialog">
+        <div class="dialog__content" role="document">
+            <div class="dialog__head">
+                <c:text type="heading" size="small" value="{!v.heading}"/>
+            </div>
+            <div class="dialog__body">
+                {!v.body}
+            </div>
+        </div>
+    </div>
+    
+</aura:component>
