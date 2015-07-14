@@ -1,0 +1,22 @@
+<aura:component access="GLOBAL">
+    <aura:attribute name="items" type="Object[]" access="GLOBAL" description="The list of items to display."/>
+    <aura:attribute name="value" type="Object" access="GLOBAL" description="The selected value."/>
+    
+    <div class="dropdown-trigger" aria-haspopup="true">
+        <c:button press="{!c.handlePress}"
+                  iconCategory="utility"
+                  iconName="down"
+                  iconStyle="border-filled"
+                  iconClass="hint"
+                  />
+        <c:dropdownMenu position="right">
+            <ul class="dropdown__list" role="menu">
+                <aura:iteration items="{!v.items}" var="item">
+                    <li href="#" class="dropdown__item" role="menuitem">
+                        <a href="#">{!item.label}</a>
+                    </li> 
+                </aura:iteration>
+            </ul>
+        </c:dropdownMenu>
+    </div>
+</aura:component>

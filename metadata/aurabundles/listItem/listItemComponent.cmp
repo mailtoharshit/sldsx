@@ -1,0 +1,16 @@
+<aura:component access="GLOBAL">
+    <aura:attribute name="type" type="String" access="GLOBAL" description="The type of list item, typically set by the list - none, description"/>
+    <aura:attribute name="class" type="String" access="GLOBAL" description="The class(es) to add."/>	
+    <aura:attribute name="style" type="String" access="GLOBAL" description="The style(s) to add."/>	
+    <aura:if isTrue="{!v.type == 'description'}">
+        <!-- Need to handle dd -->
+        <dl class="{!v.listItemClass}">
+            {!v.body}
+        </dl>
+        <aura:set attribute="else">
+            <li class="{!v.listItemClass}">
+                {!v.body}
+            </li>
+        </aura:set>
+    </aura:if>
+</aura:component>
