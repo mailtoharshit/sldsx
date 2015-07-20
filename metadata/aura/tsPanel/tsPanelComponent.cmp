@@ -1,0 +1,5 @@
+<aura:component access="GLOBAL" description="Simple panel that displays a timestamp, date, etc. to assist with testing.">
+    <aura:attribute name="timstamp" type="Integer"/>
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <div>Timestamp: {!v.timestamp}</div>
+</aura:component>

@@ -1,0 +1,5 @@
+/* Override to remove the focus border, may be accessibility issue? */
+li.THIS.tree__item.is-selected:focus {
+    outline-style: none;
+    border-color: transparent;    
+}

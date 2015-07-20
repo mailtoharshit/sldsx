@@ -1,0 +1,27 @@
+<aura:component access="GLOBAL">
+    <ltng:require styles="/resource/sdsx__sds/assets/styles/salesforce-design-system-sds.css"/>
+    <aura:attribute name="label" type="String" access="GLOBAL" description="The text to display on the node."/>	
+    <aura:attribute name="expanded" type="Boolean" access="GLOBAL" default="false" description="Indicates that the treeBranch is expanded."/>	
+    <aura:attribute name="nested" type="Boolean" access="GLOBAL" default="false" description="Indicates that the treeBranch is nested."/>	
+    <aura:attribute name="level" type="Integer" access="GLOBAL" default="-1" description="The level of nesting of the treeBranch."/>	
+    <aura:attribute name="index" type="Integer" access="GLOBAL" default="-1" description="The index of the treeBranch."/>	
+    <aura:attribute name="class" type="String" access="GLOBAL" description="The class(es) to add."/>	
+    <aura:attribute name="style" type="String" access="GLOBAL" description="The style(s) to add."/>	
+    <aura:attribute name="treeBranchClass" type="String" access="GLOBAL" description="Override class(es)."/>
+    
+    <aura:attribute name="gen_class" type="String" description="Generated class for the treeBranch."/>
+
+    
+    <aura:handler name="init" value="{!this}" action="{!c.update}"/>
+    <aura:handler name="value" value="{!v.expanded}" action="{!c.update}"/>
+    
+    <c:treeItem branch="true" expanded="{!v.expanded}" level="{!v.level}" >
+    	<div class="{!v.gen_class}">
+            <sdsx:button press="{!c.handlePress}" type="bare" iconCategory="utility" iconName="chevronright" iconType="bare" iconSize="small" label="{!v.label}"/>
+        </div>
+        <c:treeGroup label="{!v.label}" expanded="{!v.expanded}" nested="true">
+            {!v.body}
+        </c:treeGroup>
+    </c:treeItem>
+
+</aura:component>
