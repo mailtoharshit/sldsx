@@ -25,6 +25,8 @@ SDSX is distributed as an unmanaged package. The package has all the components,
 #Usage
 Once you install the unmanaged package, you can go to `{yourOrg}//sdsx/sdsTest.app` to see a kitchen sink Lightning application that shows how to use all the components.
 
+Note: All the components are in `metadata/aura/` folder.
+
 #Distribution
 If you are distributing a component that's built using SDSX, then need to package your component and SDSX. This is to ensure that your component uses proper version of SDS.
 
