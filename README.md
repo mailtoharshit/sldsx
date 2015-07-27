@@ -18,11 +18,10 @@ SDSX is distributed as a managed package. The package has all the components, an
 
 3. Writing SDS component under `<div class="slds">` 
 
-        ```
         <div class="slds">
                 <sdsx:button press="{!c.handlePress}" type="bare" iconCategory="utility" iconName="close" iconType="bare" iconSize="small"/>
         </div>
-        ```
+
 
 # Reference App (SLDS.app)
 SLDS app contains a list of all the SDSX components and source code for each one of them. The examples are identical to what you'll find in the [Salesforce Design System's (SLDS)](http://salesforce-design-system.herokuapp.com) website.
