@@ -12,50 +12,34 @@ SDSX is distributed as a managed package. The package has all the components, an
 1. Install the [managed package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB0000000Dwfu). 
 2. Load SDS static resource
 
-	 ```    
+	```    
 	 <ltng:require styles="/resource/sdsx__sds/assets/styles/salesforce-design-system-sds.css"/>
-	  ```
-3. Write the SDS component under `<div class="slds">` 
+	```
 
-```
-<div class="slds">
-        <sdsx:button press="{!c.handlePress}" type="bare" iconCategory="utility" iconName="close" iconType="bare" iconSize="small"/>
-</div>
+3. Writing SDS component under `<div class="slds">` 
 
-```
+        ```
+        <div class="slds">
+                <sdsx:button press="{!c.handlePress}" type="bare" iconCategory="utility" iconName="close" iconType="bare" iconSize="small"/>
+        </div>
+        ```
 
-#Usage  (SLDS.app)
-Once you install the unmanaged package, you can go to `{yourOrg}//sdsx/SLDS.app` to see all the components and example code for each one of them.
+# Reference App (SLDS.app)
+SLDS app contains a list of all the SDSX components and source code for each one of them. The examples are identical to what you'll find in the [Salesforce Design System's (SLDS)](http://salesforce-design-system.herokuapp.com) website.
+
+Usage: Once you install the managed package, open [{yourOrg}//sdsx/sdsTest.app](https://login.salesforce.com/sdsx/SLDS.app).
 
 <image src="https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/slds-app-small.png?token=AAmOoUKiDyKUoD3GGVHOFaCoqGVEKXu8ks5Vv6HUwA%3D%3D"/>
 Note: All the components are in `metadata/aura/` folder.
 
 
-#Components
-##Button
-
-
-```
-
-                        <sdsx:button press="{!c.handlePress}" label="Button 1"/>
-                        <sdsx:button press="{!c.handlePress}">Button 2</sdsx:button>
-                        <sdsx:button press="{!c.handlePress}" label="Button 3"/>
-                        <sdsx:button press="{!c.handlePress}" type="neutral">Button 4</sdsx:button>
-                        <sdsx:button press="{!c.handlePress}" type="brand">Button 5</sdsx:button>
-                        <sdsx:button press="{!c.handlePress}" type="inverse">Button 6</sdsx:button>
-                        <sdsx:button press="{!c.handlePress}" type="inverse" disabled="true">Button 7</sdsx:button>
-                        <sdsx:button press="{!c.handlePress}" type="neutral" label="Download" iconCategory="utility" iconName="download" iconPosition="left"/>
-                        <sdsx:button press="{!c.handlePress}" type="neutral" label="Download" iconCategory="utility" iconName="download" iconPosition="right"/>
-                        
-                        
-                        ```
 
 #Distribution
-If you are distributing a component that's built using SDSX, then need to package your component and SDSX. This is to ensure that your component uses proper version of SDS.
+If you are distributing a component that's built using SDSX, you need to package your component and SDSX static resource. This is to ensure that your component uses proper version of SDS.
 
 #Contribution
-You can fork this repo and contribute newer SDSX components or bug fixes. When you submit a new component, make sure it is in metadata/aura folder `metadata/aura/{yourcomponent}` 
-In addition also provide an example usage of your component by editing `{yourOrg}//sdsx/sdsTest.app` and adding your component at the bottom of the app.
+You can fork this repo and contribute newer SDSX components or bug fixes. When you submit a new component, make sure it is in `metadata/aura` folder `metadata/aura/{yourcomponent}` 
+In addition also provide an example usage of your component by editing `{yourOrg}//sdsx/SLDS.app` and adding your component at the bottom of the app.
 
 #License
 Please see the details in the `LICENSE` file above.
