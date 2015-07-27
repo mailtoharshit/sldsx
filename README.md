@@ -27,7 +27,7 @@ SDSX is distributed as a managed package. The package has all the components, an
 #Usage  (SLDS.app)
 Once you install the unmanaged package, you can go to `{yourOrg}//sdsx/SLDS.app` to see all the components and example code for each one of them.
 
-<image src="https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/slds-app-small.png?token=AAmOoTf7HCHmtu40GOr-fk5mg3HRkPK_ks5Vv6B-wA%3D%3D"/>
+<image src="https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/slds-app-small.png?token=AAmOoUKiDyKUoD3GGVHOFaCoqGVEKXu8ks5Vv6HUwA%3D%3D"/>
 Note: All the components are in `metadata/aura/` folder.
 
 
