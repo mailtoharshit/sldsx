@@ -1,0 +1,54 @@
+<aura:component >
+     <sdsx:container class="demo-container" size="large" align="center">
+        <h2 class="slds-text-heading--medium slds-m-bottom--large">Media Object: Base</h2>
+          <sdsx:mediaObject imageSrc="/resource/marc">
+          	Sit nulla est ex deserunt exercitation anim occaecat. Nostrud ullamco deserunt aute id consequat veniam incididunt duis in sint irure nisi. Mollit officia cillum Lorem ullamco minim nostrud elit officia tempor esse quis.
+          </sdsx:mediaObject>
+        <br/>
+        Code:
+        <sdsx:code >
+          &lt;sdsx:mediaObject imageSrc=&quot;/resource/marc&quot;&gt;
+          &nbsp;Sit nulla est ex deserunt...
+          &lt;/sdsx:mediaObject&gt;
+       </sdsx:code>
+     </sdsx:container>
+      <sdsx:container class="demo-container" size="large" align="center">
+        <h2 class="slds-text-heading--medium slds-m-bottom--large">Media Object: Center</h2>
+          <sdsx:mediaObject imageSrc="/resource/marc" center="true">
+          	Sit nulla est ex deserunt exercitation anim occaecat. Nostrud ullamco deserunt aute id consequat veniam incididunt duis in sint irure nisi. Mollit officia cillum Lorem ullamco minim nostrud elit officia tempor esse quis.
+          </sdsx:mediaObject>
+        <br/>
+        Code:
+        <sdsx:code >
+          &lt;sdsx:mediaObject imageSrc=&quot;/resource/marc&quot; center=&quot;true&quot;&gt;
+		   Sit nulla est ex deserunt...
+          &lt;/sdsx:mediaObject&gt;
+          </sdsx:code>
+     </sdsx:container>
+      <sdsx:container class="demo-container" size="large" align="center">
+        <h2 class="slds-text-heading--medium slds-m-bottom--large">Media Object: Reverse</h2>
+          <sdsx:mediaObject imageSrc="/resource/marc" reverse="true">
+          	Sit nulla est ex deserunt exercitation anim occaecat. Nostrud ullamco deserunt aute id consequat veniam incididunt duis in sint irure nisi. Mollit officia cillum Lorem ullamco minim nostrud elit officia tempor esse quis.
+          </sdsx:mediaObject>
+        <br/>
+        Code:
+        <sdsx:code >
+          &lt;sdsx:mediaObject  imageSrc=&quot;/resource/marc&quot; reverse=&quot;true&quot; &gt;
+			Sit nulla est ex deserunt...
+          &lt;/sdsx:mediaObject&gt;
+        </sdsx:code>
+     </sdsx:container>
+     <sdsx:container class="demo-container" size="large" align="center">
+        <h2 class="slds-text-heading--medium slds-m-bottom--large">Media Object: Double</h2>
+          <sdsx:mediaObject double="true" imageSrc="/resource/marc" rightImageSrc="/resource/marc">
+          	Sit nulla est ex deserunt exercitation anim occaecat. Nostrud ullamco deserunt aute id consequat veniam incididunt duis in sint irure nisi. Mollit officia cillum Lorem ullamco minim nostrud elit officia tempor esse quis.
+          </sdsx:mediaObject>
+        <br/>
+        Code:
+        <sdsx:code >
+    	&lt;sdsx:mediaObject double=&quot;true&quot; imageSrc=&quot;/resource/marc&quot; rightImageSrc=&quot;/resource/marc&quot;&gt;
+         Sit nulla est ex deserunt....
+        &lt;/sdsx:mediaObject&gt;
+        </sdsx:code>
+     </sdsx:container>
+</aura:component>

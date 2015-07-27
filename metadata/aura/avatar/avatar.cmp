@@ -1,0 +1,12 @@
+<aura:component access="GLOBAL">
+    <aura:attribute name="size" type="String" access="GLOBAL" default="medium" description="Size of the avatar - x-small, small, medium, large."/>
+    <aura:attribute name="type" type="String" access="GLOBAL" description="Type of the avatar - none, circle."/>
+    <aura:attribute name="src" type="String" access="GLOBAL" required="true" description="URL for the image to use for the avatar."/>
+    <aura:attribute name="label" type="String" access="GLOBAL" description="Text to use for the alt attribute."/>
+    <aura:attribute name="class" type="String" access="GLOBAL" description="Additional class(es) to add."/>
+	<aura:attribute name="avatarClass" type="String" access="GLOBAL" description="Generated class for the avatar, may be set by container to override."/>
+	<aura:handler name="init" value="{!this}" action="{!c.update}"/>    
+    <span class="{!v.avatarClass}">
+        <img src="{!v.src}" alt="{!v.label}"/>
+	</span>
+</aura:component>

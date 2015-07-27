@@ -1,0 +1,12 @@
+/* Lightning Design System v0.4.0 */
+.#{$css-prefix}text-introduction {
+  padding-bottom: $spacing-x-large;
+  font: {
+    size: $font-size-large;
+    weight: $font-weight-light;
+  }
+
+  @include mq-medium-min {
+    font-size: $font-size-x-large;
+  }
+}

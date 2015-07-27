@@ -1,0 +1,12 @@
+<aura:component access="GLOBAL">
+        <aura:attribute name="labels" type="String[]" access="GLOBAL" description="An array of item labels saperated by Comma"/>	
+        <nav role="navigation">
+          <p id="bread-crumb-label" class="slds-assistive-text">You are here:</p>
+          <ol class="slds-breadcrumb slds-list--horizontal" aria-labelledby="bread-crumb-label">
+             <aura:iteration items="{!v.labels}" var="label">
+                    <li class="slds-list__item slds-text-heading--label"><a href="#" title="{!label}">{!label}</a></li>
+              </aura:iteration>
+
+            </ol>
+        </nav>
+</aura:component>

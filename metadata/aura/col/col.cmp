@@ -1,0 +1,40 @@
+<aura:component access="GLOBAL">
+   	<aura:attribute name="size" type="String" access="GLOBAL" description="Manual size for default screens. 1-of-1, 1-of-2.. 1-of-12"/>	    
+    <aura:attribute name="mdSize" type="String" access="GLOBAL" description="Manual size for medium screens. 1-of-1, 1-of-2.. 1-of-12"/>	
+    <aura:attribute name="lgSize" type="String" access="GLOBAL" description="Manual size for large screens. 1-of-1, 1-of-2.. 1-of-12"/>	
+
+     <aura:attribute name="order" type="Integer" access="GLOBAL" description="Order index. 1, 2.."/>	    
+    <aura:attribute name="smOrder" type="Integer" access="GLOBAL" description="Order index for small screens. 1, 2.."/>	
+    <aura:attribute name="mdOrder" type="Integer" access="GLOBAL" description="Order index for medium screens. 1, 2.."/>	 
+    <aura:attribute name="lgOrder" type="Integer" access="GLOBAL" description="Order index for large screens. 1, 2.."/>	
+     
+    <aura:attribute name="smCount" type="Integer" access="GLOBAL" description="The count to use for small sizes."/>	
+    <aura:attribute name="mdCount" type="Integer" access="GLOBAL" description="The count to use for medium sizes."/>	
+    <aura:attribute name="lgCount" type="Integer" access="GLOBAL" description="The count to use for large sizes."/>
+    <aura:attribute name="align" type="String" access="GLOBAL" description="The alignment of the column - top, middle, bottom."/>	    
+    <aura:attribute name="padded" type="Boolean" access="GLOBAL" default="false" description="The count to use for large sizes."/>
+    <aura:attribute name="class" type="String" access="GLOBAL" description="Additional class(es) to add."/>
+    <aura:attribute name="colClass" type="String" access="GLOBAL" description="Override class(es)."/>
+    
+    <aura:attribute name="gen_class" type="String" description="Generated class for the column."/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.update}"/>
+    
+    <aura:handler name="change" value="{!v.smOrder}" action="{!c.update}"/>
+    <aura:handler name="change" value="{!v.mdOrder}" action="{!c.update}"/>
+    <aura:handler name="change" value="{!v.lgOrder}" action="{!c.update}"/>
+    <aura:handler name="change" value="{!v.smIndex}" action="{!c.update}"/>
+    <aura:handler name="change" value="{!v.mdIndex}" action="{!c.update}"/>
+    <aura:handler name="change" value="{!v.lgIndex}" action="{!c.update}"/>
+    <aura:handler name="change" value="{!v.smCount}" action="{!c.update}"/>
+    <aura:handler name="change" value="{!v.mdCount}" action="{!c.update}"/>
+    <aura:handler name="change" value="{!v.lgCount}" action="{!c.update}"/>
+    <aura:handler name="change" value="{!v.align}" action="{!c.update}"/>
+    <aura:handler name="change" value="{!v.padded}" action="{!c.update}"/>
+    <aura:handler name="change" value="{!v.class}" action="{!c.update}"/>
+    <aura:handler name="change" value="{!v.colClass}" action="{!c.update}"/>
+    
+	<div class="{!v.gen_class}">
+    	{!v.body}
+    </div>
+</aura:component>

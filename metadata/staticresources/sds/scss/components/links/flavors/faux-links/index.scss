@@ -1,0 +1,12 @@
+/* Lightning Design System v0.4.0 */
+.#{$css-prefix}type-focus {
+  border-bottom: $border-width-thin solid transparent;
+
+  &:hover {
+    border-bottom: $border-width-thin solid $color-text-link-hover;
+  }
+
+  &:focus {
+    @include focus;
+  }
+}

@@ -1,9 +1,12 @@
 ({
     update: function(component) {
         //var t1 = performance.now();
-        var gen_class = "button";
+        var gen_class = "slds-button";
         var clas = component.get("v.class");
         var type = component.get("v.type");
+        var size = component.get("v.size");
+        var position = component.get("v.position");
+        var hint = component.get("v.hint");
         
         var iconCategory = component.get("v.iconCategory") || null;
         var iconName = component.get("v.iconName") || null;
@@ -11,6 +14,9 @@
         var iconSize = component.get("v.iconSize") || null;
         var iconPosition = component.get("v.iconPosition") || null;
         var iconClass = component.get("v.iconClass") || null;
+        var iconInverse = component.get("v.iconInverse") || null;
+        var iconHint = component.get("v.iconHint") || null;
+        var iconBorderSize = component.get("v.iconBorderSize") || null;
 
         var stateful = component.get("v.stateful");
         var selected = component.get("v.selected");
@@ -18,57 +24,56 @@
         var hovered = component.get("v.hovered");
         
         if (stateful) {
-            gen_class += selected === true ? " is-selected" : " not-selected";
-            gen_class += hovered === true ? " is-hovered" : "";
+            gen_class += selected === true ? " slds-is-selected" : " slds-not-selected";
+            gen_class += hovered === true ? " slds-is-hovered" : "";
         }
             
-		gen_class += focused === true ? " is-focused" : "";
+        gen_class += focused === true ? " slds-is-focused" : "";
+        
+        if(position === "first" || position === "last") {
+            gen_class +=  position === "first" ? " slds-button--first" : " slds-button--last";
+        }
+        
+        //add size class
+        gen_class += size && (size == "small" || size== "large") ? "  slds-button--"+size : "";
             
         // "medium" is the default, no style needed
-       	
+        
         var hasIcon = iconCategory !== null && iconName !== null;
         
         if (hasIcon) {
-            gen_class += iconType ? " button--icon-" + iconType : "";
+            gen_class += iconType ? " slds-button--icon-" + iconType : "";
+             gen_class += iconBorderSize ? " slds-button--icon-border-" + iconBorderSize : "";
             /*
             // NOTE INCONSISTENCY!
-            gen_class += iconSize ? " button__icon--" + iconSize : "";
-            gen_class += type ? " button--icon-" + type : "";
+            gen_class += iconSize ? " slds-button__icon--" + iconSize : "";
+            gen_class += type ? " slds-button--icon-" + type : "";
             */
         }
         
         // Only use the button type if it's not an icon?
-        gen_class += type ? " button--" + type : "";
-        
+        gen_class += type ? " slds-button--" + type : "";
+   
+        gen_class += hint ? "  slds-button--hint" : ""; 
+
         gen_class += clas || "";
         //console.warn("gen_class: ", gen_class);
         component.set("v.gen_class", gen_class);
         
         if (hasIcon) {            
             var xlinkHref = component.get("v.resourceUrl");
-            var gen_icon_class = stateful === true ? "button__icon--stateful" : "button__icon";
+            //var gen_icon_class = stateful === true ? "slds-button__icon--stateful" : "slds-button__icon";
+            var gen_icon_class = "slds-button__icon";
             var gen_icon_text_class = "";
-            if (stateful === true) {
-                gen_icon_text_class = "text";
-                gen_icon_text_class += selected === true ? "-selected" : "-not-selected";
-                if (selected === true) {
-                    // BUGGY!!!!
-                    // Is this really focus or hover
-	                //gen_icon_text_class += focused === true ? "-focus" : "";
-                    //iconName = focused === true ? "close" : "check";
-	                gen_icon_text_class += selected === true ? "-focus" : "";
-                    iconName = hovered === true ? "close" : "check"
-                } else {
-                    iconName = "add";
-                }
-            }
-            
-            xlinkHref += "/assets/icons/" + iconCategory + "-sprite/svg/symbols.svg#" + iconName;
-            
-            component.set("v.iconHref", xlinkHref);
 
-			// Can't use the attribute in the SVG, due to CDATA replacement in setup?
-			try {
+            xlinkHref += "/assets/icons/" + iconCategory + "-sprite/svg/symbols.svg#" + iconName;
+            //var menuIconHref = xlinkHref + "/assets/icons/utility-sprite/svg/symbols.svg#down";
+            component.set("v.iconHref", xlinkHref);
+            var menuIconHref = component.get("v.resourceUrl") + "/assets/icons/utility-sprite/svg/symbols.svg#down";
+            component.set("v.menuIconHref", menuIconHref);
+
+            // Can't use the attribute in the SVG, due to CDATA replacement in setup?
+            try {
                 var cmpEl = component.getElement();
                 var useEl = cmpEl.getElementsByTagName("use")[0];
                 useEl.setAttribute("xlink:href", xlinkHref);
@@ -77,11 +82,15 @@
             }
             
             // Generate icon classes
-            gen_icon_class += iconPosition ? " button__icon--" + iconPosition : "";
-            gen_icon_class += iconClass ? " button__icon--" + iconClass : "";
-            gen_icon_class += iconSize ? " button__icon--" + iconSize : "";
+            gen_icon_class += iconPosition ? " slds-button__icon--" + iconPosition : "";
+            gen_icon_class += iconClass ? " slds-button__icon--" + iconClass : "";
+            gen_icon_class += iconSize ? " slds-button__icon--" + iconSize : "";
 
-            gen_icon_class += type ? " button--icon-" + type : "";
+            gen_icon_class += type ? " slds-button__icon--" + type : "";
+            
+            gen_icon_class += iconInverse ? "  slds-button__icon--inverse" : "";
+            
+            gen_icon_class += iconHint ? "  slds-button__icon--hint" : ""; 
             
             component.set("v.gen_icon_class", gen_icon_class);
             component.set("v.gen_icon_text_class", gen_icon_text_class);
@@ -90,15 +99,23 @@
         //console.warn("buttonHelper.update time: ", (t2 - t1).toFixed(4) + " ms");
     },
     
-  	setup: function(component) {
+    setup: function(component) {
         // Replace the CDATA block with svg element
         // Workaround for bug in Aura Framework
         
-        var svg = component.find("svg_content");
+        var svg = component.find("svg_content");   
         if (svg) {
             var value = svg.getElement().innerText;
             value = value.replace("", "");
             svg.getElement().innerHTML = value;
         }
-	}
+        
+        // for buttons w/ dropdown menu
+        var svg2 = component.find("svg_menu_content");   
+        if (svg2) {
+            var value = svg2.getElement().innerText;
+            value = value.replace("", "");
+            svg2.getElement().innerHTML = value;
+        }
+    }
 })

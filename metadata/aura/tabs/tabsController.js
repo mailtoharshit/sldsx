@@ -16,7 +16,6 @@
         var tabindex = event.target.getAttribute("tabindex");
         tabindex = parseInt(tabindex);
         var items = component.get("v.items");
-
         var item = items[tabindex];
         for (var i = 0; i < items.length; i++) {
             if (i === tabindex) {

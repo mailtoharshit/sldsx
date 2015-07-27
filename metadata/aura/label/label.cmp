@@ -1,0 +1,7 @@
+<aura:component access="GLOBAL">
+    <aura:attribute name="theme" type="String" access="GLOBAL" description="The theme of label - none, default, shade, inverse"/>
+    <aura:attribute name="value" type="String" access="GLOBAL" description="The text to be displayed in the label."/>
+    <span class="{!'slds-label' + (v.theme != null ? ' slds-theme--' + v.theme : '')}">
+        {!v.value}
+    </span>               
+</aura:component>

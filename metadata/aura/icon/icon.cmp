@@ -1,0 +1,62 @@
+<aura:component access="GLOBAL">
+    <!-- global attributes -->
+    <aura:attribute name="resourceUrl" type="String" access="GLOBAL" default="/resource/sdsx__sds" description="The URL for the SDS resource bundle."/>
+    
+    <aura:attribute name="baseClass" type="String" access="GLOBAL" default="icon" description="The base class for all derived classes, may be overridden."/>
+    <aura:attribute name="size" type="String" access="GLOBAL" default="medium" description="Size of the icon - small, medium, large."/>
+    <aura:attribute name="category" type="String" access="GLOBAL" default="action" description="Icon category - action, custom, doctype, standard, utility."/>
+    <aura:attribute name="name" type="String" access="GLOBAL" default="fallback" description="Name of the icon, category specific."/>
+    <aura:attribute name="label" type="String" access="GLOBAL" default="" description="Label used for assistive text."/>
+    <aura:attribute name="container" type="String" access="GLOBAL" description="Container for the icon - none, default, circle, ??"/>
+    <aura:attribute name="color" type="String" access="GLOBAL" description="The background color."/>
+    <aura:attribute name="class" type="String" access="GLOBAL" description="The class(es) to add."/>	
+    <aura:attribute name="style" type="String" access="GLOBAL" description="The style(s) to add."/>	
+    <aura:attribute name="iconClass" type="String" access="GLOBAL" description="Override class(es)."/>
+    <aura:attribute name="xlinkHref" type="String" access="GLOBAL" description="Override link."/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.update}"/>    
+    <aura:attribute name="gen_class" type="String" description="The generated class, may be overridden."/>
+    <aura:attribute name="gen_container_class" type="String" description="The generated class for the container, may be overridden."/>
+    <aura:attribute name="gen_style" type="String" description="The generated style, may be overridden."/>
+    <aura:attribute name="xlink_href" type="String" description="Generated href for the SVG icon, may be set by container to override."/>
+    
+    
+    <aura:handler name="change" value="{!this}" action="{!c.update}"/>
+    <aura:handler name="change" value="{!v.xlinkHref}" action="{!c.update}"/>
+    <aura:handler name="change" value="{!v.iconClass}" action="{!c.update}"/>
+
+    <span class="{!v.container ne null ? v.gen_container_class : ''}" style="{!v.container ne null ? v.gen_style : ''}">
+        <span aura:id="svg_content">
+            <![CDATA[
+                <svg aria-hidden="true" class="{!v.gen_class}" style="{!v.container eq null ? v.gen_style : ''}">
+                    <use xlink:href="{!v.xlink_href}" />
+                </svg>    
+              <span class="assistive-text">{!v.label}</span>
+             ]]>
+        </span>
+    </span>
+<!--    
+    <aura:if isTrue="{!!empty(v.container)}">
+        <span class="{!v.gen_container_class}" style="{!v.gen_style}">
+            <span aura:id="svg_content">
+                <![CDATA[
+                <svg aria-hidden="true" class="{!v.gen_class}">
+                    <use xlink:href="{!v.xlink_href}" />
+                </svg>    
+             	<span class="assistive-text">{!v.label}</span>
+            	]]>
+            </span>
+        </span>
+        <aura:set attribute="else">
+            <span aura:id="svg_content">
+                <![CDATA[
+				<svg aria-hidden="true" class="{!v.gen_class}" style="{!v.gen_style}">
+					<use xlink:href="{!v.xlink_href}" />
+				</svg>    
+                 <span class="assistive-text">{!v.label}</span>
+                ]]>
+            </span>
+        </aura:set>
+    </aura:if>
+-->    
+</aura:component>

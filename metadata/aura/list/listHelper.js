@@ -1,32 +1,10 @@
 ({
     update: function(component) {
-        var listClass = component.get("v.listClass") || null;
-        if (listClass) {
-            component.set("v.gen_class", listClass);
-            
-        } else {
-            
-            var ordered = component.get("v.orderd") || null;
-            /*
-             * 
-             * 
-             * WORK STOPPED HERE
-             * 
-             * 
-             * 
-             * 
-          	 */ 
-            var description = component.get("v.type") || null;
-            var clas = component.get("v.class") || null;
-            
-            var gen_class = "grid";
-            
-            gen_class += overflow ? " grid--overflow" : "";
-            gen_class += align ? " grid--align-" + align : "";
-            gen_class += wrap ? " wrap" : "";
-            gen_class += clas ? " " + clas : "";
-            
-            component.set("v.gen_class", gen_class);
-        }
+        var gen_class = "";
+        var type = component.get("v.type") || null;
+        var direction = component.get("v.direction") || null;
+        gen_class += type ? " slds-list--"+ type : "";
+        gen_class += direction ? " slds-list--"+ direction : "";
+        component.set("v.gen_class", gen_class);      
     }
 })

@@ -32,9 +32,9 @@
             var type = component.get("v.") || null;
             var clas = component.get("v.class") || null;
             
-            var gen_class = "tabs__content";
+            var gen_class = "slds-tabs__content";
             
-            gen_class += active ? " show" : " hide";
+            gen_class += active ? " slds-show" : " slds-hide";
             gen_class += clas ? " " + clas : "";
             
             component.set("v.gen_class", gen_class);

@@ -1,0 +1,11 @@
+<aura:component access="GLOBAL">
+    <aura:attribute name="size" type="String" access="GLOBAL" description="The size of the container - none, small, medium, large, fluid."/>	
+    <aura:attribute name="align" type="String" access="GLOBAL" description="The alignment of the container - none, left, right, center."/>	
+    <aura:attribute name="class" type="String" access="GLOBAL" description="The class(es) to add."/>	
+    <aura:attribute name="style" type="String" access="GLOBAL" description="The style(s) to add."/>	
+    <aura:attribute name="containerClass" type="String" access="GLOBAL" description="The generated class, may be overridden."/>
+    <aura:handler name="init" value="{!this}" action="{!c.update}"/>
+    <div class="{!v.containerClass}" style="{!v.style}">
+        {!v.body}
+    </div>
+</aura:component>

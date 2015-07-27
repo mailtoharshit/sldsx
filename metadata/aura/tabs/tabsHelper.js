@@ -22,21 +22,20 @@
             var type = component.get("v.type") || null;
             var clas = component.get("v.class") || null;
             
-            var gen_class = "tabs";
+            var gen_class = "slds-tabs";
             
-            gen_class += type ? " tabs--" + type : "";
+            gen_class += type ? " slds-tabs--" + type : "";
             gen_class += clas ? " " + clas : "";
             
             component.set("v.gen_class", gen_class);
         }
 
-        component.set("v.gen_nav_class", "tabs__nav");
-        
+        component.set("v.gen_nav_class", gen_class+"__nav");
         var items = component.get("v.items"); //[];
         var navItems = [];
        	var navItem = null;
         var tabCmp = null;
-        var tabClass = "tabs__item";
+        var headerClass = "slds-tabs__item slds-text-heading--label ";
         var extraClass = null;
         var active = false;
         var activeSet = false; // Ensure only one tab is active, first one in wins!
@@ -48,7 +47,7 @@
             navItem = {
                 title: tabCmp.get("v.title"),
                 active: activeSet ? false : active,
-                class: tabClass + (extraClass != null ? " " + extraClass : "")
+                class: headerClass + (extraClass != null ? " " + extraClass : "")
             }
             
             activeSet = activeSet || active;

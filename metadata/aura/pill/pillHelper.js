@@ -8,7 +8,7 @@
             
             var clas = component.get("v.class") || null;
             
-            var gen_class = "pill";
+            var gen_class = "slds-pill";
             
             gen_class += clas ? " " + clas : "";
             

@@ -11,11 +11,11 @@
             var align = component.get("v.align") || null;
             var clas = component.get("v.class") || null;
             
-            var gen_class = "grid";
+            var gen_class = "slds-grid";
             
-            gen_class += overflow ? " grid--overflow" : "";
-            gen_class += align ? " grid--align-" + align : "";
-            gen_class += wrap ? " wrap" : "";
+            gen_class += overflow ? " slds-grid--overflow" : "";
+            gen_class += align ? " slds-grid--align-" + align : "";
+            gen_class += wrap ? " slds-wrap" : "";
             gen_class += clas ? " " + clas : "";
             
             component.set("v.gen_class", gen_class);

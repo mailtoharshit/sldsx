@@ -27,6 +27,26 @@ Once you install the unmanaged package, you can go to `{yourOrg}//sdsx/sdsTest.a
 
 Note: All the components are in `metadata/aura/` folder.
 
+
+#Components
+##Button
+
+
+```
+
+                        <sdsx:button press="{!c.handlePress}" label="Button 1"/>
+                        <sdsx:button press="{!c.handlePress}">Button 2</sdsx:button>
+                        <sdsx:button press="{!c.handlePress}" label="Button 3"/>
+                        <sdsx:button press="{!c.handlePress}" type="neutral">Button 4</sdsx:button>
+                        <sdsx:button press="{!c.handlePress}" type="brand">Button 5</sdsx:button>
+                        <sdsx:button press="{!c.handlePress}" type="inverse">Button 6</sdsx:button>
+                        <sdsx:button press="{!c.handlePress}" type="inverse" disabled="true">Button 7</sdsx:button>
+                        <sdsx:button press="{!c.handlePress}" type="neutral" label="Download" iconCategory="utility" iconName="download" iconPosition="left"/>
+                        <sdsx:button press="{!c.handlePress}" type="neutral" label="Download" iconCategory="utility" iconName="download" iconPosition="right"/>
+                        
+                        
+                        ```
+
 #Distribution
 If you are distributing a component that's built using SDSX, then need to package your component and SDSX. This is to ensure that your component uses proper version of SDS.
 

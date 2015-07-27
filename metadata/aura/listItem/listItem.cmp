@@ -1,0 +1,18 @@
+<aura:component access="GLOBAL">
+    <aura:attribute name="type" type="String" access="GLOBAL" description="The type of list item, typically set by the list - none, description"/>
+    <aura:attribute name="itemClass" type="String" access="GLOBAL" description="List item class. Class to add to slds-list__{itemClass}"/>	
+    <aura:attribute name="style" type="String" access="GLOBAL" description="The style(s) to add."/>	
+    <aura:attribute name="press" type="Aura.Action" default="{!c.myAction}" access="GLOBAL"/>
+
+    <aura:if isTrue="{!v.type == 'description'}">
+        <!-- Need to handle dd -->
+        <dl onclick="{!v.press}" class="{!v.itemClass}">
+            {!v.body}
+        </dl>
+        <aura:set attribute="else">
+            <li onclick="{!v.press}" class="{!'slds-list__'+v.itemClass}">
+                {!v.body}
+            </li>
+        </aura:set>
+    </aura:if>
+</aura:component>

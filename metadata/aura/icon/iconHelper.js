@@ -17,7 +17,7 @@
             component.set("v.xlink_href", xlink_href);
         }
         
-        var gen_class = "icon";
+        var gen_class = "slds-icon";
 
         var iconClass = component.get("v.iconClass") || null;
         if (iconClass) {
@@ -27,19 +27,19 @@
             var clas = component.get("v.class") || null;
             
             if (typeof container !== "undefined" && container !== null) {
-                var gen_container_class = "icon__container";
-                gen_container_class += container === "default" ? "" : " icon__container--" + container;
-                gen_container_class += " icon-" + category + "-" + name;
-                gen_container_class += " icon__svg--default";
+                var gen_container_class = "slds-icon__container";
+                gen_container_class += container === "default" ? "" : " slds-icon__container--" + container;
+                gen_container_class += " slds-icon-" + category + "-" + name;
+                gen_container_class += " slds-icon__svg--default";
                 
                 component.set("v.gen_container_class", gen_container_class);
             } else {
                 // Only add this if the container is not present            
-                gen_class += " icon-" + category + "-" + name;
-                gen_class += " icon__svg--default";
+                gen_class += " slds-icon-" + category + "-" + name;
+                gen_class += " slds-icon__svg--default";
             }
             
-            gen_class += size !== "medium" ? " icon--" + size : "";
+            gen_class += size !== "medium" ? " slds-icon--" + size : "";
             gen_class += clas ? " " + clas : "";
 
             component.set("v.gen_class", gen_class);

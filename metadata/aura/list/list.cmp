@@ -1,0 +1,19 @@
+<aura:component access="GLOBAL">
+    <aura:attribute name="ordered" type="Boolean" access="GLOBAL" default="false" description="Toggle unordered/ordered list."/>	
+    <aura:attribute name="type" type="String" access="GLOBAL" description="The list type - dotted, numeric."/>	
+    <aura:attribute name="direction" type="String" access="GLOBAL" description="Stack direction - horizontal, block"/>		
+    <aura:attribute name="gen_class" type="String" description="Generated class."/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.update}"/>
+    
+  	<aura:if isTrue="{!v.ordered == true}">
+        <ol class="{!v.gen_class}">
+        	{!v.body}
+        </ol>
+        <aura:set attribute="else">
+            <ul class="{!v.gen_class}">
+				{!v.body}
+            </ul>
+        </aura:set>
+    </aura:if>
+</aura:component>

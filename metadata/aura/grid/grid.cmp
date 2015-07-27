@@ -1,0 +1,22 @@
+<aura:component access="GLOBAL">
+    <aura:attribute name="wrap" type="Boolean" access="GLOBAL" description="Toggles grid wrapping."/>	
+    <aura:attribute name="overflow" type="Boolean" access="GLOBAL" description="Toggles grid overflow."/>	
+    <aura:attribute name="align" type="String" access="GLOBAL" description="The alignment of the grid - none, center, space, spread."/>	
+    <aura:attribute name="class" type="String" access="GLOBAL" description="The class(es) to add."/>	
+    <aura:attribute name="style" type="String" access="GLOBAL" description="The style(s) to add."/>	
+    <aura:attribute name="gridClass" type="String" access="GLOBAL" description="Override class(es)."/>
+    
+    <aura:attribute name="gen_class" type="String" description="Generated class for the grid."/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.update}"/>
+    
+    <aura:handler name="value" value="{!v.wrap}" action="{!c.update}"/>
+    <aura:handler name="value" value="{!v.overflow}" action="{!c.update}"/>
+    <aura:handler name="value" value="{!v.align}" action="{!c.update}"/>
+    <aura:handler name="value" value="{!v.class}" action="{!c.update}"/>
+    <aura:handler name="value" value="{!v.gridClass}" action="{!c.update}"/>
+    
+    <div class="{!v.gen_class}" style="{!v.style}">
+        {!v.body}
+    </div>	
+</aura:component>

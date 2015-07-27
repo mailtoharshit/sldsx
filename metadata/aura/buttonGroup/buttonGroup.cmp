@@ -1,0 +1,5 @@
+<aura:component >
+	<div class="slds-button-group" role="group">
+        {!v.body}
+    </div>
+</aura:component>

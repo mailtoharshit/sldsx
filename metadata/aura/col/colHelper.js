@@ -5,13 +5,13 @@
             component.set("v.gen_class", colClass);
             
         } else {
-            
+            var size = component.get("v.size") || null;
+            var mdSize = component.get("v.mdSize") || null;
+            var lgSize = component.get("v.lgSize") || null;
+            var order = component.get("v.order") || null;
             var smOrder = component.get("v.smOrder") || null;
             var mdOrder = component.get("v.mdOrder") || null;
-            var lgOrder = component.get("v.lgOrder") || null;
-            var smIndex = component.get("v.smIndex") || null;
-            var mdIndex = component.get("v.mdIndex") || null;
-            var lgIndex = component.get("v.lgIndex") || null;
+            var lgOrder = component.get("v.lgOrder") || null;             
             var smCount = component.get("v.smCount") || null;
             var mdCount = component.get("v.mdCount") || null;
             var lgCount = component.get("v.lgCount") || null;
@@ -19,17 +19,18 @@
             var align = component.get("v.align") || null;
             var clas = component.get("v.class") || null;
             
-            var gen_class = "col";
+            var gen_class = "slds-col";
+            gen_class += size ? " slds-size--" + size : "";
+            gen_class += mdSize ? " slds-medium-size--" + mdSize : "";
+            gen_class += lgSize ? " slds-large-size--" + lgSize : "";
+ 
+            gen_class += order ? " slds-order--" + order : "";
+            gen_class += smOrder ? " slds-small-order--" + smOrder : "";
+            gen_class += mdOrder ? " slds-medium-order--" + mdOrder : "";
+            gen_class += lgOrder ? " slds-large-order--" + lgOrder : "";
             
-            gen_class += (smIndex && smCount) ? " size--" + smIndex + "-of-" + smCount : "";
-            gen_class += (mdIndex && mdCount) ? " medium-size--" + mdIndex + "-of-" + mdCount : "";
-            gen_class += (lgIndex && lgCount) ? " large-size--" + lgIndex + "-of-" + lgCount : "";
-            gen_class += smOrder ? " small-order--" + smOrder : "";
-            gen_class += mdOrder ? " medium-order--" + mdOrder : "";
-            gen_class += lgOrder ? " large-order--" + lgOrder : "";
-            
-            gen_class += align ? " align-" + align : "";
-            gen_class += padded ? " col--padded" : "";
+            gen_class += align ? " slds-align-" + align : "";
+            gen_class += padded ? " slds-col--padded" : "";
             gen_class += clas ? " " + clas : "";
             
             component.set("v.gen_class", gen_class);
