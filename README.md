@@ -7,24 +7,27 @@ SDSX is an open-source project to provide a set of common Lightning Components t
 Note: All sdsx components use `sdsx` namespace.
 
 #Installation
-SDSX is distributed as an unmanaged package. The package has all the components, and latest version of SDS framework (CSS, fonts, icons etc). To use it, simply install the package, load SDS static resource and use individual components in your app.
+SDSX is distributed as a managed package. The package has all the components, and latest version of SDS framework (CSS, fonts, icons etc). To use it, simply install the package, load SDS static resource and use individual components in your app.
 
-1. Install this [unmanaged package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB0000000Dvec). 
+1. Install the [managed package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB0000000Dwfu). 
 2. Load SDS static resource
 
 	 ```    
 	 <ltng:require styles="/resource/sdsx__sds/assets/styles/salesforce-design-system-sds.css"/>
 	  ```
-3. Use the component
+3. Write the SDS component under `<div class="slds">` 
 
 ```
-<sdsx:button press="{!c.handlePress}" type="bare" iconCategory="utility" iconName="close" iconType="bare" iconSize="small"/>
+<div class="slds">
+        <sdsx:button press="{!c.handlePress}" type="bare" iconCategory="utility" iconName="close" iconType="bare" iconSize="small"/>
+</div>
 
 ```
 
-#Usage
-Once you install the unmanaged package, you can go to `{yourOrg}//sdsx/sdsTest.app` to see a kitchen sink Lightning application that shows how to use all the components.
+#Usage  (SLDS.app)
+Once you install the unmanaged package, you can go to `{yourOrg}//sdsx/SLDS.app` to see all the components and example code for each one of them.
 
+<image src="https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/slds-app-small.png?token=AAmOoTf7HCHmtu40GOr-fk5mg3HRkPK_ks5Vv6B-wA%3D%3D"/>
 Note: All the components are in `metadata/aura/` folder.
 
 
