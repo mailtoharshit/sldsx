@@ -1,7 +1,7 @@
 <image src="https://login.salesforce.com/img/logo190.png"/>
 
 
-#SDSX - SDS For Lightning Components
+#SDSX - SLDS For Lightning Components
 SDSX is an open-source project to provide a set of common Lightning Components that conform and wrap [Salesforce Design System's (SDS)](http://salesforce-design-system.herokuapp.com) CSS framework. This is to help you not worry about SDS specific CSS and markup for basic components. And also to provide JS support so you don't have to implement them.
 
 Note: All sdsx components use `sdsx` namespace.
