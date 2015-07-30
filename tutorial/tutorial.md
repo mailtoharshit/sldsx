@@ -31,7 +31,7 @@ SLDS app is a sample app that contains a list of all the SDSX components and sou
 
 <image src="https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/slds-app-small.png?token=AAmOoUKiDyKUoD3GGVHOFaCoqGVEKXu8ks5Vv6HUwA%3D%3D"/>
 
-#Step 3 - Check Out SDSX Documentation In AuraDocs
+#Step 3 - Check Out SDSX Documentation
 Lightning auto-generates documentation based on the source code. Since you installed the SDSX components package, you'll be able to browse the docs along with all other components! 
 1. Open `{yourOrg}/auradocs/reference.app`
 2. Click on `Components > SDSX` to see all the components in `SDSX` namespace. 
