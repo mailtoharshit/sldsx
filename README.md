@@ -13,7 +13,8 @@ SDSX is distributed as a unmanaged package. The package has all the components, 
 2. Load SLDS static resource
 
 	```    
-	 <ltng:require styles="/resource/sdsx__sds/assets/styles/salesforce-design-system-sds.css"/>
+	     <ltng:require styles="/resource/sdsx__sds/assets/styles/salesforce-lightning-design-system-vf.css"/>
+
 	```
 
 3. Write SLDS component under `<div class="slds">` 
@@ -26,7 +27,7 @@ Notes:
 If your org already has some of the components
 
 # Reference App (SLDS.app)
-SLDS app contains a list of all the SDSX components and source code for each one of them. The examples are identical to what you'll find in the [Salesforce Design System's (SLDS)](http://salesforce-design-system.herokuapp.com) website.
+SLDS app contains a list of all the SDSX components and source code for each one of them. The examples are identical to what you'll find in the [Salesforce Lightning Design System's (SLDS)](http://salesforce-design-system.herokuapp.com) website.
 
 Usage: Once you install the unmanaged package, open [{yourOrg}//sdsx/SLDS.app](https://login.salesforce.com/sdsx/SLDS.app).
 
