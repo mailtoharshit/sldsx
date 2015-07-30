@@ -2,14 +2,27 @@
 
 
 #SDSX - SLDS For Lightning Components
-SDSX is an open-source project to provide a set of common Lightning Components that conform and wrap [Salesforce Lightning Design System's (SLDS)](http://getslds.com) CSS framework. This is to help you not worry about SDS specific CSS and markup for basic components. And also to provide JS support so you don't have to implement them.
+SDSX is an open-source project to provide a set of common Lightning Components that conform and wrap [Salesforce Lightning Design System's (SLDS)](http://getslds.com) CSS framework. This is to help you not worry about SLDS specific CSS and markup for basic components. And also to provide JS support so you don't have to implement them.
 
-Note: All sdsx components use `sdsx` namespace.
+Note: All SDSX components use `sdsx` namespace.
 
-#Installation
-SDSX is distributed as a unmanaged package. The package has all the components, and latest version of SLDS framework (CSS, fonts, icons etc). To use it, simply install the package, load SLDS static resource and use individual components in your app.
+In this tutorial we'll show how to use SLDS components in a Lightning app.
 
-1. Install the [unmanaged package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB0000000DwlZ). 
+#Step 0 - Enable Lightning Components
+1. Login to your Salesforce Org.
+2. Go to `Setup > Develop > Lightning Components`
+3. Check `Enable Lightning Components`
+
+![image](http://enableLightningComponentsPic.png)
+
+#Step 1 - Installation
+
+SDSX is distributed as an [unmanaged package](https://help.salesforce.com/apex/HTViewHelpDoc?id=sharing_apps.htm&language=en). The package has all the components, and latest version of SLDS framework (CSS, fonts, icons etc). To use it, simply install the package, load SLDS static resource and use individual components in your app.
+
+1. Login to your Salesforce Org.
+2. Click on the: [unmanaged package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB0000000DwlZ). 
+3. Click `Next` and `Next` until it's done installing.
+4. O 
 2. Load SLDS static resource
 
 	```    
@@ -36,7 +49,7 @@ Note: All the components are in `metadata/aura/` folder.
 
 
 #Distribution
-If you are distributing a component that's built using SDSX, you need to package your component and SDSX static resource. This is to ensure that your component uses proper version of SLDS.
+If you are distributing a component that's built using SDSX, you need to package your component and SDSX static resource. This is to ensure that your component uses proper version of SDS.
 
 #Contribution
 You can fork this repo and contribute newer SDSX components or bug fixes. When you submit a new component, make sure it is in `metadata/aura` folder `metadata/aura/{yourcomponent}` 
