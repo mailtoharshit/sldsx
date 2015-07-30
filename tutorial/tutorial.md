@@ -32,12 +32,12 @@ SLDS app is a sample app that contains a list of all the SDSX components and sou
 <image src="https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/slds-app-small.png?token=AAmOoUKiDyKUoD3GGVHOFaCoqGVEKXu8ks5Vv6HUwA%3D%3D"/>
 
 #Step 3 - Check Out SDSX Documentation
-Lightning auto-generates documentation based on the source code. Since you installed the SDSX components package, you'll be able to browse the docs along with all other components! 
+Lightning auto-generates documentation for all components based on the source code. Since you installed the SDSX components package, you'll be able to browse the docs along with all other components! 
 1. Open `{yourOrg}/auradocs/reference.app`
 2. Click on `Components > SDSX` to see all the components in `SDSX` namespace. 
 
 
-<image src="https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/auraDocsPic.png?token=AAmOoUKiDyKUoD3GGVHOFaCoqGVEKXu8ks5Vv6HUwA%3D%3D"/>
+<image src="https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/tutorial/auraDocsPic.png?token=AAmOodKb9rVMTRPyycVSGSWLnTEA7iqZks5Vw7STwA%3D%3D"/>
 
 #Step 4 - Loading SLDS Into Lightning Components
 `SLDS.app` itself uses a lot of SDSX components, so you can simply see the source code to get an idea about how you can use various SDSX components.
@@ -47,7 +47,7 @@ Lightning auto-generates documentation based on the source code. Since you insta
 4. Scroll through the source.
 
 Notice that the code loads SLDS as a static resource and also uses `slds` div parent element to CSS namespace the component so that CSS doesn't bleed into other components. This is how you load SLDS framework into your Lightning app or component.  
-<image src="https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/tutorial/sldsNSPic.png?token=AAmOoUKiDyKUoD3GGVHOFaCoqGVEKXu8ks5Vv6HUwA%3D%3D"/>
+<image src="https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/tutorial/sldsNSPic.png?token=AAmOocILl68XPbdGeJZF5VtPloyzg1EEks5Vw7TuwA%3D%3D"/>
 
 Note: You don't need to load it in every component, you just need to load it in the main component or app that has all other components.
 
@@ -62,9 +62,9 @@ Note: You don't need to load it in every component, you just need to load it in 
     </div>
 
 	```
+4. Press `Preview` and you'll see:
 
-4. Press 'Preview` and you'll see:
-![image](https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/tutorial/buttonPic.png?token=AAmOoUKiDyKUoD3GGVHOFaCoqGVEKXu8ks5Vv6HUwA%3D%3D)
+	![image](https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/tutorial/buttonPic.png?token=AAmOoSrUeJXezRvpCdsPwl6aYCd_jhXVks5Vw7VCwA%3D%3D)
 
 
 #Step 6 - Change An Attribute
@@ -76,7 +76,8 @@ Every SDSX components has multiple attributes that can have various values. Comp
 	```
 
 4. Press 'Preview` and you'll see:
-![image](https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/tutorial/buttonBrandPic.png?token=AAmOoUKiDyKUoD3GGVHOFaCoqGVEKXu8ks5Vv6HUwA%3D%3D)
+
+	![image](https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/tutorial/buttonBrandPic.png?token=AAmOodeZEuoLBMgroITMhykc5eP7GRw9ks5Vw7VNwA%3D%3D)
 
 Note: You can use  AuraDocs app (Step 3) to see list of attributes and possible values for each attribute for a given component.
 
