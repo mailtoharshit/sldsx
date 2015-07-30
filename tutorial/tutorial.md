@@ -85,6 +85,7 @@ Note: You can use  AuraDocs app (Step 3) to see list of attributes and possible 
 
 #Step 7 - Add A JS Controller
 Every SDSX component has a `press` attribute that allows us to add a JavaScript controller. In our button, we already have that attribute `press="{!c.myButtonHandler}" ` but it doesn't do anything.
+
 1. In Developer Console, click on `Controller` button on the rightside pane.
 2. Replace the code with the following:
 	```
