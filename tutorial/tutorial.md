@@ -195,7 +195,7 @@ In SDSX components, they correspond to "size", "mdSize" and "lgSize" respectivel
 In this example, we will build a simple Accounts app that shows list of accounts in a table.
 We'll use raw CSS instead of SDSX components just to show that you can use it directly as well. 
 
-![image](https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/tutorial/accountsAppPic.png?token=AAmOoaXkZJm2Ops8ZaKJWPUeqPVHkooTks5VyAPiwA%3D%3D)
+![image](https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/tutorial/accountsAppPic.png?token=AAmOoSz6452ZSIiTdPkVMsouxEIrJmFJks5VyDpNwA%3D%3D)
 
 #### Create Accounts Apex Controller
 1. In Developer console, Click on New > Create Apex Class
