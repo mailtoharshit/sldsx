@@ -33,6 +33,7 @@ SLDS app is a sample app that contains a list of all the SDSX components and sou
 
 #Step 3 - Browse SDSX Docs
 Lightning auto-generates documentation for all components based on the source code. Since you installed the SDSX components package, you'll be able to browse the docs for SDSX components along with all other components! 
+
 1. Open `{yourOrg}/auradocs/reference.app`
 2. Click on `Components > SDSX` to see all the components in `SDSX` namespace. 
 
@@ -143,14 +144,26 @@ If you want just 1 cell to occupy 1/12 the space, simply use: `1-of-12`. This al
 
 ```
 
-	![image](https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/tutorial/gridSystem.png?token=AAmOodeZEuoLBMgroITMhykc5eP7GRw9ks5Vw7VNwA%3D%3D)
+![image](https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/tutorial/gridSystemPic.png?token=AAmOoYYd25le7hvQNsgV7-qLrxIVzlxmks5VyAMawA%3D%3D)
 	
 
 Note: Notice we are also using `wrap=true` attribute. This tells the Grid System to wrap and move the cell to the next row below if there are more cells than it can fit.
-	![image](https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/tutorial/wrapPic?token=AAmOodeZEuoLBMgroITMhykc5eP7GRw9ks5Vw7VNwA%3D%3D)
+
+![image](https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/tutorial/wrapPic.png?token=AAmOoQ_t-CEn_0eG_F71LUQHCLOgNQDOks5VyAK3wA%3D%3D)
 	
 #### Multiple Sizes For Various Screensizes
-In most apps you want to show different number of items depending on the screensize. For example, if viewed from a mobile device you may want to show just one cell/item per row, but if viewed from a medium size screen like a tablet, you may want to show 6 cells/items in a single row. And finally if viewed from a large screen, you may want to show 12 cells/items in a single row.
+In most apps you want to show different number of items depending on the screensize. 
+
+For example, if viewed from a mobile device you may want to show just one cell/item per row, but if viewed from a medium size screen like a tablet, you may want to show 6 cells/items in a single row. And finally if viewed from a large screen, you may want to show 12 cells/items in a single row.
+In Large Screen (e.g. laptops):
+![image](https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/tutorial/largeScreenPic.png?token=AAmOod5OPF2KCfe_XhFFXOFBxV0tinm8ks5VyANKwA%3D%3D)
+
+In Medium Screen (e.g. tablets):
+		![image](https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/tutorial/mdScreenPic.png?token=AAmOocA-UBP9st0rI2m2sFLq8dNT7BwBks5VyANrwA%3D%3D)
+
+In Small Screens (e.g. mobile phones): 		
+![image](https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/tutorial/smScreenPic.png?token=AAmOoaXkZJm2Ops8ZaKJWPUeqPVHkooTks5VyAPiwA%3D%3D)
+
 Thankfully, Grid System offers small, medium and large size attributes that can be used in this situation.
 In SDSX components, they correspond to "size", "mdSize" and "lgSize" respectively.
 
@@ -177,6 +190,4 @@ In SDSX components, they correspond to "size", "mdSize" and "lgSize" respectivel
 </sdsx:grid>
 
 ```
-	![image](https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/tutorial/largeScreenPic.png?token=AAmOodeZEuoLBMgroITMhykc5eP7GRw9ks5Vw7VNwA%3D%3D)
-		![image](https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/tutorial/mdScreenPic.png?token=AAmOodeZEuoLBMgroITMhykc5eP7GRw9ks5Vw7VNwA%3D%3D)
-			![image](https://raw.githubusercontent.com/ForceDotComLabs/sdsx/master/tutorial/smScreenPic.png?token=AAmOodeZEuoLBMgroITMhykc5eP7GRw9ks5Vw7VNwA%3D%3D)
+
