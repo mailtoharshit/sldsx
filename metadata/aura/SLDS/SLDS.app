@@ -1,7 +1,5 @@
 <aura:application access="GLOBAL">
   <ltng:require styles="/resource/sdsx__sds/assets/styles/salesforce-lightning-design-system-vf.css"/>
-  	<!--scroll-to-top anchor --> 
-    <a name="top"></a> 
     <div class="slds">
         <sdsx:grid wrap="true" class="topHeader">
             <sdsx:col size="1-of-1" mdSize="1-of-12" lgSize="1-of-12">

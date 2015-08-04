@@ -1,5 +1,4 @@
 <aura:component access="GLOBAL">
-    <ltng:require styles="/resource/sdsx__sds/assets/styles/salesforce-design-system-sds.css"/>
     <aura:attribute name="value" type="String" access="GLOBAL" description="The value to be displayed, may overriden by the body."/>
     <aura:attribute name="type" type="String" access="GLOBAL" default="body" description="The type of text - none, body, header, section."/>	
     <aura:attribute name="size" type="String" access="GLOBAL" description="The size of the text - small, medium, large, label."/>	

@@ -1,11 +1,13 @@
-/* Lightning Design System v0.4.0 */
-/* Lightning Design System v0.4.0 */
-/* ---------------------------------------------------------------------------
- Copyright (c) 2015, salesforce.com, inc. All rights reserved.
- Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. Neither the name of salesforce.com, inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- */
+/* Lightning Design System v0.5.0 */
+/* Lightning Design System v0.5.0 */
+/*
+Copyright (c) 2015, salesforce.com, inc. All rights reserved.
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+Neither the name of salesforce.com, inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
 @font-face {
   font-family: "Salesforce Sans";
   src: url("../fonts/webfonts/SalesforceSans-Light.woff2") format("woff2"), url("../fonts/webfonts/SalesforceSans-Light.woff") format("woff");
@@ -501,9 +503,6 @@
   .slds .slds-button--icon-inverse:focus:active {
     background-color: #eef1f6; }
 
-  .slds .slds-button--icon-inverse .slds-button__icon {
-    fill: white; }
-
   .slds .slds-button-group .slds-button:first-child.slds-button--inverse[disabled] {
     border-left-color: rgba(255, 255, 255, 0.15); }
 
@@ -648,8 +647,7 @@
     text-align: center;
     vertical-align: middle;
     border: 1px solid #d8dde6;
-    background-color: transparent;
-    color: #e0e5ee; }
+    background-color: transparent; }
 
   .slds .slds-button--inverse:hover,
   .slds .slds-button--inverse:focus {
@@ -657,6 +655,11 @@
 
   .slds .slds-button--inverse:active {
     background-color: #eef1f6; }
+
+  .slds .slds-button--inverse,
+  .slds .slds-button--inverse:link,
+  .slds .slds-button--inverse:visited {
+    color: #e0e5ee; }
 
   .slds .slds-button--inverse:hover,
   .slds .slds-button--inverse:focus,
@@ -896,7 +899,7 @@
   .slds .slds-card__footer {
     padding: 4px 16px 8px; }
 
-  .slds .slds-card .slds-list__item {
+  .slds .slds-card .slds-tile {
     margin: 8px;
     padding: 8px; }
 
@@ -905,6 +908,9 @@
 
   .slds .slds-form-element {
     position: relative; }
+
+  .slds .slds-form-element__helper {
+    font-size: 14px; }
 
   .slds .slds-form-element__label {
     color: #54698d;
@@ -1362,9 +1368,6 @@
       display: inline-block;
       vertical-align: middle; } }
 
-  .slds .slds-form--compound .slds-form-element__group {
-    float: left; }
-
   .slds .slds-form--compound .slds-form-element__row {
     margin-bottom: 8px; }
 
@@ -1372,31 +1375,26 @@
     clear: both; }
 
   .slds .slds-form--compound .slds-form-element__control {
-    margin-bottom: 8px;
     display: inline-block;
     position: relative; }
 
-  @media (min-width: 48em) {
-    .slds .slds-form--compound .slds-form-element__control {
-      margin-bottom: 0; }
-
-    .slds .slds-form--compound .slds-form-element__control + .slds-form-element__control {
-      padding-left: 8px; } }
+  .slds .slds-form--compound .slds-form-element__control + .slds-form-element__control {
+    padding-left: 8px; }
 
   @media (min-width: 48em) {
     .slds .slds-form--compound .slds-form-element__label {
       white-space: nowrap;
       overflow: hidden;
-      text-overflow: ellipsis;
-      min-width: 80px;
-      max-width: 33%; } }
+      text-overflow: ellipsis; } }
 
   @media (min-width: 48em) {
     .slds .slds-form--compound--horizontal .slds-form-element__label {
       float: left;
       text-align: right;
       position: relative;
-      top: 8px; } }
+      top: 8px;
+      min-width: 80px;
+      max-width: 33%; } }
 
   .slds .slds-form-element__static {
     display: inline-block;
@@ -1642,6 +1640,15 @@
     -webkit-align-self: flex-end;
     -ms-flex-item-align: end;
     align-self: flex-end; }
+
+  .slds .slds-grid--overflow {
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap; }
+
+  .slds .slds-grid--overflow .slds-col {
+    min-width: 11.25em;
+    max-width: 22.5em; }
 
   .slds .slds-tooltip {
     position: relative;
@@ -2247,6 +2254,9 @@
     -webkit-transition: opacity 0.1s linear, visibility 0.1s linear;
     transition: opacity 0.1s linear, visibility 0.1s linear; }
 
+  .slds .slds-dropdown--actions a {
+    color: #0070d2; }
+
   .slds .slds-datepicker {
     margin-top: 4px;
     padding: 0;
@@ -2581,25 +2591,24 @@
     width: 68px;
     height: 68px; }
 
-  .slds .slds-tile--kanban {
-    padding: 8px;
-    border: 1px solid #d8dde6;
-    border-radius: 4px;
-    background-color: white; }
+  .slds .slds-tile + .slds-tile {
+    margin-top: 8px; }
 
-  .slds .slds-tile--kanban:hover,
-  .slds .slds-tile--kanban:focus {
-    background-color: #f4f6f9;
-    cursor: move; }
+  .slds .slds-tile__meta {
+    color: #16325c; }
 
-  .slds .slds-tile--kanban .slds-needs-action {
+  .slds .slds-tile--board {
+    position: relative; }
+
+  .slds .slds-tile--board .slds-icon {
+    width: 16px;
+    height: 16px;
     position: absolute;
-    right: 12px;
-    bottom: 12px; }
+    bottom: 4px;
+    right: 4px; }
 
-  .slds .slds-kanban[dir=rtl] .slds-needs-action {
-    right: auto;
-    left: 12px; }
+  .slds .slds-tile--board .slds-has-alert {
+    padding-right: 24px; }
 
   .slds .slds-tile__meta {
     color: #16325c; }
@@ -4129,6 +4138,9 @@
   .slds .slds-icon-text-default {
     fill: #54698d; }
 
+  .slds .slds-icon-text-warning {
+    fill: #ffb75d; }
+
   .slds .slds-icon--tiny {
     line-height: 1;
     width: 16px;
@@ -5530,25 +5542,25 @@
   .slds .slds-theme--inverse-text a:not(.slds-button--neutral)[disabled] {
     color: rgba(255, 255, 255, 0.15); }
 
-  .slds .slds-list--vertical .slds-list__item--separator {
+  .slds .slds-list--vertical > .slds-list__item--separator {
     padding: 8px;
     border-bottom: 1px solid #d8dde6; }
 
-  .slds .slds-list--vertical .slds-list__item--separator:hover,
-  .slds .slds-list--vertical .slds-list__item--separator:focus {
+  .slds .slds-list--vertical > .slds-list__item--separator:hover,
+  .slds .slds-list--vertical > .slds-list__item--separator:focus {
     background-color: #f4f6f9;
     border-color: #d8dde6; }
 
-  .slds .slds-list--vertical .slds-list__item--separator:active {
+  .slds .slds-list--vertical > .slds-list__item--separator:active {
     background-color: #eef1f6;
-    box-shadow: #d8dde6 0 0 0 1px inset; }
+    box-shadow: #d8dde6 0 -1px 0 inset; }
 
-  .slds .slds-list--vertical .slds-list__item--separator.slds-is-selected {
+  .slds .slds-list--vertical > .slds-list__item--separator.slds-is-selected {
     box-shadow: #0070d2 0 0 0 1px inset;
     background-color: #f0f8fc; }
 
-  .slds .slds-list--vertical .slds-list__item--separator.slds-is-selected:hover,
-  .slds .slds-list--vertical .slds-list__item--separator.slds-is-selected:focus {
+  .slds .slds-list--vertical > .slds-list__item--separator.slds-is-selected:hover,
+  .slds .slds-list--vertical > .slds-list__item--separator.slds-is-selected:focus {
     box-shadow: #1589ee 0 -2px 0 inset, #1589ee 0 0 0 1px inset; }
 
   .slds .slds-list--horizontal .slds-list__item--separator {
@@ -5572,6 +5584,20 @@
   .slds .slds-list--horizontal .slds-list__item--separator:last-child:after {
     content: none; }
 
+  @media (max-width: 47.9375em) {
+    .slds .slds-list--horizontal .slds-list__item--separator:before {
+      width: 4px;
+      height: 4px;
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 50%;
+      background-color: #16325c;
+      margin-right: 12px; }
+
+    .slds .slds-list--horizontal .slds-list__item--separator:after {
+      content: none; } }
+
   .slds .slds-list__item--card {
     padding: 8px;
     border-radius: 4px;
@@ -5585,7 +5611,7 @@
 
   .slds .slds-list__item--card:active {
     background-color: #eef1f6;
-    box-shadow: #d8dde6 0 0 0 1px inset; }
+    box-shadow: #d8dde6 0 -1px 0 inset; }
 
   .slds .slds-list__item--card.slds-is-selected {
     box-shadow: #0070d2 0 0 0 1px inset;

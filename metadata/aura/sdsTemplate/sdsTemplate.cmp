@@ -3,7 +3,7 @@
     <aura:set attribute="loadingText" value="Salesforce Design System for Lightning Components"/>
 	<aura:set attribute="extraStyleTags">
         <!--
-        <link href="/resource/sdsx__sds/assets/styles/salesforce-design-system-sds.css" type="text/css" rel="stylesheet"/>
+        <link href="/resource/sdsx__sds/assets/styles/salesforce-design-system-vf.css" type="text/css" rel="stylesheet"/>
         -->
         <style>
             

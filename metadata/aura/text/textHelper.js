@@ -9,7 +9,7 @@
             var type = component.get("v.type") || null;
             var clas = component.get("v.class") || null;
             
-            var gen_class = "text";
+            var gen_class = "slds-text";
 
             gen_class += type ? "-" + type : "";        
             gen_class += size ? "--" + size : "";

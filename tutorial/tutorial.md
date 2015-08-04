@@ -20,7 +20,7 @@ In this tutorial we'll show how to use SLDS components in a Lightning app.
 SDSX is distributed as an [unmanaged package](https://help.salesforce.com/apex/HTViewHelpDoc?id=sharing_apps.htm&language=en). The package has all the components, and latest version of SLDS framework (CSS, fonts, icons etc). To use it, simply install the package, load SLDS static resource and use individual components in your app.
 
 1. Login to your Salesforce Org.
-2. Click on the: [unmanaged package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB0000000DwlZ). 
+2. Install the [unmanaged package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB0000000Dwle) (w/ SLDS v0.5). 
 3. Keep the default settings and click `Install`.
 
 #Step 2 - Browse SLDS.app (Sample App)

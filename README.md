@@ -9,7 +9,7 @@ Note: All sdsx components use `sdsx` namespace.
 #Installation
 SDSX is distributed as a unmanaged package. The package has all the components, and latest version of SLDS framework (CSS, fonts, icons etc). To use it, simply install the package, load SLDS static resource and use individual components in your app.
 
-1. Install the [unmanaged package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB0000000DwlZ). 
+1. Install the [unmanaged package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB0000000Dwle) (w/ SLDS v0.5). 
 2. Load SLDS static resource
 
 	```    
@@ -27,7 +27,7 @@ Notes:
 If your org already has some of the components
 
 # Reference App (SLDS.app)
-SLDS app contains a list of all the SDSX components and source code for each one of them. The examples are identical to what you'll find in the [Salesforce Lightning Design System's (SLDS)](http://salesforce-design-system.herokuapp.com) website.
+SLDS app contains a list of all the SDSX components and source code for each one of them. The examples are identical to what you'll find in the [Salesforce Lightning Design System's (SLDS)](http://www.getslds.com) website.
 
 Usage: Once you install the unmanaged package, open [{yourOrg}//sdsx/SLDS.app](https://login.salesforce.com/sdsx/SLDS.app).
 

@@ -37,10 +37,8 @@
         //add size class
         gen_class += size && (size == "small" || size== "large") ? "  slds-button--"+size : "";
             
-        // "medium" is the default, no style needed
         
-        var hasIcon = iconCategory !== null && iconName !== null;
-        
+        var hasIcon = iconCategory !== null && iconName !== null;        
         if (hasIcon) {
             gen_class += iconType ? " slds-button--icon-" + iconType : "";
              gen_class += iconBorderSize ? " slds-button--icon-border-" + iconBorderSize : "";

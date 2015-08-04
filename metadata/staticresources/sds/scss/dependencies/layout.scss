@@ -1,10 +1,15 @@
-/* Lightning Design System v0.4.0 */
-/* ---------------------------------------------------------------------------
- Copyright (c) 2015, salesforce.com, inc. All rights reserved.
- Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. Neither the name of salesforce.com, inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- */
+/* Lightning Design System v0.5.0 */
+/*
+Copyright (c) 2015, salesforce.com, inc. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+Neither the name of salesforce.com, inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
 // Grid
 $grid: (
   "tiny": (
@@ -29,7 +34,7 @@ $grid: (
 @mixin mq-screen {
 
   @media (only-screen) {
-    @content
+    @content;
   }
 }
 
@@ -37,14 +42,14 @@ $grid: (
 @mixin mq-tiny-min {
 
   @media (min-width: pem($mq-tiny)) {
-    @content
+    @content;
   }
 }
 
 @mixin mq-tiny-max {
 
   @media (max-width: pem($mq-tiny - 1)) {
-    @content
+    @content;
   }
 }
 
@@ -52,14 +57,14 @@ $grid: (
 @mixin mq-small-min {
 
   @media (min-width: pem($mq-small)) {
-    @content
+    @content;
   }
 }
 
 @mixin mq-small-max {
 
   @media (max-width: pem($mq-small - 1)) {
-    @content
+    @content;
   }
 }
 
@@ -67,14 +72,14 @@ $grid: (
 @mixin mq-medium-min {
 
   @media (min-width: pem($mq-medium)) {
-    @content
+    @content;
   }
 }
 
 @mixin mq-medium-max {
 
   @media (max-width: pem($mq-medium - 1)) {
-    @content
+    @content;
   }
 }
 
@@ -82,14 +87,14 @@ $grid: (
 @mixin mq-large-min {
 
   @media (min-width: pem($mq-large)) {
-    @content
+    @content;
   }
 }
 
 @mixin mq-large-max {
 
   @media (max-width: pem($mq-large - 1)) {
-    @content
+    @content;
   }
 }
 
@@ -97,14 +102,14 @@ $grid: (
 @mixin mq-huge-min {
 
   @media (min-width: pem(1224)) {
-    @content
+    @content;
   }
 }
 
 @mixin mq-huge-max {
 
   @media (max-width: pem(1223)) {
-    @content
+    @content;
   }
 }
 
@@ -112,14 +117,14 @@ $grid: (
 @mixin mq-super-min {
 
   @media (min-width: pem(1824)) {
-    @content
+    @content;
   }
 }
 
 @mixin mq-super-max {
 
   @media (max-width: pem(1823)) {
-    @content
+    @content;
   }
 }
 
@@ -131,7 +136,7 @@ $grid: (
                             (-webkit-min-device-pixel-ratio: 1.3),
                             (min-device-pixel-ratio: 1.3),
                             (min-resolution: 1.3dppx) {
-    @content
+    @content;
   }
 }
 
@@ -139,24 +144,28 @@ $grid: (
 @mixin webkit {
 
   @media screen and (-webkit-min-device-pixel-ratio: 0) {
-    @content
+    @content;
   }
 }
 
 // Sizing Helper
 @mixin width($columns, $breakpoint: null) {
+  $breakpoint-string: null;
   // Loop through the number of columns for each denominator of our fractions.
   @each $denominator in $columns {
+    @if ($breakpoint != null) {
+      $breakpoint-string: $breakpoint + '-';
+    }
     // If we’re trying to make wholes, just spit a 100% width utility out one time only.
     @if ($denominator == 1) {
-      .#{$breakpoint}size--1-of-#{$denominator} {
+      .#{$css-prefix}#{$breakpoint-string}size--1-of-#{$denominator} {
         width: 100%;
       }
     } @else {
       // Begin creating a numberator for our fraction up until we hit the denominator.
       @for $numerator from 1 through $denominator {
         // Build a class in the format `.slds-size--3-of-4`.
-        .#{$breakpoint}size--#{$numerator}-of-#{$denominator} {
+        .#{$css-prefix}#{$breakpoint-string}size--#{$numerator}-of-#{$denominator} {
             width: ($numerator / $denominator) * 100%;
         }
       }
@@ -263,10 +272,10 @@ $grid: (
   }
 
   @each $token, $size in $force-base-map {
-    $token-string: _proof-quote($token);
+    $token-string: inspect($token);
 
     @if str-index($token-string, spacing) {
-      $spacing: str-replace($token-string, 'spacing-', '');
+      $spacing: unquote(str-replace($token, 'spacing-', ''));
 
       @each $position in $positions {
 

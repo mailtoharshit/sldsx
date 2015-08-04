@@ -4,13 +4,13 @@
 	},
     
     handleMouseOver: function(component, event, helper) {
-        $A.util.addClass(component.getElement(), "is-hovered");
+        $A.util.addClass(component.getElement(), "slds-is-hovered");
         component.set("v.hovered", true);
         helper.update(component);
     },
     
     handleMouseOut: function(component, event, helper) {
-        $A.util.removeClass(component.getElement(), "is-hovered");
+        $A.util.removeClass(component.getElement(), "slds-is-hovered");
         component.set("v.hovered", false);
         helper.update(component);
     },

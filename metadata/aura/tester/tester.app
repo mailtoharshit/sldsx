@@ -3,8 +3,9 @@
     <aura:attribute name="myComponents" type="Aura.Component[]" access="GLOBAL"/>
 	<aura:handler name="init" value="{!this}" action="{!c.init}"/>
     
-    <div class="sds">
-        <!--
+	<ltng:require styles="/resource/sdsx__sds/assets/styles/salesforce-lightning-design-system-vf.css"/>
+    
+    <div class="slds">
 
         <div>
             <sdsx:icon category="action" name="announcement"/>
@@ -48,13 +49,12 @@
             <sdsx:icon category="standard" name="call" container="circle" color="rgba(200,100,50,0.3)"/>
             <sdsx:icon category="standard" name="call" container="circle" color="rgba(200,100,50,0.1)"/>
         </div>
-		-->
+
         
         <sdsx:text type="heading" size="large">Large Heading Body</sdsx:text>
         <sdsx:text type="heading" size="large" value="Large Heading Value"/>
         <sdsx:text type="heading" size="large" value="Large Heading Value">Large Heading Body</sdsx:text>
         
-        <!--
         <sdsx:button press="{!c.test}" type="neutral" label="Not Stateful" iconCategory="utility" iconName="download" iconPosition="right"/>
         
         <sdsx:button press="{!c.test}" type="neutral" stateful="true" label="Stateful" iconCategory="utility" iconName="download" iconPosition="left"/>
@@ -72,8 +72,6 @@
         	My Dialog
         </sdsx:dialog>
 
-		-->
-        <!--        
         <sdsx:tabs type="task">
             <sdsx:tab title="Item One">
                 <sdsx:tsPanel />
@@ -110,8 +108,7 @@
                 </sdsx:treeBranch>
             </aura:iteration>
         </sdsx:tree>
--->
-<!--
+
         <hr/>
 		<sdsx:tree heading="My Tree">
             <sdsx:treeBranch label="Root" expanded="true" nested="false">
@@ -147,7 +144,6 @@
             </sdsx:treeBranch>
         </sdsx:tree>
         <hr/>
- -->       
 
 
 <!--      
