@@ -2,9 +2,12 @@
 
 
 #SLDSX - SLDS For Lightning Components
-SLDSX is an open-source project to provide a set of common Lightning Components that conform and wrap [Salesforce Lightning Design System's (SLDS)](http://getslds.com) CSS framework. This is to help you not worry about SDS specific CSS and markup for basic components. And also to provide JS support so you don't have to implement them.
+SLDSX is an open-source project to provide a set of common Lightning Components that conform and wrap [Salesforce Lightning Design System's (SLDS)](http://getslds.com) CSS framework. This is to help you not worry about SLDS specific CSS and markup for basic components. And also to provide JS support so you don't have to implement them.
 
 Note: All sldsx components use `sldsx` namespace.
+
+#Tutorial
+We've created a tutorial for you to understand how to use it. Please go through the <a href="https://github.com/ForceDotComLabs/sldsx/blob/master/tutorial/tutorial.md" target="_blank">tutorial here</a>.
 
 #Installation
 SLDSX is distributed as a unmanaged package. The package has all the components, and latest version of SLDS framework (CSS, fonts, icons etc). To use it, simply install the package, load SLDS static resource and use individual components in your app.
