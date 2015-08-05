@@ -13,7 +13,7 @@ In this tutorial we'll show how to use SLDS components in a Lightning app.
 2. Go to `Setup > Develop > Lightning Components`
 3. Check `Enable Lightning Components`
 
-![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/enableLightningComponentsPic.png?token=AAmOoQ83GPhZKZVL0OehGs1KF45P-UTVks5Vw5_xwA%3D%3D)
+![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/enableLightningComponentsPic.png?token=AAmOoTbmOidomfsnO1qURbobzN46kf0Iks5Vy5mAwA%3D%3D)
 
 #Step 1 - Installation
 
@@ -29,7 +29,7 @@ SLDS app is a sample app that contains a list of all the SLDSX components and so
 1. Open SLDS.app by changing the url to: [{yourOrg}//{namespace}/SLDS.app](https://login.salesforce.com/c/SLDS.app)
 2. Scroll down or Click on `Buttons`, `Grid System` etc to understand how the SLDSX code look for various elements.
 
-<image src="https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/slds-app-small.png?token=AAmOoUKiDyKUoD3GGVHOFaCoqGVEKXu8ks5Vv6HUwA%3D%3D"/>
+<image src="https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/slds-app-small.png?token=AAmOoZ0b2T0P3lRWXQEVQsxziDcEHqiLks5Vy5kkwA%3D%3D"/>
 
 #Step 3 - Browse SLDSX Docs
 Lightning auto-generates documentation for all components based on the source code. Since you installed the SLDSX components package, you'll be able to browse the docs for SLDSX components along with all other components! 
@@ -38,7 +38,7 @@ Lightning auto-generates documentation for all components based on the source co
 2. Click on `Components > SLDSX` to see all the components in `SLDSX` namespace. 
 
 
-<image src="https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/auraDocsPic.png?token=AAmOodKb9rVMTRPyycVSGSWLnTEA7iqZks5Vw7STwA%3D%3D"/>
+<image src="https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/auraDocsPic.png?token=AAmOoRx-WXidbUBSzWY502DgyfTXq_dMks5Vy5mjwA%3D%3D"/>
 
 #Step 4 - Loading SLDS Framework
 `SLDS.app` itself uses a lot of SLDSX components, so you can simply see the source code to get an idea about how you can use various SLDSX components.
@@ -49,7 +49,7 @@ Lightning auto-generates documentation for all components based on the source co
 4. Scroll through the source.
 
 Notice that the code loads SLDS as a static resource and also uses `slds` div parent element to CSS namespace the component so that CSS doesn't bleed into other components. This is how you load SLDS framework into your Lightning app or component.  
-<image src="https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/sldsNSPic.png?token=AAmOocILl68XPbdGeJZF5VtPloyzg1EEks5Vw7TuwA%3D%3D"/>
+<image src="https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/sldsNSPic.png?token=AAmOob3ZEPGQlLCFFzllU46W_0-LKPpzks5Vy5nBwA%3D%3D"/>
 
 Note: You don't need to load it in every component, you just need to load it in the main component or app that has all other components.
 
@@ -66,7 +66,7 @@ Note: You don't need to load it in every component, you just need to load it in 
 	```
 4. Press `Preview` and you'll see:
 
-	![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/buttonPic.png?token=AAmOoSrUeJXezRvpCdsPwl6aYCd_jhXVks5Vw7VCwA%3D%3D)
+	![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/buttonPic.png?token=AAmOobiB9DTurbPar1NRKqgaWgQcz5psks5Vy5nbwA%3D%3D)
 
 
 ##Step 5.1 - Change An Attribute
@@ -79,7 +79,7 @@ Every SLDSX components has multiple attributes that can have various values. Com
 
 4. Press 'Preview` and you'll see:
 
-	![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/buttonBrandPic.png?token=AAmOodeZEuoLBMgroITMhykc5eP7GRw9ks5Vw7VNwA%3D%3D)
+	![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/buttonBrandPic.png?token=AAmOobaya7wUMWtm8D6NmvV6njATRjhDks5Vy5n7wA%3D%3D)
 
 Note: You can use  AuraDocs app (Step 3) to see list of attributes and possible values for each attribute for a given component.
 
@@ -144,25 +144,25 @@ If you want just 1 cell to occupy 1/12 the space, simply use: `1-of-12`. This al
 
 ```
 
-![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/gridSystemPic.png?token=AAmOoYYd25le7hvQNsgV7-qLrxIVzlxmks5VyAMawA%3D%3D)
+![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/gridSystemPic.png?token=AAmOoRlvh2yv8IiBoPpcDX18ZFUzY5XVks5Vy5oewA%3D%3D)
 	
 
 Note: Notice we are also using `wrap=true` attribute. This tells the Grid System to wrap and move the cell to the next row below if there are more cells than it can fit.
 
-![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/wrapPic.png?token=AAmOoQ_t-CEn_0eG_F71LUQHCLOgNQDOks5VyAK3wA%3D%3D)
+![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/wrapPic.png?token=AAmOoZ6dhQzNJUugyqe7qdbWOFhdyeAPks5Vy5o3wA%3D%3D)
 	
 #### Multiple Sizes For Various Screensizes
 In most apps you want to show different number of items depending on the screensize. 
 
 For example, if viewed from a mobile device you may want to show just one cell/item per row, but if viewed from a medium size screen like a tablet, you may want to show 6 cells/items in a single row. And finally if viewed from a large screen, you may want to show 12 cells/items in a single row.
 In Large Screen (e.g. laptops):
-![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/largeScreenPic.png?token=AAmOod5OPF2KCfe_XhFFXOFBxV0tinm8ks5VyANKwA%3D%3D)
+![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/largeScreenPic.png?token=AAmOoaaGHCLJVJ5GXWH4CX1w2mjV-DbZks5Vy5pUwA%3D%3D)
 
 In Medium Screen (e.g. tablets):
-		![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/mdScreenPic.png?token=AAmOocA-UBP9st0rI2m2sFLq8dNT7BwBks5VyANrwA%3D%3D)
+		![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/mdScreenPic.png?token=AAmOoWFHgJAe4VlETcHXwvvB4IenC24vks5Vy5prwA%3D%3D)
 
 In Small Screens (e.g. mobile phones): 		
-![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/smScreenPic.png?token=AAmOoaXkZJm2Ops8ZaKJWPUeqPVHkooTks5VyAPiwA%3D%3D)
+![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/smScreenPic.png?token=AAmOofzz-Rn-TaYbsMUfLFGYk9Z_WU5kks5Vy5qCwA%3D%3D)
 
 Thankfully, Grid System offers small, medium and large size attributes that can be used in this situation.
 In SLDSX components, they correspond to "size", "mdSize" and "lgSize" respectively.
@@ -195,7 +195,7 @@ In SLDSX components, they correspond to "size", "mdSize" and "lgSize" respective
 In this example, we will build a simple Accounts app that shows list of accounts in a table.
 We'll use raw CSS instead of SLDSX components just to show that you can use it directly as well. 
 
-![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/accountsAppPic.png?token=AAmOoSz6452ZSIiTdPkVMsouxEIrJmFJks5VyDpNwA%3D%3D)
+![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/accountsAppPic.png?token=AAmOoQPjlV_js_sfzhu-4jZWkd6yRuekks5Vy5qtwA%3D%3D)
 
 #### Create Accounts Apex Controller
 1. In Developer console, Click on New > Create Apex Class

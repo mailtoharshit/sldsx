@@ -7,7 +7,8 @@ SLDSX is an open-source project to provide a set of common Lightning Components 
 Note: All sldsx components use `sldsx` namespace.
 
 #Tutorial
-We've created a tutorial for you to understand how to use it. Please go through the <a href="https://github.com/ForceDotComLabs/sldsx/blob/master/tutorial/tutorial.md" target="_blank">tutorial here</a>.
+We've created a tutorial to explain how to use it. Please go through the <a href="https://github.com/ForceDotComLabs/sldsx/blob/master/tutorial/tutorial.md" target="_blank">tutorial here</a>.
+<image src="https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/slds-app-small.png?token=AAmOoZ0b2T0P3lRWXQEVQsxziDcEHqiLks5Vy5kkwA%3D%3D"/>
 
 #Installation
 SLDSX is distributed as a unmanaged package. The package has all the components, and latest version of SLDS framework (CSS, fonts, icons etc). To use it, simply install the package, load SLDS static resource and use individual components in your app.
@@ -16,13 +17,13 @@ SLDSX is distributed as a unmanaged package. The package has all the components,
 2. Load SLDS static resource
 
 	```    
-	     <ltng:require styles="/resource/sldsx/assets/styles/salesforce-lightning-design-system-vf.css"/>
+	<ltng:require styles="/resource/sldsx/assets/styles/salesforce-lightning-design-system-vf.css"/>
 
 	```
 	If your org has it's own namespace, for example: `ns` then, append `ns__` to the `sldsx` in the resource path to look like below:
 
 	```    
-	     <ltng:require styles="/resource/ns__sldsx/assets/styles/salesforce-lightning-design-system-vf.css"/>
+	 <ltng:require styles="/resource/ns__sldsx/assets/styles/salesforce-lightning-design-system-vf.css"/>
 
 	```	
 
