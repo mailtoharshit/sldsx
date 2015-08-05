@@ -1,3 +1,0 @@
-<aura:event type="APPLICATION" access="GLOBAL" description="Opens the specified dialog.">
-    <aura:attribute name="dialog" type="Aura.Component" access="GLOBAL" description="The dialog to be opened."/>
-</aura:event>

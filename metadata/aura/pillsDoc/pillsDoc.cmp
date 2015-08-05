@@ -1,52 +1,52 @@
 <aura:component access="GLOBAL">
-    <sdsx:container class="demo-container" size="large" align="center">
+    <c:container class="demo-container" size="large" align="center">
       <h2 class="slds-text-heading--medium slds-m-bottom--large">Pills: Base</h2>
-      <sdsx:pill label="Pill Label" press="{!c.handlePress}">
-        <sdsx:button press="{!c.handleClosePress}" iconCategory="utility" iconName="close" iconType="bare" />
-      </sdsx:pill>
+      <c:pill label="Pill Label" press="{!c.handlePress}">
+        <c:button press="{!c.handleClosePress}" iconCategory="utility" iconName="close" iconType="bare" />
+      </c:pill>
       <br/>
-      Code:
-      <sdsx:code >
-      &lt;sdsx:pill label=&quot;Pill Label&quot; press=&quot;myJSHandler&quot;&gt;
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;sdsx:button press=&quot;myCloseHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;close&quot; iconType=&quot;bare&quot; /&gt;
-      &lt;/sdsx:pill&gt;
-     </sdsx:code>
-    </sdsx:container>
-    <sdsx:container class="demo-container" size="large" align="center">
+      Code: 
+      <c:code >
+      &lt;sldsx:pill label=&quot;Pill Label&quot; press=&quot;myJSHandler&quot;&gt;
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;sldsx:button press=&quot;myCloseHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;close&quot; iconType=&quot;bare&quot; /&gt;
+      &lt;/sldsx:pill&gt;
+     </c:code>
+    </c:container>
+    <c:container class="demo-container" size="large" align="center">
       <h2 class="slds-text-heading--medium slds-m-bottom--large">Pills: Unlink</h2>
-      <sdsx:pill label="Unlink" unlink="true" press="{!c.handlePress}"></sdsx:pill>
+      <c:pill label="Unlink" unlink="true" press="{!c.handlePress}"></c:pill>
       <br/>
       Code:
-      <sdsx:code >
-      &lt;sdsx:pill label=&quot;Unlink&quot; unlink=&quot;true&quot; press=&quot;myJSHandler&quot;&gt;&lt;/sdsx:pill&gt;
-      </sdsx:code>
-     </sdsx:container>
+      <c:code >
+      &lt;sldsx:pill label=&quot;Unlink&quot; unlink=&quot;true&quot; press=&quot;myJSHandler&quot;&gt;&lt;/sldsx:pill&gt;
+      </c:code>
+     </c:container>
 
-    <sdsx:container class="demo-container" size="large" align="center">
+    <c:container class="demo-container" size="large" align="center">
       <h2 class="slds-text-heading--medium slds-m-bottom--large">Pills: Icon</h2>
-      <sdsx:pill label="Pill Label" press="{!c.handlePress}" iconCategory="standard" iconName="account" iconSize="small">
-        <sdsx:button press="{!c.handleClosePress}" type="bare" iconCategory="utility" iconName="close" iconType="bare"/>
-      </sdsx:pill>
+      <c:pill label="Pill Label" press="{!c.handlePress}" iconCategory="standard" iconName="account" iconSize="small">
+        <c:button press="{!c.handleClosePress}" type="bare" iconCategory="utility" iconName="close" iconType="bare"/>
+      </c:pill>
       <br/>
       Code:
-      <sdsx:code >
-      &lt;sdsx:pill label=&quot;Pill Label&quot; press=&quot;myJSHandler&quot; iconCategory=&quot;standard&quot; iconName=&quot;account&quot; iconSize=&quot;small&quot;&gt;
-      &nbsp;&nbsp;&nbsp;&lt;sdsx:button press=&quot;myCloseHandler&quot; type=&quot;bare&quot; iconCategory=&quot;utility&quot; iconName=&quot;close&quot; iconType=&quot;bare&quot;/&gt;
-      &lt;/sdsx:pill&gt;
-      </sdsx:code>
-    </sdsx:container> 
+      <c:code >
+      &lt;sldsx:pill label=&quot;Pill Label&quot; press=&quot;myJSHandler&quot; iconCategory=&quot;standard&quot; iconName=&quot;account&quot; iconSize=&quot;small&quot;&gt;
+      &nbsp;&nbsp;&nbsp;&lt;sldsx:button press=&quot;myCloseHandler&quot; type=&quot;bare&quot; iconCategory=&quot;utility&quot; iconName=&quot;close&quot; iconType=&quot;bare&quot;/&gt;
+      &lt;/sldsx:pill&gt;
+      </c:code>
+    </c:container> 
       
-   <sdsx:container class="demo-container" size="large" align="center">
+   <c:container class="demo-container" size="large" align="center">
       <h2 class="slds-text-heading--medium slds-m-bottom--large">Pills: Potrait</h2>
-      <sdsx:pill label="Marc Benioff" press="{!c.handlePress}" avatarSrc="/resource/marc" avatarSize="x-small" avatarType="circle" avatarLabel="Marc">
-        <sdsx:button press="{!c.handleClosePress}" type="bare" iconCategory="utility" iconName="close" iconType="bare"/>
-      </sdsx:pill>
+      <c:pill label="Marc Benioff" press="{!c.handlePress}" avatarSrc="/resource/marc" avatarSize="x-small" avatarType="circle" avatarLabel="Marc">
+        <c:button press="{!c.handleClosePress}" type="bare" iconCategory="utility" iconName="close" iconType="bare"/>
+      </c:pill>
       <br/>
       Code:
-      <sdsx:code >
-      &lt;sdsx:pill label=&quot;Marc Benioff&quot; press=&quot;myJSHandler&quot; avatarSrc=&quot;/resource/marc&quot; avatarSize=&quot;x-small&quot; avatarType=&quot;circle&quot; avatarLabel=&quot;Marc&quot;&gt;
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;sdsx:button press=&quot;myCloseHandler&quot; type=&quot;bare&quot; iconCategory=&quot;utility&quot; iconName=&quot;close&quot; iconType=&quot;bare&quot;/&gt;
-      &lt;/sdsx:pill&gt;
-      </sdsx:code>
-    </sdsx:container>
+      <c:code >
+      &lt;sldsx:pill label=&quot;Marc Benioff&quot; press=&quot;myJSHandler&quot; avatarSrc=&quot;/resource/marc&quot; avatarSize=&quot;x-small&quot; avatarType=&quot;circle&quot; avatarLabel=&quot;Marc&quot;&gt;
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;sldsx:button press=&quot;myCloseHandler&quot; type=&quot;bare&quot; iconCategory=&quot;utility&quot; iconName=&quot;close&quot; iconType=&quot;bare&quot;/&gt;
+      &lt;/sldsx:pill&gt;
+      </c:code>
+    </c:container>
 </aura:component>

@@ -1,4 +1,0 @@
-<aura:component access="GLOBAL" abstract="true">
-    <aura:attribute name="class" type="String" access="GLOBAL" description="The class(es) to add."/>	
-    <aura:attribute name="style" type="String" access="GLOBAL" description="The style(s) to add."/>	
-</aura:component>

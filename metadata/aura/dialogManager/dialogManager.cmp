@@ -1,5 +1,0 @@
-<aura:component access="GLOBAL">
-    <aura:attribute name="dialogs" type="Aura.Component[]" description="Maintains a list of dialogs."/>
-    <aura:handler event="c:openDialog" action="{!c.openDialog}" description="Opens the specified dialog."/>    
-    <aura:handler event="c:closeDialog" action="{!c.closeDialog}" description="Close the specified dialog."/>    
-</aura:component>

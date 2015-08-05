@@ -1,6 +1,6 @@
 <aura:component access="GLOBAL">
     <!-- global attributes -->
-    <aura:attribute name="resourceUrl" type="String" access="GLOBAL" default="/resource/sdsx__sds" description="The URL for the SDS resource bundle."/>
+    <aura:attribute name="resourceUrl" type="String" access="GLOBAL" default="/resource/sldsx__sds" description="The URL for the SDS resource bundle."/>
     
     <aura:attribute name="baseClass" type="String" access="GLOBAL" default="icon" description="The base class for all derived classes, may be overridden."/>
     <aura:attribute name="size" type="String" access="GLOBAL" default="medium" description="Size of the icon - small, medium, large."/>

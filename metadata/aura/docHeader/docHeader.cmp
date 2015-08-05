@@ -3,10 +3,10 @@
     <aura:attribute name="top" type="Boolean" default="true"/>
     <aura:attribute name="anchorName" type="String" default="true"/>
    <a name="{!v.anchorName}"></a>     
-  <sdsx:grid >   
-    <sdsx:col size="10-of-12"><h1 class="slds-text-heading--large slds-truncate">{!v.name}</h1></sdsx:col>
+  <c:grid >   
+    <c:col size="10-of-12"><h1 class="slds-text-heading--large slds-truncate">{!v.name}</h1></c:col>
      <aura:if isTrue="{!v.top == true}"> 
-    	<sdsx:col size="2-of-12"><a onclick="{!c.scroll}" data-href="#top"><sdsx:label value="Scroll To Top"/></a></sdsx:col>
+    	<c:col size="2-of-12"><a onclick="{!c.scroll}" data-href="#top"><c:label value="Scroll To Top"/></a></c:col>
     </aura:if>     
-  </sdsx:grid> 
+  </c:grid> 
 </aura:component>

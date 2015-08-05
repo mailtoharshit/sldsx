@@ -1,7 +1,0 @@
-<aura:component access="GLOBAL">
-    <aura:attribute name="orientation" type="String" access="GLOBAL" default="vertical" description="The orientation of the scrollable area - vertical, horizontal"/>
-    <aura:attribute name="style" type="String" access="GLOBAL" description="The style(s) to add."/>	
-    <div class="{!'scrollable' + (v.orientation == 'horizontal' ? '--x' : '')}" style="{!v.style}">
-    	{!v.body}
-    </div>
-</aura:component>

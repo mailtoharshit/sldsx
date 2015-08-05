@@ -1,90 +1,90 @@
 <aura:component access="GLOBAL">
-	<sdsx:container class="demo-container" size="large" align="center">
+	<c:container class="demo-container" size="large" align="center">
       <h2 class="slds-text-heading--medium slds-m-bottom--large">Base</h2>
-      <sdsx:buttonGroup >
-        <sdsx:button press="{!c.handlePress}" type="neutral">Refresh</sdsx:button>
-        <sdsx:button press="{!c.handlePress}" type="neutral">Edit</sdsx:button>
-        <sdsx:button press="{!c.handlePress}" type="neutral">Save</sdsx:button>
-        <sdsx:button press="{!c.handlePress}" iconCategory="utility" iconName="down" iconType="border-filled" />
-    </sdsx:buttonGroup>
+      <c:buttonGroup>
+        <c:button press="{!c.handlePress}" type="neutral">Refresh</c:button>
+        <c:button press="{!c.handlePress}" type="neutral">Edit</c:button>
+        <c:button press="{!c.handlePress}" type="neutral">Save</c:button>
+        <c:button press="{!c.handlePress}" iconCategory="utility" iconName="down" iconType="border-filled" />
+    </c:buttonGroup>
     <br/>
-    <sdsx:buttonGroup >
-        <sdsx:button press="{!c.handlePress}" type="neutral">Neutral</sdsx:button>
-        <sdsx:button press="{!c.handlePress}" iconCategory="utility" iconName="down" iconType="border-filled" />
-    </sdsx:buttonGroup>
+    <c:buttonGroup >
+        <c:button press="{!c.handlePress}" type="neutral">Neutral</c:button>
+        <c:button press="{!c.handlePress}" iconCategory="utility" iconName="down" iconType="border-filled" />
+    </c:buttonGroup>
     <br/>
-    <sdsx:buttonGroup >
-        <sdsx:button press="{!c.handlePress}" type="neutral" disabled="true">Refresh</sdsx:button>
-        <sdsx:button press="{!c.handlePress}" type="neutral">Edit</sdsx:button>
-        <sdsx:button press="{!c.handlePress}" type="neutral" position="last">Save</sdsx:button>
-        <sdsx:button press="{!c.handlePress}" iconCategory="utility" iconName="down" iconType="border-filled" disabled="true" />
-    </sdsx:buttonGroup>
+    <c:buttonGroup>
+        <c:button press="{!c.handlePress}" type="neutral" disabled="true">Refresh</c:button>
+        <c:button press="{!c.handlePress}" type="neutral">Edit</c:button>
+        <c:button press="{!c.handlePress}" type="neutral" position="last">Save</c:button>
+        <c:button press="{!c.handlePress}" iconCategory="utility" iconName="down" iconType="border-filled" disabled="true" />
+    </c:buttonGroup>
     <br/>
     Code:
-    <sdsx:code >
-    &lt;sdsx:buttonGroup&gt;
-    &lt;sdsx:button press=&quot;myJSHandler&quot; type=&quot;neutral&quot;&gt;Refresh&lt;/sdsx:button&gt;
-    &lt;sdsx:button press=&quot;myJSHandler&quot; type=&quot;neutral&quot;&gt;Edit&lt;/sdsx:button&gt;
-    &lt;sdsx:button press=&quot;myJSHandler&quot; type=&quot;neutral&quot;&gt;Save&lt;/sdsx:button&gt;
-    &lt;sdsx:button press=&quot;myJSHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;down&quot; iconType=&quot;border-filled&quot; /&gt;
-    &lt;/sdsx:buttonGroup&gt;
+    <c:code>
+    &lt;sldsx:buttonGroup&gt;
+    &lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;neutral&quot;&gt;Refresh&lt;/sldsx:button&gt;
+    &lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;neutral&quot;&gt;Edit&lt;/sldsx:button&gt;
+    &lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;neutral&quot;&gt;Save&lt;/sldsx:button&gt;
+    &lt;sldsx:button press=&quot;myJSHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;down&quot; iconType=&quot;border-filled&quot; /&gt;
+    &lt;/sldsx:buttonGroup&gt;
     <br />
-    &lt;sdsx:buttonGroup&gt;
-    &lt;sdsx:button press=&quot;myJSHandler&quot; type=&quot;neutral&quot;&gt;Neutral&lt;/sdsx:button&gt;
-    &lt;sdsx:button press=&quot;myJSHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;down&quot; iconType=&quot;border-filled&quot; /&gt;
-    &lt;/sdsx:buttonGroup&gt;
+    &lt;sldsx:buttonGroup&gt;
+    &lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;neutral&quot;&gt;Neutral&lt;/sldsx:button&gt;
+    &lt;sldsx:button press=&quot;myJSHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;down&quot; iconType=&quot;border-filled&quot; /&gt;
+    &lt;/sldsx:buttonGroup&gt;
     <br />
-    &lt;sdsx:buttonGroup&gt;
-    &lt;sdsx:button press=&quot;myJSHandler&quot; type=&quot;neutral&quot; disabled=&quot;true&quot;&gt;Refresh&lt;/sdsx:button&gt;
-    &lt;sdsx:button press=&quot;myJSHandler&quot; type=&quot;neutral&quot;&gt;Edit&lt;/sdsx:button&gt;
-    &lt;sdsx:button press=&quot;myJSHandler&quot; type=&quot;neutral&quot; position=&quot;last&quot;&gt;Save&lt;/sdsx:button&gt;
-    &lt;sdsx:button press=&quot;myJSHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;down&quot; iconType=&quot;border-filled&quot; disabled=&quot;true&quot; /&gt;
-    &lt;/sdsx:buttonGroup&gt;
-    </sdsx:code>
-      </sdsx:container>
-    <sdsx:container class="demo-container " size="large" align="center">
+    &lt;sldsx:buttonGroup&gt;
+    &lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;neutral&quot; disabled=&quot;true&quot;&gt;Refresh&lt;/sldsx:button&gt;
+    &lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;neutral&quot;&gt;Edit&lt;/sldsx:button&gt;
+    &lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;neutral&quot; position=&quot;last&quot;&gt;Save&lt;/sldsx:button&gt;
+    &lt;sldsx:button press=&quot;myJSHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;down&quot; iconType=&quot;border-filled&quot; disabled=&quot;true&quot; /&gt;
+    &lt;/sldsx:buttonGroup&gt;
+    </c:code>
+      </c:container>
+    <c:container class="demo-container " size="large" align="center">
         <h2 class="slds-text-heading--medium slds-m-bottom--large">Inverse</h2>
         <div class="demo--inverse"> 
-        <sdsx:buttonGroup >
-            <sdsx:button press="{!c.handlePress}" type="inverse">Refresh</sdsx:button>
-            <sdsx:button press="{!c.handlePress}" type="inverse">Edit</sdsx:button>
-            <sdsx:button press="{!c.handlePress}" type="inverse">Save</sdsx:button>
-            <sdsx:button press="{!c.handlePress}" type="icon-inverse" iconCategory="utility" iconName="down" iconType="border" />
-        </sdsx:buttonGroup>
+        <c:buttonGroup >
+            <c:button press="{!c.handlePress}" type="inverse">Refresh</c:button>
+            <c:button press="{!c.handlePress}" type="inverse">Edit</c:button>
+            <c:button press="{!c.handlePress}" type="inverse">Save</c:button>
+            <c:button press="{!c.handlePress}" type="icon-inverse" iconCategory="utility" iconName="down" iconType="border" />
+        </c:buttonGroup>
         <br/>
-        <sdsx:buttonGroup >
-            <sdsx:button press="{!c.handlePress}" type="inverse">Neutral</sdsx:button>
-            <sdsx:button press="{!c.handlePress}" type="icon-inverse" iconCategory="utility" iconName="down" iconType="border" />
-        </sdsx:buttonGroup>
+        <c:buttonGroup >
+            <c:button press="{!c.handlePress}" type="inverse">Neutral</c:button>
+            <c:button press="{!c.handlePress}" type="icon-inverse" iconCategory="utility" iconName="down" iconType="border" />
+        </c:buttonGroup>
         <br/>
-        <sdsx:buttonGroup >
-            <sdsx:button press="{!c.handlePress}" type="inverse" disabled="true">Refresh</sdsx:button>
-            <sdsx:button press="{!c.handlePress}" type="inverse">Edit</sdsx:button>
-            <sdsx:button press="{!c.handlePress}" type="inverse" position="last">Save</sdsx:button>
-            <sdsx:button press="{!c.handlePress}"  type="icon-inverse" iconCategory="utility" iconName="down" iconType="border" disabled="true" />
-        </sdsx:buttonGroup>
+        <c:buttonGroup >
+            <c:button press="{!c.handlePress}" type="inverse" disabled="true">Refresh</c:button>
+            <c:button press="{!c.handlePress}" type="inverse">Edit</c:button>
+            <c:button press="{!c.handlePress}" type="inverse" position="last">Save</c:button>
+            <c:button press="{!c.handlePress}"  type="icon-inverse" iconCategory="utility" iconName="down" iconType="border" disabled="true" />
+        </c:buttonGroup>
             </div>
         <br/>
         Code:
-        <sdsx:code >
-        &lt;sdsx:buttonGroup&gt;
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sdsx:button press=&quot;myJSHandler&quot; type=&quot;inverse&quot;&gt;Refresh&lt;/sdsx:button&gt;
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sdsx:button press=&quot;myJSHandler&quot; type=&quot;inverse&quot;&gt;Edit&lt;/sdsx:button&gt;
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sdsx:button press=&quot;myJSHandler&quot; type=&quot;inverse&quot;&gt;Save&lt;/sdsx:button&gt;
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sdsx:button press=&quot;myJSHandler&quot; type=&quot;icon-inverse&quot; iconCategory=&quot;utility&quot; iconName=&quot;down&quot; iconType=&quot;border&quot; /&gt;
-        &lt;/sdsx:buttonGroup&gt;
+        <c:code >
+        &lt;sldsx:buttonGroup&gt;
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;inverse&quot;&gt;Refresh&lt;/sldsx:button&gt;
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;inverse&quot;&gt;Edit&lt;/sldsx:button&gt;
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;inverse&quot;&gt;Save&lt;/sldsx:button&gt;
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;icon-inverse&quot; iconCategory=&quot;utility&quot; iconName=&quot;down&quot; iconType=&quot;border&quot; /&gt;
+        &lt;/sldsx:buttonGroup&gt;
         
-        &lt;sdsx:buttonGroup&gt;
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sdsx:button press=&quot;myJSHandler&quot; type=&quot;inverse&quot;&gt;Neutral&lt;/sdsx:button&gt;
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sdsx:button press=&quot;myJSHandler&quot; type=&quot;icon-inverse&quot; iconCategory=&quot;utility&quot; iconName=&quot;down&quot; iconType=&quot;border&quot; /&gt;
-        &lt;/sdsx:buttonGroup&gt;
+        &lt;sldsx:buttonGroup&gt;
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;inverse&quot;&gt;Neutral&lt;/sldsx:button&gt;
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;icon-inverse&quot; iconCategory=&quot;utility&quot; iconName=&quot;down&quot; iconType=&quot;border&quot; /&gt;
+        &lt;/sldsx:buttonGroup&gt;
         
-        &lt;sdsx:buttonGroup&gt;
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sdsx:button press=&quot;myJSHandler&quot; type=&quot;inverse&quot; disabled=&quot;true&quot;&gt;Refresh&lt;/sdsx:button&gt;
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sdsx:button press=&quot;myJSHandler&quot; type=&quot;inverse&quot;&gt;Edit&lt;/sdsx:button&gt;
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sdsx:button press=&quot;myJSHandler&quot; type=&quot;inverse&quot; position=&quot;last&quot;&gt;Save&lt;/sdsx:button&gt;
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sdsx:button press=&quot;myJSHandler&quot;  type=&quot;icon-inverse&quot; iconCategory=&quot;utility&quot; iconName=&quot;down&quot; iconType=&quot;border&quot; disabled=&quot;true&quot; /&gt;
-        &lt;/sdsx:buttonGroup&gt;
-        </sdsx:code>
-      </sdsx:container>
+        &lt;sldsx:buttonGroup&gt;
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;inverse&quot; disabled=&quot;true&quot;&gt;Refresh&lt;/sldsx:button&gt;
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;inverse&quot;&gt;Edit&lt;/sldsx:button&gt;
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;inverse&quot; position=&quot;last&quot;&gt;Save&lt;/sldsx:button&gt;
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sldsx:button press=&quot;myJSHandler&quot;  type=&quot;icon-inverse&quot; iconCategory=&quot;utility&quot; iconName=&quot;down&quot; iconType=&quot;border&quot; disabled=&quot;true&quot; /&gt;
+        &lt;/sldsx:buttonGroup&gt;
+        </c:code>
+      </c:container>
 </aura:component>

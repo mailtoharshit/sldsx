@@ -25,11 +25,11 @@
             <aura:set attribute="else">
                 <a href="#" onclick="{!v.press}" class="slds-pill__label">
                  <aura:if isTrue="{!v.iconName != ''}">
-            		<sdsx:icon category="{!v.iconCategory}" name="{!v.iconName}" size="{!v.iconSize}"/>
+            		<c:icon category="{!v.iconCategory}" name="{!v.iconName}" size="{!v.iconSize}"/>
         		</aura:if> 
                  
                 <aura:if isTrue="{!v.avatarSrc != ''}">
-                   <sdsx:avatar src="{!v.avatarSrc}" label="{!v.avatarLabel}" size="{!v.avatarSize}" type="{!v.avatarType}"/>
+                   <c:avatar src="{!v.avatarSrc}" label="{!v.avatarLabel}" size="{!v.avatarSize}" type="{!v.avatarType}"/>
         		</aura:if> 
                 {!v.label}
                 </a>

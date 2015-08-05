@@ -1,7 +1,0 @@
-<aura:component access="GLOBAL">
-    <aura:attribute name="type" type="String" access="GLOBAL" description="The type of label - none, error, success, warning."/>
-    <aura:attribute name="value" type="String" access="GLOBAL" description="The text to be displayed in the label."/>
-    <span class="{!'label' + (v.type != null ? ' label--' + v.type : '')}">
-        {!v.value}
-    </span>               
-</aura:component>
