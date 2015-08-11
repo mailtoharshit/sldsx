@@ -1,86 +1,86 @@
 <aura:component access="GLOBAL">
-      <c:container class="demo-container" size="large" align="center">
+      <sldsx:container class="demo-container" size="large" align="center">
         <h2 class="slds-text-heading--medium slds-m-bottom--large">Button: Base</h2>
-        <c:button press="{!c.handlePress}" label="Button"/>
-        <c:button press="{!c.handlePress}">Button 2</c:button> 
+        <sldsx:button press="{!c.handlePress}" label="Button"/>
+        <sldsx:button press="{!c.handlePress}">Button 2</sldsx:button> 
         <br/>
         Code:
         <br/>
-        <c:code > 
+        <sldsx:code > 
             &lt;sldsx:button press=&quot;myJSHandler&quot; label=&quot;Button&quot;/&gt;
             &lt;sldsx:button press=&quot;myJSHandler&quot;&gt;Button 2&lt;/sldsx:button&gt;
-        </c:code>
-    </c:container>
-    <c:container class="demo-container" size="large" align="center">     
+        </sldsx:code>
+    </sldsx:container>
+    <sldsx:container class="demo-container" size="large" align="center">     
         <h2 class="slds-text-heading--medium slds-m-bottom--large">Button: Neutral</h2>
-        <c:button press="{!c.handlePress}" type="neutral">Neutral</c:button>
-        <c:button press="{!c.handlePress}" type="neutral" size="small">Small</c:button>
-        <c:button press="{!c.handlePress}" disabled="true" type="neutral">Disabled Neutral</c:button>
+        <sldsx:button press="{!c.handlePress}" type="neutral">Neutral</sldsx:button>
+        <sldsx:button press="{!c.handlePress}" type="neutral" size="small">Small</sldsx:button>
+        <sldsx:button press="{!c.handlePress}" disabled="true" type="neutral">Disabled Neutral</sldsx:button>
         <br/> 
         Code:
         <br/>
-        <c:code > 
+        <sldsx:code > 
             &lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;neutral&quot;&gt;Neutral&lt;/sldsx:button&gt;
             &lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;neutral&quot; size=&quot;small&quot;&gt;Small&lt;/sldsx:button&gt;
             &lt;sldsx:button press=&quot;myJSHandler&quot; disabled=&quot;true&quot; type=&quot;neutral&quot;&gt;Disabled Neutral&lt;/sldsx:button&gt;
-        </c:code>
-    </c:container>
-    <c:container class="demo-container" size="large" align="center">
+        </sldsx:code>
+    </sldsx:container>
+    <sldsx:container class="demo-container" size="large" align="center">
         <h2 class="slds-text-heading--medium slds-m-bottom--large">Button: Neutral Icon</h2>
-        <c:button press="{!c.handlePress}" type="neutral" label="Download" iconCategory="utility" iconName="download" iconPosition="left"/>
-        <c:button press="{!c.handlePress}" type="neutral" label="Download" iconCategory="utility" iconName="download" iconPosition="right"/>
+        <sldsx:button press="{!c.handlePress}" type="neutral" label="Download" iconCategory="utility" iconName="download" iconPosition="left"/>
+        <sldsx:button press="{!c.handlePress}" type="neutral" label="Download" iconCategory="utility" iconName="download" iconPosition="right"/>
         <br/> 
         Code:
         <br/>
-        <c:code > 
+        <sldsx:code > 
             &lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;neutral&quot; label=&quot;Download&quot; iconCategory=&quot;utility&quot; iconName=&quot;download&quot; iconPosition=&quot;left&quot;/&gt;
             &lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;neutral&quot; label=&quot;Download&quot; iconCategory=&quot;utility&quot; iconName=&quot;download&quot; iconPosition=&quot;right&quot;/&gt;
-        </c:code>
-    </c:container>  
-    <c:container class="demo-container" size="large" align="center">
+        </sldsx:code>
+    </sldsx:container>  
+    <sldsx:container class="demo-container" size="large" align="center">
         <h2 class="slds-text-heading--medium slds-m-bottom--large">Button: Brand</h2>
-        <c:button press="{!c.handlePress}" type="brand" label="Brand" />
-        <c:button press="{!c.handlePress}" type="brand" label="Brand Disabled" disabled="true"/>
-        <c:button press="{!c.handlePress}" type="brand" size="small">Small</c:button>
+        <sldsx:button press="{!c.handlePress}" type="brand" label="Brand" />
+        <sldsx:button press="{!c.handlePress}" type="brand" label="Brand Disabled" disabled="true"/>
+        <sldsx:button press="{!c.handlePress}" type="brand" size="small">Small</sldsx:button>
         <br/> 
         Code:
         <br/> 
-        <c:code > 
+        <sldsx:code > 
         &lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;brand&quot; label=&quot;Brand&quot; /&gt;
         &lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;brand&quot; label=&quot;Brand Disabled&quot; disabled=&quot;true&quot;/&gt;
         &lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;brand&quot; size=&quot;small&quot;&gt;Small&lt;/sldsx:button&gt;
-    </c:code>
-</c:container> 
-<c:container class="demo-container" size="large" align="center">
+    </sldsx:code>
+</sldsx:container> 
+<sldsx:container class="demo-container" size="large" align="center">
     <h2 class="slds-text-heading--medium slds-m-bottom--large">Button: Inverse</h2>
     <div class="demo-only demo--inverse demo-container">
-      <c:button press="{!c.handlePress}" type="inverse">Inverse</c:button>
-      <c:button press="{!c.handlePress}" disabled="true" type="inverse">Disabled Inverse</c:button>
-      <c:button press="{!c.handlePress}" type="inverse" size="small">Small</c:button>
+      <sldsx:button press="{!c.handlePress}" type="inverse">Inverse</sldsx:button>
+      <sldsx:button press="{!c.handlePress}" disabled="true" type="inverse">Disabled Inverse</sldsx:button>
+      <sldsx:button press="{!c.handlePress}" type="inverse" size="small">Small</sldsx:button>
   </div>
   <br/>  
   Code:
   <br/>
-    <c:code > 
+    <sldsx:code > 
   &lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;inverse&quot;&gt;Inverse&lt;/sldsx:button&gt;
   &lt;sldsx:button press=&quot;myJSHandler&quot; disabled=&quot;true&quot; type=&quot;inverse&quot;&gt;Disabled Inverse&lt;/sldsx:button&gt;
   &lt;sldsx:button press=&quot;myJSHandler&quot; type=&quot;inverse&quot; size=&quot;small&quot;&gt;Small&lt;/sldsx:button&gt;
-</c:code>
-</c:container>       
-<c:container class="demo-container" size="large" align="center">
+</sldsx:code>
+</sldsx:container>       
+<sldsx:container class="demo-container" size="large" align="center">
     <h2 class="slds-text-heading--medium slds-m-bottom--large">Button: Icons</h2>
-    <c:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="bare" />
-    <c:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="container"/>
-    <c:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="container" disabled="true"/>
-    <c:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="border"/>
-    <c:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="border" disabled="true" />
-    <c:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="border-filled" />
-    <c:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="border-filled" disabled="true" />
-    <c:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="border-filled" size="small" />
+    <sldsx:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="bare" />
+    <sldsx:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="container"/>
+    <sldsx:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="container" disabled="true"/>
+    <sldsx:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="border"/>
+    <sldsx:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="border" disabled="true" />
+    <sldsx:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="border-filled" />
+    <sldsx:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="border-filled" disabled="true" />
+    <sldsx:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="border-filled" size="small" />
     <br/> 
     Code:
     <br/>
-    <c:code > 
+    <sldsx:code > 
         &lt;sldsx:button press=&quot;myJSHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;settings&quot; iconType=&quot;bare&quot; /&gt;
         &lt;sldsx:button press=&quot;myJSHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;settings&quot; iconType=&quot;container&quot;/&gt;
         &lt;sldsx:button press=&quot;myJSHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;settings&quot; iconType=&quot;container&quot; disabled=&quot;true&quot;/&gt;
@@ -89,23 +89,23 @@
         &lt;sldsx:button press=&quot;myJSHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;settings&quot; iconType=&quot;border-filled&quot; /&gt;
         &lt;sldsx:button press=&quot;myJSHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;settings&quot; iconType=&quot;border-filled&quot; disabled=&quot;true&quot; /&gt;
         &lt;sldsx:button press=&quot;myJSHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;settings&quot; iconType=&quot;border-filled&quot; size=&quot;small&quot; /&gt;
-    </c:code>
-</c:container>  
+    </sldsx:code>
+</sldsx:container>  
 
-<c:container class="demo-container" size="large" align="center">
+<sldsx:container class="demo-container" size="large" align="center">
     <h2 class="slds-text-heading--medium slds-m-bottom--large">Button: Icons Sizing</h2>
-    <c:button press="{!c.handlePress}" iconCategory="utility" iconName="down" iconType="bare"/>
-    <c:button press="{!c.handlePress}" iconCategory="utility" iconName="down" iconType="bare" iconSize="x-small"/>
-    <c:button press="{!c.handlePress}" iconCategory="utility" iconName="down" iconType="bare" iconSize="small"/>
-    <c:button press="{!c.handlePress}" iconCategory="utility" iconName="down" iconType="bare" iconSize="medium"/>
-    <c:button press="{!c.handlePress}" iconCategory="utility" iconName="down" iconType="bare" iconSize="large"/>
-    <c:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="bare" iconSize="medium"/>
-    <c:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="bare" iconSize="small"/>
-    <c:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="bare" iconSize="x-small"/>
+    <sldsx:button press="{!c.handlePress}" iconCategory="utility" iconName="down" iconType="bare"/>
+    <sldsx:button press="{!c.handlePress}" iconCategory="utility" iconName="down" iconType="bare" iconSize="x-small"/>
+    <sldsx:button press="{!c.handlePress}" iconCategory="utility" iconName="down" iconType="bare" iconSize="small"/>
+    <sldsx:button press="{!c.handlePress}" iconCategory="utility" iconName="down" iconType="bare" iconSize="medium"/>
+    <sldsx:button press="{!c.handlePress}" iconCategory="utility" iconName="down" iconType="bare" iconSize="large"/>
+    <sldsx:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="bare" iconSize="medium"/>
+    <sldsx:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="bare" iconSize="small"/>
+    <sldsx:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="bare" iconSize="x-small"/>
     <br/> 
     Code:
     <br/>
-    <c:code > 
+    <sldsx:code > 
         &lt;sldsx:button press=&quot;myJSHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;down&quot; iconType=&quot;bare&quot;/&gt;
         &lt;sldsx:button press=&quot;myJSHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;down&quot; iconType=&quot;bare&quot; iconSize=&quot;x-small&quot;/&gt;
         &lt;sldsx:button press=&quot;myJSHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;down&quot; iconType=&quot;bare&quot; iconSize=&quot;small&quot;/&gt;
@@ -114,63 +114,63 @@
         &lt;sldsx:button press=&quot;myJSHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;settings&quot; iconType=&quot;bare&quot; iconSize=&quot;medium&quot;/&gt;
         &lt;sldsx:button press=&quot;myJSHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;settings&quot; iconType=&quot;bare&quot; iconSize=&quot;small&quot;/&gt;
         &lt;sldsx:button press=&quot;myJSHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;settings&quot; iconType=&quot;bare&quot; iconSize=&quot;x-small&quot;/&gt;
-    </c:code>
-</c:container>
-<c:container class="demo-container" size="large" align="center">
+    </sldsx:code>
+</sldsx:container>
+<sldsx:container class="demo-container" size="large" align="center">
     <h2 class="slds-text-heading--medium slds-m-bottom--large">Button: Icons More</h2>
-    <c:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="more"/>
-    <c:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" type="neutral" iconType="more"/>
+    <sldsx:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" iconType="more"/>
+    <sldsx:button press="{!c.handlePress}" iconCategory="utility" iconName="settings" type="neutral" iconType="more"/>
     <br/> 
     Code:
     <br/>
-    <c:code > 
+    <sldsx:code > 
         &lt;sldsx:button press=&quot;myJSHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;settings&quot; iconType=&quot;more&quot;/&gt;
         &lt;sldsx:button press=&quot;myJSHandler&quot; iconCategory=&quot;utility&quot; iconName=&quot;settings&quot; type=&quot;neutral&quot; iconType=&quot;more&quot;/&gt;
-    </c:code>
-</c:container>
-<c:container class="demo-container" size="large" align="center">
+    </sldsx:code>
+</sldsx:container>
+<sldsx:container class="demo-container" size="large" align="center">
     <h2 class="slds-text-heading--medium slds-m-bottom--large">Button: Icons Stateful</h2>
-    <c:button press="{!c.handlePress}" iconCategory="utility" iconType="border" iconName="like" stateful="true"/>
+    <sldsx:button press="{!c.handlePress}" iconCategory="utility" iconType="border" iconName="like" stateful="true"/>
     <br/>  
     Code:
     <br/>
-    <c:code > 
+    <sldsx:code > 
         &lt;sldsx:button press=&quot;myJSHandler&quot; iconCategory=&quot;utility&quot; iconType=&quot;border&quot; iconName=&quot;like&quot; stateful=&quot;true&quot;/&gt;
-    </c:code>
-</c:container>
+    </sldsx:code>
+</sldsx:container>
 
-<c:container class="demo-container" size="large" align="center">
+<sldsx:container class="demo-container" size="large" align="center">
     <h2 class="slds-text-heading--medium slds-m-bottom--large">Button: Icons Inverse</h2>
     <div class="demo--inverse">
-        <c:button press="{!c.handlePress}" iconInverse="true" iconCategory="utility" iconName="close" />
-        <c:button press="{!c.handlePress}" iconInverse="true" iconCategory="utility" iconName="close" disabled="true" />
+        <sldsx:button press="{!c.handlePress}" iconInverse="true" iconCategory="utility" iconName="close" />
+        <sldsx:button press="{!c.handlePress}" iconInverse="true" iconCategory="utility" iconName="close" disabled="true" />
     </div>
     <br/>  
     Code:
     <br/>
-    <c:code > 
+    <sldsx:code > 
         &lt;sldsx:button press=&quot;myJSHandler&quot; iconInverse=&quot;true&quot; iconCategory=&quot;utility&quot; iconName=&quot;close&quot; /&gt;
         &lt;sldsx:button press=&quot;myJSHandler&quot; iconInverse=&quot;true&quot; iconCategory=&quot;utility&quot; iconName=&quot;close&quot; disabled=&quot;true&quot; /&gt;
-    </c:code>
-</c:container>
+    </sldsx:code>
+</sldsx:container>
 
-<c:container class="demo-container" size="large" align="center">
+<sldsx:container class="demo-container" size="large" align="center">
     <h2 class="slds-text-heading--medium slds-m-bottom--large">Button: Icons Inverse</h2>
     <div class="slds-hint-parent" style="background-color:rgba(21,137,238,0.35);padding:20px;">
-        <c:button press="{!c.handlePress}" iconHint="true" iconBorderSize="small" iconCategory="utility" iconName="down" iconSize="small" iconType="border"/>
-        <c:button press="{!c.handlePress}" iconHint="true" iconCategory="utility" iconName="settings" />
-        <c:button press="{!c.handlePress}" hint="true" type="neutral" label="Hint Button"/>
+        <sldsx:button press="{!c.handlePress}" iconHint="true" iconBorderSize="small" iconCategory="utility" iconName="down" iconSize="small" iconType="border"/>
+        <sldsx:button press="{!c.handlePress}" iconHint="true" iconCategory="utility" iconName="settings" />
+        <sldsx:button press="{!c.handlePress}" hint="true" type="neutral" label="Hint Button"/>
         Hover over me to see the buttons highlight.
     </div>
     <br/>  
     Code:
     <br/>
-    <c:code >
+    <sldsx:code >
        &lt;div class=&quot;slds-hint-parent&quot;&gt;
        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sldsx:button press=&quot;myJSHandler&quot; iconHint=&quot;true&quot; iconBorderSize=&quot;small&quot; iconCategory=&quot;utility&quot; iconName=&quot;down&quot; iconSize=&quot;small&quot; iconType=&quot;border-filled&quot;/&gt;
        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sldsx:button press=&quot;myJSHandler&quot; iconHint=&quot;true&quot; iconCategory=&quot;utility&quot; iconName=&quot;settings&quot; /&gt;
        &nbsp;&nbsp;&nbsp;&nbsp;&lt;sldsx:button press=&quot;myJSHandler&quot; hint=&quot;true&quot; label=&quot;Hint Button&quot;/&gt;
        &lt;/div&gt;
-   </c:code>
-</c:container>	
+   </sldsx:code>
+</sldsx:container>	
 </aura:component>

@@ -1,54 +1,54 @@
 <aura:component >
-     <c:container class="demo-container" size="large" align="center">
+     <sldsx:container class="demo-container" size="large" align="center">
         <h2 class="slds-text-heading--medium slds-m-bottom--large">Media Object: Base</h2>
-          <c:mediaObject imageSrc="/resource/marc">
+          <sldsx:mediaObject imageSrc="/resource/marc">
           	Sit nulla est ex deserunt exercitation anim occaecat. Nostrud ullamco deserunt aute id consequat veniam incididunt duis in sint irure nisi. Mollit officia cillum Lorem ullamco minim nostrud elit officia tempor esse quis.
-          </c:mediaObject>
+          </sldsx:mediaObject>
         <br/>
         Code:
-        <c:code >
+        <sldsx:code >
           &lt;sldsx:mediaObject imageSrc=&quot;/resource/marc&quot;&gt;
           &nbsp;Sit nulla est ex deserunt...
           &lt;/sldsx:mediaObject&gt;
-       </c:code>
-     </c:container>
-      <c:container class="demo-container" size="large" align="center">
+       </sldsx:code>
+     </sldsx:container>
+      <sldsx:container class="demo-container" size="large" align="center">
         <h2 class="slds-text-heading--medium slds-m-bottom--large">Media Object: Center</h2>
-          <c:mediaObject imageSrc="/resource/marc" center="true">
+          <sldsx:mediaObject imageSrc="/resource/marc" center="true">
           	Sit nulla est ex deserunt exercitation anim occaecat. Nostrud ullamco deserunt aute id consequat veniam incididunt duis in sint irure nisi. Mollit officia cillum Lorem ullamco minim nostrud elit officia tempor esse quis.
-          </c:mediaObject>
+          </sldsx:mediaObject>
         <br/>
         Code:
-        <c:code >
+        <sldsx:code >
           &lt;sldsx:mediaObject imageSrc=&quot;/resource/marc&quot; center=&quot;true&quot;&gt;
 		   Sit nulla est ex deserunt...
           &lt;/sldsx:mediaObject&gt;
-          </c:code>
-     </c:container>
-      <c:container class="demo-container" size="large" align="center">
+          </sldsx:code>
+     </sldsx:container>
+      <sldsx:container class="demo-container" size="large" align="center">
         <h2 class="slds-text-heading--medium slds-m-bottom--large">Media Object: Reverse</h2>
-          <c:mediaObject imageSrc="/resource/marc" reverse="true">
+          <sldsx:mediaObject imageSrc="/resource/marc" reverse="true">
           	Sit nulla est ex deserunt exercitation anim occaecat. Nostrud ullamco deserunt aute id consequat veniam incididunt duis in sint irure nisi. Mollit officia cillum Lorem ullamco minim nostrud elit officia tempor esse quis.
-          </c:mediaObject>
+          </sldsx:mediaObject>
         <br/>
         Code:
-        <c:code >
+        <sldsx:code >
           &lt;sldsx:mediaObject  imageSrc=&quot;/resource/marc&quot; reverse=&quot;true&quot; &gt;
 			Sit nulla est ex deserunt...
           &lt;/sldsx:mediaObject&gt;
-        </c:code>
-     </c:container>
-     <c:container class="demo-container" size="large" align="center">
+        </sldsx:code>
+     </sldsx:container>
+     <sldsx:container class="demo-container" size="large" align="center">
         <h2 class="slds-text-heading--medium slds-m-bottom--large">Media Object: Double</h2>
-          <c:mediaObject double="true" imageSrc="/resource/marc" rightImageSrc="/resource/marc">
+          <sldsx:mediaObject double="true" imageSrc="/resource/marc" rightImageSrc="/resource/marc">
           	Sit nulla est ex deserunt exercitation anim occaecat. Nostrud ullamco deserunt aute id consequat veniam incididunt duis in sint irure nisi. Mollit officia cillum Lorem ullamco minim nostrud elit officia tempor esse quis.
-          </c:mediaObject>
+          </sldsx:mediaObject>
         <br/>
         Code:
-        <c:code >
+        <sldsx:code >
     	&lt;sldsx:mediaObject double=&quot;true&quot; imageSrc=&quot;/resource/marc&quot; rightImageSrc=&quot;/resource/marc&quot;&gt;
          Sit nulla est ex deserunt....
         &lt;/sldsx:mediaObject&gt;
-        </c:code>
-     </c:container>
+        </sldsx:code>
+     </sldsx:container>
 </aura:component>

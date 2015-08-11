@@ -1,31 +1,31 @@
 <aura:component access="GLOBAL">
-      <c:container class="demo-container" size="large" align="center">
+      <sldsx:container class="demo-container" size="large" align="center">
         <h2 class="slds-text-heading--medium slds-m-bottom--large">Lists: Base</h2>
         <div class="slds-grid slds-grid--align-space">
-  		<c:list >
-            <c:listItem >Basic un-ordered list</c:listItem>
-            <c:listItem >List Item</c:listItem>
-            <c:listItem >List Item</c:listItem>
-        </c:list>
-        <c:list type="dotted"> 
-            <c:listItem press="{!c.handlePress}">Dotted un-ordered list</c:listItem>
-            <c:listItem press="{!c.handlePress}">List Item</c:listItem>
-            <c:listItem press="{!c.handlePress}">List Item</c:listItem>
-        </c:list>
-        <c:list ordered="true">
-            <c:listItem >Basic ordered list</c:listItem>
-            <c:listItem >List Item</c:listItem>
-            <c:listItem >List Item</c:listItem>
-        </c:list>
-         <c:list ordered="true" type="ordered">
-             <c:listItem >Ordered numeric list</c:listItem>
-            <c:listItem >List Item</c:listItem>
-            <c:listItem >List Item</c:listItem>
-        </c:list>
+  		<sldsx:list >
+            <sldsx:listItem >Basic un-ordered list</sldsx:listItem>
+            <sldsx:listItem >List Item</sldsx:listItem>
+            <sldsx:listItem >List Item</sldsx:listItem>
+        </sldsx:list>
+        <sldsx:list type="dotted"> 
+            <sldsx:listItem press="{!c.handlePress}">Dotted un-ordered list</sldsx:listItem>
+            <sldsx:listItem press="{!c.handlePress}">List Item</sldsx:listItem>
+            <sldsx:listItem press="{!c.handlePress}">List Item</sldsx:listItem>
+        </sldsx:list>
+        <sldsx:list ordered="true">
+            <sldsx:listItem >Basic ordered list</sldsx:listItem>
+            <sldsx:listItem >List Item</sldsx:listItem>
+            <sldsx:listItem >List Item</sldsx:listItem>
+        </sldsx:list>
+         <sldsx:list ordered="true" type="ordered">
+             <sldsx:listItem >Ordered numeric list</sldsx:listItem>
+            <sldsx:listItem >List Item</sldsx:listItem>
+            <sldsx:listItem >List Item</sldsx:listItem>
+        </sldsx:list>
         </div>
         <br/>
         Code:
-        <c:code >
+        <sldsx:code >
         &lt;sldsx:list&gt;
             &lt;sldsx:listItem&gt;Basic un-ordered list&lt;/sldsx:listItem&gt;
             &lt;sldsx:listItem&gt;List Item&lt;/sldsx:listItem&gt;
@@ -49,40 +49,40 @@
             &lt;sldsx:listItem&gt;List Item&lt;/sldsx:listItem&gt;
             &lt;sldsx:listItem&gt;List Item&lt;/sldsx:listItem&gt;
         &lt;/sldsx:list&gt;
-      </c:code>
-    </c:container>
-      <c:container class="demo-container" size="large" align="center">
+      </sldsx:code>
+    </sldsx:container>
+      <sldsx:container class="demo-container" size="large" align="center">
         <h2 class="slds-text-heading--medium slds-m-bottom--large">Lists: Horizontal List</h2>
-        <c:list direction="horizontal">
-            <c:listItem itemClass="item" press="{!c.handlePress}"><a>Horizontal list</a></c:listItem>
-            <c:listItem itemClass="item" press="{!c.handlePress}"><a>List Item</a></c:listItem>
-            <c:listItem itemClass="item" press="{!c.handlePress}"><a>List item</a></c:listItem>
-        </c:list>
+        <sldsx:list direction="horizontal">
+            <sldsx:listItem itemClass="item" press="{!c.handlePress}"><a>Horizontal list</a></sldsx:listItem>
+            <sldsx:listItem itemClass="item" press="{!c.handlePress}"><a>List Item</a></sldsx:listItem>
+            <sldsx:listItem itemClass="item" press="{!c.handlePress}"><a>List item</a></sldsx:listItem>
+        </sldsx:list>
         <br/>
         Code:
-        <c:code >
+        <sldsx:code >
         &lt;sldsx:list direction=&quot;horizontal&quot;&gt;
             &lt;sldsx:listItem itemClass=&quot;item&quot; press=&quot;myJSHandler&quot;&gt;&lt;a&gt;Horizontal list&lt;/a&gt;&lt;/sldsx:listItem&gt;
             &lt;sldsx:listItem itemClass=&quot;item&quot; press=&quot;myJSHandler&quot;&gt;&lt;a&gt;List Item&lt;/a&gt;&lt;/sldsx:listItem&gt;
             &lt;sldsx:listItem itemClass=&quot;item&quot; press=&quot;myJSHandler&quot;&gt;&lt;a&gt;List item&lt;/a&gt;&lt;/sldsx:listItem&gt;
         &lt;/sldsx:list&gt;
-       </c:code>
-     </c:container> 
-      <c:container class="demo-container" size="large" align="center">
+       </sldsx:code>
+     </sldsx:container> 
+      <sldsx:container class="demo-container" size="large" align="center">
         <h2 class="slds-text-heading--medium slds-m-bottom--large">Lists: Vertical Block List</h2>
-        <c:list direction="block">
-            <c:listItem itemClass="item" press="{!c.handlePress}"><a>Vertical List with block level links</a></c:listItem>
-            <c:listItem itemClass="item" press="{!c.handlePress}"><a>List Item</a></c:listItem>
-            <c:listItem itemClass="item" press="{!c.handlePress}"><a>List item</a></c:listItem>
-        </c:list>
+        <sldsx:list direction="block">
+            <sldsx:listItem itemClass="item" press="{!c.handlePress}"><a>Vertical List with block level links</a></sldsx:listItem>
+            <sldsx:listItem itemClass="item" press="{!c.handlePress}"><a>List Item</a></sldsx:listItem>
+            <sldsx:listItem itemClass="item" press="{!c.handlePress}"><a>List item</a></sldsx:listItem>
+        </sldsx:list>
         <br/>
         Code:
-        <c:code >
+        <sldsx:code >
          &lt;sldsx:list direction=&quot;block&quot;&gt;
             &lt;sldsx:listItem itemClass=&quot;item&quot; press=&quot;myJSHandler&quot;&gt;&lt;a&gt;Vertical List with block level links&lt;/a&gt;&lt;/sldsx:listItem&gt;
             &lt;sldsx:listItem itemClass=&quot;item&quot; press=&quot;myJSHandler&quot;&gt;&lt;a&gt;List Item&lt;/a&gt;&lt;/sldsx:listItem&gt;
             &lt;sldsx:listItem itemClass=&quot;item&quot; press=&quot;myJSHandler&quot;&gt;&lt;a&gt;List item&lt;/a&gt;&lt;/sldsx:listItem&gt;
          &lt;/sldsx:list&gt;
-       </c:code>
-     </c:container> 	
+       </sldsx:code>
+     </sldsx:container> 	
 </aura:component>

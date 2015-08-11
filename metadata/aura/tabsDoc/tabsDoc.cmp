@@ -1,21 +1,21 @@
 <aura:component access="GLOBAL">
-      <c:container class="demo-container" size="large" align="center">
+      <sldsx:container class="demo-container" size="large" align="center">
         <h2 class="slds-text-heading--large slds-m-bottom--small"><span>Tabs: Base</span></h2>
-        <c:tabs >
-          <c:tab title="Item One">
+        <sldsx:tabs >
+          <sldsx:tab title="Item One">
             Item One Content
-          </c:tab>
-          <c:tab title="Item Two">
+          </sldsx:tab>
+          <sldsx:tab title="Item Two">
             Item Two Content
-          </c:tab>
-          <c:tab title="Item Three">
+          </sldsx:tab>
+          <sldsx:tab title="Item Three">
             Item Three Content
-          </c:tab>
-        </c:tabs>
+          </sldsx:tab>
+        </sldsx:tabs>
       	<br/>
     	<br/>  
     	Code:
-    	<c:code >
+    	<sldsx:code >
          &lt;sldsx:tabs&gt;
           &lt;sldsx:tab title=&quot;Item One&quot;&gt;
             Item One Content
@@ -27,25 +27,25 @@
             Item Three Content
           &lt;/sldsx:tab&gt;
         &lt;/sldsx:tabs&gt; 
-        </c:code>
-      </c:container>
-      <c:container class="demo-container" size="large" align="center">
+        </sldsx:code>
+      </sldsx:container>
+      <sldsx:container class="demo-container" size="large" align="center">
         <h2 class="slds-text-heading--medium slds-m-bottom--large">Tabs: Scoped</h2>
-        <c:tabs type="scoped">
-          <c:tab title="Item One">
+        <sldsx:tabs type="scoped">
+          <sldsx:tab title="Item One">
             Item One Content
-          </c:tab>
-          <c:tab title="Item Two">
+          </sldsx:tab>
+          <sldsx:tab title="Item Two">
             Item Two Content
-          </c:tab>
-          <c:tab title="Item Three">
+          </sldsx:tab>
+          <sldsx:tab title="Item Three">
             Item Three Content
-          </c:tab>
-        </c:tabs>
+          </sldsx:tab>
+        </sldsx:tabs>
       	<br/>
     	<br/>  
     	Code:
-    	<c:code >
+    	<sldsx:code >
          &lt;sldsx:tabs type=&quot;scoped&quot;&gt;
           &lt;sldsx:tab title=&quot;Item One&quot;&gt;
             Item One Content
@@ -57,7 +57,7 @@
             Item Three Content
           &lt;/sldsx:tab&gt;
         &lt;/sldsx:tabs&gt; 
-        </c:code>
-      </c:container>
+        </sldsx:code>
+      </sldsx:container>
 	
 </aura:component>

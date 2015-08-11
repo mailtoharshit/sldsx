@@ -1,18 +1,18 @@
 <aura:component access="GLOBAL">
-	<c:container class="demo-container" size="large" align="center">
+	<sldsx:container class="demo-container" size="large" align="center">
         <h2 class="slds-text-heading--medium slds-m-bottom--large">Labels: Base</h2>
-        <c:label value="Label"/>
-        <c:label theme="default" value="Label"/>
-        <c:label theme="shade" value="Label"/>
-        <c:label theme="inverse" value="Label"/> 
+        <sldsx:label value="Label"/>
+        <sldsx:label theme="default" value="Label"/>
+        <sldsx:label theme="shade" value="Label"/>
+        <sldsx:label theme="inverse" value="Label"/> 
         <br/>
         <br/>
         Code:
-        <c:code>
+        <sldsx:code >
         &lt;sldsx:label value=&quot;Label&quot;/&gt;
         &lt;sldsx:label theme=&quot;default&quot; value=&quot;Label&quot;/&gt;
         &lt;sldsx:label theme=&quot;shade&quot; value=&quot;Label&quot;/&gt;
         &lt;sldsx:label theme=&quot;inverse&quot; value=&quot;Label&quot;/&gt;
-        </c:code>
-    </c:container>
+        </sldsx:code>
+    </sldsx:container>
 </aura:component>

@@ -1,25 +1,25 @@
 <aura:component access="GLOBAL">
-	  <c:container class="demo-container" size="large" align="center">
+	  <sldsx:container class="demo-container" size="large" align="center">
         <h2 class="slds-text-heading--medium slds-m-bottom--large">Images: Avatars</h2>
-          <c:avatar src="/resource/marc" label="Marc" size="x-small"/>
-          <c:avatar src="/resource/marc" label="Marc" size="small"/>
-          <c:avatar src="/resource/marc" label="Marc" size="medium"/>
-          <c:avatar src="/resource/marc" label="Marc" size="large"/>
-          <c:avatar src="/resource/marc" label="Marc" size="x-small" type="circle"/>
-          <c:avatar src="/resource/marc" label="Marc" size="small" type="circle"/>
-          <c:avatar src="/resource/marc" label="Marc" size="medium" type="circle"/>
-          <c:avatar src="/resource/marc" label="Marc" size="large" type="circle"/>
+          <sldsx:avatar src="/resource/marc" label="Marc" size="x-small"/>
+          <sldsx:avatar src="/resource/marc" label="Marc" size="small"/>
+          <sldsx:avatar src="/resource/marc" label="Marc" size="medium"/>
+          <sldsx:avatar src="/resource/marc" label="Marc" size="large"/>
+          <sldsx:avatar src="/resource/marc" label="Marc" size="x-small" type="circle"/>
+          <sldsx:avatar src="/resource/marc" label="Marc" size="small" type="circle"/>
+          <sldsx:avatar src="/resource/marc" label="Marc" size="medium" type="circle"/>
+          <sldsx:avatar src="/resource/marc" label="Marc" size="large" type="circle"/>
         <br/>
         Code:
-        <c:code>
-          &lt;sldsx:avatar src=&quot;/resource/marc&quot; label=&quot;Marc&quot; size=&quot;x-small&quot;/&gt;<br />
-          &lt;sldsx:avatar src=&quot;/resource/marc&quot; label=&quot;Marc&quot; size=&quot;small&quot;/&gt;<br />
-          &lt;sldsx:avatar src=&quot;/resource/marc&quot; label=&quot;Marc&quot; size=&quot;medium&quot;/&gt;<br />
-          &lt;sldsx:avatar src=&quot;/resource/marc&quot; label=&quot;Marc&quot; size=&quot;large&quot;/&gt;<br />
-          &lt;sldsx:avatar src=&quot;/resource/marc&quot; label=&quot;Marc&quot; size=&quot;x-small&quot; type=&quot;circle&quot;/&gt;<br />
-          &lt;sldsx:avatar src=&quot;/resource/marc&quot; label=&quot;Marc&quot; size=&quot;small&quot; type=&quot;circle&quot;/&gt;<br />
-          &lt;sldsx:avatar src=&quot;/resource/marc&quot; label=&quot;Marc&quot; size=&quot;medium&quot; type=&quot;circle&quot;/&gt;<br />
-          &lt;sldsx:avatar src=&quot;/resource/marc&quot; label=&quot;Marc&quot; size=&quot;large&quot; type=&quot;circle&quot;/&gt;
-         </c:code>
-     </c:container>
+        <sldsx:code >
+          &lt;sdsx:avatar src=&quot;/resource/marc&quot; label=&quot;Marc&quot; size=&quot;x-small&quot;/&gt;<br />
+          &lt;sdsx:avatar src=&quot;/resource/marc&quot; label=&quot;Marc&quot; size=&quot;small&quot;/&gt;<br />
+          &lt;sdsx:avatar src=&quot;/resource/marc&quot; label=&quot;Marc&quot; size=&quot;medium&quot;/&gt;<br />
+          &lt;sdsx:avatar src=&quot;/resource/marc&quot; label=&quot;Marc&quot; size=&quot;large&quot;/&gt;<br />
+          &lt;sdsx:avatar src=&quot;/resource/marc&quot; label=&quot;Marc&quot; size=&quot;x-small&quot; type=&quot;circle&quot;/&gt;<br />
+          &lt;sdsx:avatar src=&quot;/resource/marc&quot; label=&quot;Marc&quot; size=&quot;small&quot; type=&quot;circle&quot;/&gt;<br />
+          &lt;sdsx:avatar src=&quot;/resource/marc&quot; label=&quot;Marc&quot; size=&quot;medium&quot; type=&quot;circle&quot;/&gt;<br />
+          &lt;sdsx:avatar src=&quot;/resource/marc&quot; label=&quot;Marc&quot; size=&quot;large&quot; type=&quot;circle&quot;/&gt;
+         </sldsx:code>
+     </sldsx:container>
 </aura:component>

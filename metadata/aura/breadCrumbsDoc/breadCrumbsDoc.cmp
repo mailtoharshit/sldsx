@@ -1,11 +1,12 @@
-<aura:component>
-    <c:container class="demo-container" size="large" align="center">
+<aura:component >
+    <sldsx:container class="demo-container" size="large" align="center">
       <h2 class="slds-text-heading--medium slds-m-bottom--large">Bread Crumbs: Base</h2>
-      <c:breadCrumbs labels="Parent, Child, Grand Child"/>
+      <sldsx:breadCrumbs labels="Parent, Child, Grand Child"/>
       <br/>
       Code:
-      <c:code >
+      <sldsx:code>
+      
       	&lt;sldsx:breadCrumbs labels=&quot;Parent, Child, Grand Child&quot;/&gt;
-     </c:code>
-    </c:container>	
+     </sldsx:code>
+    </sldsx:container>	
 </aura:component>

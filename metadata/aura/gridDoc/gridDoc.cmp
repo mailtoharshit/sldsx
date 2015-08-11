@@ -1,28 +1,28 @@
 <aura:component access="GLOBAL">
-        <c:container class="demo-container" size="large" align="center">
+        <sldsx:container class="demo-container" size="large" align="center">
       	<h2 class="slds-text-heading--large slds-m-bottom--small"><span>Grid: Sizes</span></h2>
-        <c:grid wrap="true">
-            <c:col size="1-of-1">1-of-1</c:col>
-            <c:col size="1-of-2">1-of-2</c:col>
-            <c:col size="1-of-2">1-of-2</c:col>
-            <c:col size="1-of-3">1-of-3</c:col>
-            <c:col size="1-of-3">1-of-3</c:col>
-            <c:col size="1-of-3">1-of-3</c:col>
-            <c:col size="1-of-4">1-of-4</c:col>
-            <c:col size="1-of-4">1-of-4</c:col>
-            <c:col size="1-of-4">1-of-4</c:col>
-            <c:col size="1-of-4">1-of-4</c:col>
-            <c:col size="1-of-5">1-of-5</c:col>
-            <c:col size="1-of-5">1-of-5</c:col>
-            <c:col size="1-of-5">1-of-5</c:col>
-            <c:col size="1-of-5">1-of-5</c:col>
-            <c:col size="1-of-5">1-of-5</c:col>
-            <c:col size="1-of-6">1-of-6</c:col>
-            <c:col size="1-of-6">1-of-6</c:col>
-            <c:col size="1-of-6">1-of-6</c:col>
-            <c:col size="1-of-6">1-of-6</c:col>
-            <c:col size="1-of-6">1-of-6</c:col>
-            <c:col size="1-of-6">1-of-6</c:col>
+        <sldsx:grid wrap="true">
+            <sldsx:col size="1-of-1">1-of-1</sldsx:col>
+            <sldsx:col size="1-of-2">1-of-2</sldsx:col>
+            <sldsx:col size="1-of-2">1-of-2</sldsx:col>
+            <sldsx:col size="1-of-3">1-of-3</sldsx:col>
+            <sldsx:col size="1-of-3">1-of-3</sldsx:col>
+            <sldsx:col size="1-of-3">1-of-3</sldsx:col>
+            <sldsx:col size="1-of-4">1-of-4</sldsx:col>
+            <sldsx:col size="1-of-4">1-of-4</sldsx:col>
+            <sldsx:col size="1-of-4">1-of-4</sldsx:col>
+            <sldsx:col size="1-of-4">1-of-4</sldsx:col>
+            <sldsx:col size="1-of-5">1-of-5</sldsx:col>
+            <sldsx:col size="1-of-5">1-of-5</sldsx:col>
+            <sldsx:col size="1-of-5">1-of-5</sldsx:col>
+            <sldsx:col size="1-of-5">1-of-5</sldsx:col>
+            <sldsx:col size="1-of-5">1-of-5</sldsx:col>
+            <sldsx:col size="1-of-6">1-of-6</sldsx:col>
+            <sldsx:col size="1-of-6">1-of-6</sldsx:col>
+            <sldsx:col size="1-of-6">1-of-6</sldsx:col>
+            <sldsx:col size="1-of-6">1-of-6</sldsx:col>
+            <sldsx:col size="1-of-6">1-of-6</sldsx:col>
+            <sldsx:col size="1-of-6">1-of-6</sldsx:col>
          <!--   <sldsx:col size="1-of-7">1-of-7</sldsx:col>
             <sldsx:col size="1-of-7">1-of-7</sldsx:col>
             <sldsx:col size="1-of-7">1-of-7</sldsx:col>
@@ -69,62 +69,62 @@
             <sldsx:col size="1-of-11">1-of-11</sldsx:col>
             <sldsx:col size="1-of-11">1-of-11</sldsx:col>
             <sldsx:col size="1-of-11">1-of-11</sldsx:col>  -->          
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
+            <sldsx:col size="1-of-12">1-of-12</sldsx:col>
+            <sldsx:col size="1-of-12">1-of-12</sldsx:col>
+            <sldsx:col size="1-of-12">1-of-12</sldsx:col>
+            <sldsx:col size="1-of-12">1-of-12</sldsx:col>
+            <sldsx:col size="1-of-12">1-of-12</sldsx:col>
+            <sldsx:col size="1-of-12">1-of-12</sldsx:col>
+            <sldsx:col size="1-of-12">1-of-12</sldsx:col>
+            <sldsx:col size="1-of-12">1-of-12</sldsx:col>
+            <sldsx:col size="1-of-12">1-of-12</sldsx:col>
+            <sldsx:col size="1-of-12">1-of-12</sldsx:col>
+            <sldsx:col size="1-of-12">1-of-12</sldsx:col>
+            <sldsx:col size="1-of-12">1-of-12</sldsx:col>
 
-            <c:col size="2-of-2">2-of-2</c:col>
+            <sldsx:col size="2-of-2">2-of-2</sldsx:col>
 
-            <c:col size="2-of-3">2-of-3</c:col>
-            <c:col size="1-of-3">1-of-3</c:col>
-            <c:col size="2-of-4">2-of-4</c:col>
-            <c:col size="2-of-4">2-of-4</c:col>
-            <c:col size="2-of-8">2-of-8</c:col>
-            <c:col size="2-of-8">2-of-8</c:col>
-            <c:col size="2-of-8">2-of-8</c:col>
-			<c:col size="2-of-8">2-of-8</c:col>
-			<c:col size="3-of-3">3-of-3</c:col>
-			<c:col size="3-of-6">3-of-6</c:col>
-            <c:col size="3-of-6">3-of-6</c:col>
-            <c:col size="4-of-6">4-of-6</c:col>
-            <c:col size="2-of-6">2-of-6</c:col>
-            <c:col size="5-of-6">5-of-6</c:col>
-            <c:col size="1-of-6">1-of-6</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="11-of-12">11-of-12</c:col>
-            <c:col size="2-of-12">2-of-12</c:col>
-            <c:col size="10-of-12">10-of-12</c:col>
-            <c:col size="3-of-12">3-of-12</c:col>
-            <c:col size="9-of-12">9-of-12</c:col>
-            <c:col size="4-of-12">4-of-12</c:col>
-            <c:col size="8-of-12">8-of-12</c:col> 
-            <c:col size="5-of-12">5-of-12</c:col>
-            <c:col size="7-of-12">7-of-12</c:col>	            
-            <c:col size="6-of-12">6-of-12</c:col>
-            <c:col size="6-of-12">6-of-12</c:col>
-            <c:col size="7-of-12">7-of-12</c:col>
-            <c:col size="5-of-12">5-of-12</c:col>
-            <c:col size="8-of-12">8-of-12</c:col>
-            <c:col size="4-of-12">4-of-12</c:col> 
-            <c:col size="9-of-12">9-of-12</c:col>
-            <c:col size="3-of-12">3-of-12</c:col>
-            <c:col size="10-of-12">10-of-12</c:col>
-            <c:col size="2-of-12">2-of-12</c:col> 
-            <c:col size="11-of-12">11-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col> 
-        </c:grid>
+            <sldsx:col size="2-of-3">2-of-3</sldsx:col>
+            <sldsx:col size="1-of-3">1-of-3</sldsx:col>
+            <sldsx:col size="2-of-4">2-of-4</sldsx:col>
+            <sldsx:col size="2-of-4">2-of-4</sldsx:col>
+            <sldsx:col size="2-of-8">2-of-8</sldsx:col>
+            <sldsx:col size="2-of-8">2-of-8</sldsx:col>
+            <sldsx:col size="2-of-8">2-of-8</sldsx:col>
+			<sldsx:col size="2-of-8">2-of-8</sldsx:col>
+			<sldsx:col size="3-of-3">3-of-3</sldsx:col>
+			<sldsx:col size="3-of-6">3-of-6</sldsx:col>
+            <sldsx:col size="3-of-6">3-of-6</sldsx:col>
+            <sldsx:col size="4-of-6">4-of-6</sldsx:col>
+            <sldsx:col size="2-of-6">2-of-6</sldsx:col>
+            <sldsx:col size="5-of-6">5-of-6</sldsx:col>
+            <sldsx:col size="1-of-6">1-of-6</sldsx:col>
+            <sldsx:col size="1-of-12">1-of-12</sldsx:col>
+            <sldsx:col size="11-of-12">11-of-12</sldsx:col>
+            <sldsx:col size="2-of-12">2-of-12</sldsx:col>
+            <sldsx:col size="10-of-12">10-of-12</sldsx:col>
+            <sldsx:col size="3-of-12">3-of-12</sldsx:col>
+            <sldsx:col size="9-of-12">9-of-12</sldsx:col>
+            <sldsx:col size="4-of-12">4-of-12</sldsx:col>
+            <sldsx:col size="8-of-12">8-of-12</sldsx:col> 
+            <sldsx:col size="5-of-12">5-of-12</sldsx:col>
+            <sldsx:col size="7-of-12">7-of-12</sldsx:col>	            
+            <sldsx:col size="6-of-12">6-of-12</sldsx:col>
+            <sldsx:col size="6-of-12">6-of-12</sldsx:col>
+            <sldsx:col size="7-of-12">7-of-12</sldsx:col>
+            <sldsx:col size="5-of-12">5-of-12</sldsx:col>
+            <sldsx:col size="8-of-12">8-of-12</sldsx:col>
+            <sldsx:col size="4-of-12">4-of-12</sldsx:col> 
+            <sldsx:col size="9-of-12">9-of-12</sldsx:col>
+            <sldsx:col size="3-of-12">3-of-12</sldsx:col>
+            <sldsx:col size="10-of-12">10-of-12</sldsx:col>
+            <sldsx:col size="2-of-12">2-of-12</sldsx:col> 
+            <sldsx:col size="11-of-12">11-of-12</sldsx:col>
+            <sldsx:col size="1-of-12">1-of-12</sldsx:col> 
+        </sldsx:grid>
         <br/>  
       Code:
-      <c:code >
+      <sldsx:code >
         &lt;sldsx:grid  wrap=&quot;true&quot;&gt;
             &lt;sldsx:col size=&quot;1-of-1&quot;&gt;1-of-1&lt;/sldsx:col&gt;
             &lt;sldsx:col size=&quot;1-of-2&quot;&gt;1-of-2&lt;/sldsx:col&gt;
@@ -198,36 +198,36 @@
             &lt;sldsx:col size=&quot;11-of-12&quot;&gt;11-of-12&lt;/sldsx:col&gt;
             &lt;sldsx:col size=&quot;1-of-12&quot;&gt;1-of-12&lt;/sldsx:col&gt; 
       &lt;/sldsx:grid&gt;          
-      </c:code>
-        </c:container>
+      </sldsx:code>
+        </sldsx:container>
 
-      <c:container class="demo-container" size="large" align="center">
+      <sldsx:container class="demo-container" size="large" align="center">
       	<h2 class="slds-text-heading--large slds-m-bottom--small"><span>Grid: Base</span></h2>
-        <c:grid >
-          <c:col >1. Contents go here.</c:col>
-          <c:col >2. Contents go here.</c:col>
-        </c:grid>
-        <c:grid >
-          <c:col >1. Contents go here.</c:col>
-          <c:col >    
-            <c:grid >
-              <c:col >2.1 I'm</c:col>
-              <c:col >2.2 A</c:col>
-              <c:col >2.3 Nested</c:col>
-              <c:col >2.4 Grid</c:col>
-            </c:grid> 
-          </c:col>
-          <c:col >3. Contents go here.</c:col>
-        </c:grid>
-        <c:grid >
-          <c:col >1. Contents go here.</c:col>
-          <c:col >2. Contents go here.</c:col>
-          <c:col >3. Contents go here.</c:col>
-          <c:col >4. Contents go here.</c:col>
-        </c:grid>
+        <sldsx:grid >
+          <sldsx:col >1. Contents go here.</sldsx:col>
+          <sldsx:col >2. Contents go here.</sldsx:col>
+        </sldsx:grid>
+        <sldsx:grid >
+          <sldsx:col >1. Contents go here.</sldsx:col>
+          <sldsx:col >    
+            <sldsx:grid >
+              <sldsx:col >2.1 I'm</sldsx:col>
+              <sldsx:col >2.2 A</sldsx:col>
+              <sldsx:col >2.3 Nested</sldsx:col>
+              <sldsx:col >2.4 Grid</sldsx:col>
+            </sldsx:grid> 
+          </sldsx:col>
+          <sldsx:col >3. Contents go here.</sldsx:col>
+        </sldsx:grid>
+        <sldsx:grid >
+          <sldsx:col >1. Contents go here.</sldsx:col>
+          <sldsx:col >2. Contents go here.</sldsx:col>
+          <sldsx:col >3. Contents go here.</sldsx:col>
+          <sldsx:col >4. Contents go here.</sldsx:col>
+        </sldsx:grid>
       <br/>  
       Code:
-      <c:code >
+      <sldsx:code >
         &lt;sldsx:grid&gt;
           &lt;sldsx:col&gt;1. Contents go here.&lt;/sldsx:col&gt;
           &lt;sldsx:col&gt;2. Contents go here.&lt;/sldsx:col&gt;
@@ -250,26 +250,26 @@
           &lt;sldsx:col&gt;3. Contents go here.&lt;/sldsx:col&gt;
           &lt;sldsx:col&gt;4. Contents go here.&lt;/sldsx:col&gt;
         &lt;/sldsx:grid&gt;        
-      </c:code>          
-        </c:container>
-        <c:container class="demo-container" size="large" align="center">
+      </sldsx:code>          
+        </sldsx:container>
+        <sldsx:container class="demo-container" size="large" align="center">
           <h2 class="slds-text-heading--large slds-m-bottom--small"><span>Grid: Manual Sizing</span></h2>
-          <c:grid wrap="true">
-            <c:col size="1-of-1">Contents go here</c:col>
-            <c:col size="1-of-2" mdSize="1-of-6" lgSize="8-of-12">Contents go here</c:col>
-            <c:col size="1-of-1" mdSize="2-of-6">Contents go here</c:col>
-            <c:col size="1-of-1" mdSize="2-of-6">Contents go here</c:col>
-            <c:col size="1-of-1" mdSize="2-of-6">Contents go here</c:col>
-            <c:col size="1-of-1" mdSize="2-of-6">
-              <c:grid wrap="true">
-               <c:col size="1-of-2" mdSize="6-of-6" lgSize="6-of-12">Contents go here</c:col>
-               <c:col size="1-of-2" mdSize="6-of-6" lgSize="6-of-12">Contents go here</c:col>
-             </c:grid>
-           </c:col>
-         </c:grid>
+          <sldsx:grid wrap="true">
+            <sldsx:col size="1-of-1">Contents go here</sldsx:col>
+            <sldsx:col size="1-of-2" mdSize="1-of-6" lgSize="8-of-12">Contents go here</sldsx:col>
+            <sldsx:col size="1-of-1" mdSize="2-of-6">Contents go here</sldsx:col>
+            <sldsx:col size="1-of-1" mdSize="2-of-6">Contents go here</sldsx:col>
+            <sldsx:col size="1-of-1" mdSize="2-of-6">Contents go here</sldsx:col>
+            <sldsx:col size="1-of-1" mdSize="2-of-6">
+              <sldsx:grid wrap="true">
+               <sldsx:col size="1-of-2" mdSize="6-of-6" lgSize="6-of-12">Contents go here</sldsx:col>
+               <sldsx:col size="1-of-2" mdSize="6-of-6" lgSize="6-of-12">Contents go here</sldsx:col>
+             </sldsx:grid>
+           </sldsx:col>
+         </sldsx:grid>
         <br/>  
       	Code:
-      	<c:code >
+      	<sldsx:code >
          &lt;sldsx:grid wrap=&quot;true&quot;&gt;
             &lt;sldsx:col size=&quot;1-of-1&quot;&gt;Contents go here&lt;/sldsx:col&gt;
             &lt;sldsx:col size=&quot;1-of-2&quot; mdSize=&quot;1-of-6&quot; lgSize=&quot;8-of-12&quot;&gt;Contents go here&lt;/sldsx:col&gt;
@@ -283,21 +283,21 @@
              &lt;/sldsx:grid&gt;
            &lt;/sldsx:col&gt;
          &lt;/sldsx:grid&gt;    
-        </c:code>
-       </c:container>
-      <c:container class="demo-container" size="large" align="center">
+        </sldsx:code>
+       </sldsx:container>
+      <sldsx:container class="demo-container" size="large" align="center">
       	<h2 class="slds-text-heading--large slds-m-bottom--small demo-grid"><span>Grid: Containers</span></h2>
-          <c:container >Contents go here.</c:container>
-          <c:container size="small">Contents go here.</c:container>
-          <c:container size="medium">Contents go here.</c:container>
-          <c:container size="large">Contents go here.</c:container>
-          <c:container size="fluid">Contents go here.</c:container>
-          <c:container size="small" align="left">Contents go here.</c:container>
-          <c:container size="small" align="center">Contents go here.</c:container>
-          <c:container size="small" align="right">Contents go here.</c:container>
+          <sldsx:container >Contents go here.</sldsx:container>
+          <sldsx:container size="small">Contents go here.</sldsx:container>
+          <sldsx:container size="medium">Contents go here.</sldsx:container>
+          <sldsx:container size="large">Contents go here.</sldsx:container>
+          <sldsx:container size="fluid">Contents go here.</sldsx:container>
+          <sldsx:container size="small" align="left">Contents go here.</sldsx:container>
+          <sldsx:container size="small" align="center">Contents go here.</sldsx:container>
+          <sldsx:container size="small" align="right">Contents go here.</sldsx:container>
           <br/>
       	Code:
-      	<c:code >
+      	<sldsx:code >
           &lt;sldsx:container&gt;Contents go here.&lt;/sldsx:container&gt;
           &lt;sldsx:container size=&quot;small&quot;&gt;Contents go here.&lt;/sldsx:container&gt;
           &lt;sldsx:container size=&quot;medium&quot;&gt;Contents go here.&lt;/sldsx:container&gt;
@@ -306,80 +306,80 @@
           &lt;sldsx:container size=&quot;small&quot; align=&quot;left&quot;&gt;Contents go here.&lt;/sldsx:container&gt;
           &lt;sldsx:container size=&quot;small&quot; align=&quot;center&quot;&gt;Contents go here.&lt;/sldsx:container&gt;
           &lt;sldsx:container size=&quot;small&quot; align=&quot;right&quot;&gt;Contents go here.&lt;/sldsx:container&gt;    
-        </c:code>
-        </c:container>
-    <c:container class="demo-container" size="large" align="center">
+        </sldsx:code>
+        </sldsx:container>
+    <sldsx:container class="demo-container" size="large" align="center">
       	<h2 class="slds-text-heading--large slds-m-bottom--small demo-grid"><span>Grid: Horizontal Alignment Space</span></h2>
-        <c:grid align="space">
-            <c:col padded="true">Content determines the width unless otherwise set</c:col>
-            <c:col padded="true">1</c:col>
-            <c:col padded="true">1</c:col>
-            <c:col padded="true">1</c:col>
-        </c:grid>  
+        <sldsx:grid align="space">
+            <sldsx:col padded="true">Content determines the width unless otherwise set</sldsx:col>
+            <sldsx:col padded="true">1</sldsx:col>
+            <sldsx:col padded="true">1</sldsx:col>
+            <sldsx:col padded="true">1</sldsx:col>
+        </sldsx:grid>  
         <br/>
       	Code:
-      	<c:code >
+      	<sldsx:code >
         &lt;sldsx:grid align=&quot;space&quot;&gt;
             &lt;sldsx:col padded=&quot;true&quot;&gt;Content determines the width unless otherwise set&lt;/sldsx:col&gt;
             &lt;sldsx:col padded=&quot;true&quot;&gt;1&lt;/sldsx:col&gt;
             &lt;sldsx:col padded=&quot;true&quot;&gt;1&lt;/sldsx:col&gt;
             &lt;sldsx:col padded=&quot;true&quot;&gt;1&lt;/sldsx:col&gt;
         &lt;/sldsx:grid&gt;     
-        </c:code>
-        </c:container>  
-    <c:container class="demo-container" size="large" align="center">
+        </sldsx:code>
+        </sldsx:container>  
+    <sldsx:container class="demo-container" size="large" align="center">
       	<h2 class="slds-text-heading--large slds-m-bottom--small demo-grid"><span>Grid: Horizontal Alignment Spread</span></h2>
-        <c:grid align="spread">
-            <c:col padded="true">Start Line</c:col>
-            <c:col padded="true">In Between</c:col>
-            <c:col padded="true">In Between</c:col>
-            <c:col padded="true">Finish Line</c:col>
-        </c:grid>  
+        <sldsx:grid align="spread">
+            <sldsx:col padded="true">Start Line</sldsx:col>
+            <sldsx:col padded="true">In Between</sldsx:col>
+            <sldsx:col padded="true">In Between</sldsx:col>
+            <sldsx:col padded="true">Finish Line</sldsx:col>
+        </sldsx:grid>  
         <br/>
       	Code:
-      	<c:code >
+      	<sldsx:code >
         &lt;sldsx:grid align=&quot;spread&quot;&gt;&lt;br /&gt;
             &lt;sldsx:col padded=&quot;true&quot;&gt;Start Line&lt;/sldsx:col&gt;&lt;br /&gt;
             &lt;sldsx:col padded=&quot;true&quot;&gt;In Between&lt;/sldsx:col&gt;&lt;br /&gt;
             &lt;sldsx:col padded=&quot;true&quot;&gt;In Between&lt;/sldsx:col&gt;&lt;br /&gt;
             &lt;sldsx:col padded=&quot;true&quot;&gt;Finish Line&lt;/sldsx:col&gt;&lt;br /&gt;
         &lt;/sldsx:grid&gt;      
-        </c:code>
-        </c:container> 
-    	<c:container class="demo-container" size="large" align="center">
+        </sldsx:code>
+        </sldsx:container> 
+    	<sldsx:container class="demo-container" size="large" align="center">
       	<h2 class="slds-text-heading--large slds-m-bottom--small demo-grid"><span>Grid: Vertical Alignment</span></h2>
-        <c:grid align="spread"  style="height:150px;">
-            <c:col align="top" padded="true">Top Align</c:col>
-            <c:col align="middle" padded="true">Middle Align</c:col>
-            <c:col align="middle" padded="true">Middle Align</c:col>
-            <c:col align="bottom" padded="true">Bottom Align</c:col>
-        </c:grid>  
+        <sldsx:grid align="spread"  style="height:150px;">
+            <sldsx:col align="top" padded="true">Top Align</sldsx:col>
+            <sldsx:col align="middle" padded="true">Middle Align</sldsx:col>
+            <sldsx:col align="middle" padded="true">Middle Align</sldsx:col>
+            <sldsx:col align="bottom" padded="true">Bottom Align</sldsx:col>
+        </sldsx:grid>  
         <br/>
       	Code:
-      	<c:code >
+      	<sldsx:code >
         &lt;sldsx:grid align=&quot;spread&quot;  style=&quot;height:150px;&quot;&gt;
             &lt;sldsx:col align=&quot;top&quot; padded=&quot;true&quot;&gt;Top Align&lt;/sldsx:col&gt;
             &lt;sldsx:col align=&quot;middle&quot; padded=&quot;true&quot;&gt;Middle Align&lt;/sldsx:col&gt;
             &lt;sldsx:col align=&quot;middle&quot; padded=&quot;true&quot;&gt;Middle Align&lt;/sldsx:col&gt;
             &lt;sldsx:col align=&quot;bottom&quot; padded=&quot;true&quot;&gt;Bottom Align&lt;/sldsx:col&gt;
         &lt;/sldsx:grid&gt;       
-        </c:code>
-        </c:container>
-    	<c:container class="demo-container" size="large" align="center">
+        </sldsx:code>
+        </sldsx:container>
+    	<sldsx:container class="demo-container" size="large" align="center">
       	<h2 class="slds-text-heading--large slds-m-bottom--small demo-grid"><span>Grid: Order</span></h2>
-        <c:grid wrap="true">
-            <c:col size="1-of-1" smOrder="2" mdOrder="1">1</c:col>
-            <c:col size="1-of-2" smOrder="1" mdOrder="3">2</c:col>
-            <c:col size="1-of-2" smOrder="1" mdOrder="2">3</c:col>
-        </c:grid>  
+        <sldsx:grid wrap="true">
+            <sldsx:col size="1-of-1" smOrder="2" mdOrder="1">1</sldsx:col>
+            <sldsx:col size="1-of-2" smOrder="1" mdOrder="3">2</sldsx:col>
+            <sldsx:col size="1-of-2" smOrder="1" mdOrder="2">3</sldsx:col>
+        </sldsx:grid>  
         <br/>
       	Code:
-      	<c:code >
+      	<sldsx:code >
          &lt;sldsx:grid wrap=&quot;true&quot;&gt;
             &lt;sldsx:col size=&quot;1-of-1&quot; smOrder=&quot;2&quot; mdOrder=&quot;1&quot;&gt;1&lt;/sldsx:col&gt;
             &lt;sldsx:col size=&quot;1-of-2&quot; smOrder=&quot;1&quot; mdOrder=&quot;3&quot;&gt;2&lt;/sldsx:col&gt;
             &lt;sldsx:col size=&quot;1-of-2&quot; smOrder=&quot;1&quot; mdOrder=&quot;2&quot;&gt;3&lt;/sldsx:col&gt;
         &lt;/sldsx:grid&gt; 
-        </c:code>
-        </c:container> 
+        </sldsx:code>
+        </sldsx:container> 
 </aura:component>
