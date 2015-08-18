@@ -13,7 +13,7 @@ We've created a tutorial to explain how to use it. Please go through the <a href
 #Installation
 SLDSX is distributed as a unmanaged package. The package has all the components, and latest version of SLDS framework (CSS, fonts, icons etc). To use it, simply install the package, load SLDS static resource and use individual components in your app.
 
-1. Install the [unmanaged package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB00000001VLj) (w/ SLDS v0.5). 
+1. Install the [unmanaged package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB00000001WWa) (w/ SLDS v0.5). 
 2. Load SLDS static resource
 
 	```    
