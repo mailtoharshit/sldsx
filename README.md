@@ -9,7 +9,8 @@ Note: All components use `sldsx` namespace.
 
 #### Tutorial
 We've created a tutorial to explain how to use it. Please go through the <a href="https://github.com/ForceDotComLabs/sldsx/blob/master/tutorial/tutorial.md" target="_blank">tutorial here</a>.
-<image src="https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/slds-app-small.png?token=AAmOoX_EdgYwpP90hsQsIUFJ6zzW3R2Yks5V3LQ_wA%3D%3D"/>
+<image src="![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/accountsAppPic.png?token=AAmOocLC71enF48M39WloAY23uQRdstWks5V3MvDwA%3D%3D)
+"/>
 
 ####Installation
 This project is distributed as an unmanaged package. The package has all the components, and latest version of SLDS framework (CSS, fonts, icons etc). To use it, simply install the package, load SLDS static resource and use individual components in your app.

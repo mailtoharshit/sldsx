@@ -210,12 +210,13 @@ In SLDSX components, they correspond to "size", "mdSize" and "lgSize" respective
 </sldsx:grid>
 
 ```
-#Part 4 - Using SLDS and Sample Components togeather
+#Part 4 - Building An Accounts List App
+####This app shows you how to use raw SLDS markup along with SLDSX components.
 SLDS framework provides a whole host of components that are not part of these sample components like: tables, headers and so on but we can use both togeather.
 In this example, we will build a simple Accounts app that shows list of accounts in a table.
 We'll use raw CSS instead of SLDSX components just to show that you can use it directly as well. 
 
-![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/accountsAppPic.png?token=AAmOofG7pWFzuR6ZR8WdDuE_p_MQGg1Jks5V3LpPwA%3D%3D)
+![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/accountsAppPic.png?token=AAmOocLC71enF48M39WloAY23uQRdstWks5V3MvDwA%3D%3D)
 
 ####Step 1 - Create Accounts Apex Controller
 1. In Developer console, Click on New > Create Apex Class
@@ -240,7 +241,7 @@ We'll use raw CSS instead of SLDSX components just to show that you can use it d
 3. Paste the following code:
 
 	```
-	<aura:component controller="AccountsController">
+<aura:component controller="AccountsController">
 	  <aura:attribute name="accounts" type="List" />
 	  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
 	  <!-- Use the Apex model and controller to fetch server side data -->
@@ -265,14 +266,30 @@ We'll use raw CSS instead of SLDSX components just to show that you can use it d
 	         <td>{!account.NumberOfEmployees}</td>                 
 	         <td>{!account.TickerSymbol}</td>
 	         <td>{!account.Phone}</td>                 
-	         <td>{!account.BillingStreet }<br/> {!account.BillingCity + ', '} {!account.BillingState } <br/> {!account.BillingPostalCode}</td>
+	         <td>
+               <! !!! -- REPLACE THIS WITH A BUTTON COMPONENT !!!!! -->
+              </td>
 	       </tr>
 	     </aura:iteration>
 	   </tbody>
 	 </table>
 	</aura:component>
 	```
-4. Save it.
+4. Add an SLDSX button that has JavaScript handler `{!c.myButtonHandler}` that also receives data via `data` attribute. The `data` attribute is useful to pass around data for example, to know exactly which Account button was clicked.
+
+	In the above code, replace the following line:
+	
+	```
+	<! !!! -- REPLACE THIS WITH A BUTTON COMPONENT !!!!! -->
+	```
+	With:
+	
+	
+	```
+	<sldsx:button data="{!account.Id}" press="{!c.myButtonHandler}" type="brand">Details</sldsx:button>
+	``` 
+
+5. Save
 
 ####Step 3 - Create JS Controller
 1. While in AccountList component, click on the `Controller` menu in the right-side panel.
@@ -283,12 +300,17 @@ We'll use raw CSS instead of SLDSX components just to show that you can use it d
 		 doInit : function(component, event, helper) {      
 			//Fetch the expense list from the Apex controller   
 	        helper.getAccountList(component);
-	    }
+	    },
+        myButtonHandler: function(component, event, helper) {
+            //Get data via "data-data" attribute
+            alert(event.target.getAttribute("data-data") + " was passed");
+        }
 	})
 	```
 3. Save it
 
 ####Step 4 - Create JS Helper
+Helper is used to interact with the server.
 
 1. While in AccountList component, click on the `Helper` menu in the right-side panel.
 2. Copy paste the below code:
