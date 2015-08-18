@@ -5,9 +5,10 @@ In this tutorial we'll show how to use these sample components in a Lightning ap
 #Part 1 - Installation And Documentation
 ####Step 1 - Enable Lightning Components
 
-1. Login to your Salesforce Org.
+1. Login to your Salesforce Org
 2. Go to `Setup > Develop > Lightning Components`
 3. Check `Enable Lightning Components`
+
 
 	![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/enableLightningComponentsPic.png?token=AAmOoXNBdvBa7YlhYyoaAF7Y3rpSMB2pks5V3LWIwA%3D%3D)
 
@@ -60,7 +61,7 @@ Lightning auto-generates documentation for all components based on the source co
 
 <image src="https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/auraDocsPic.png?token=AAmOoTO4_cqHfJtcvkz4oG5OiiBasPNBks5V3LlCwA%3D%3D"/>
 
-#Part 2 - Building a Hello World App
+#Part 2 - Building A Hello World App
 ####Step 1 - Load SLDS Framework
 `SLDS.app` itself uses a lot of SLDSX components, so you can simply see the source code to get an idea about how you can use various SLDSX components.
 
@@ -128,7 +129,7 @@ Every SLDSX component has a `press` attribute that allows us to add interact wit
 4. Click on the button
 5. You'll see `Button Clicked!` alert.
 
-#Part 3 - Building Responsive App (Grid System)
+#Part 3 - Building A Responsive App (Grid System)
 An App is said to be responsive if it can adapt and display its contents irrespective of the screen size (i.e. viewed from a mobile, tablet or a laptop). Since the screens on the mobile devices are literally smaller than screens in laptops and large monitors, the app needs to automatically show or hide or rearrange the content depending on the screen size. To figure out how much data to show can be tricky and that's where the `Grid System` comes in handy.
 
 ####Step 1 - Grid System
@@ -212,11 +213,12 @@ In SLDSX components, they correspond to "size", "mdSize" and "lgSize" respective
 ```
 #Part 4 - Building An Accounts List App
 ####This app shows you how to use raw SLDS markup along with SLDSX components.
+![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/accountsAppPic.png?token=AAmOocLC71enF48M39WloAY23uQRdstWks5V3MvDwA%3D%3D)
 SLDS framework provides a whole host of components that are not part of these sample components like: tables, headers and so on but we can use both togeather.
 In this example, we will build a simple Accounts app that shows list of accounts in a table.
 We'll use raw CSS instead of SLDSX components just to show that you can use it directly as well. 
 
-![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/accountsAppPic.png?token=AAmOocLC71enF48M39WloAY23uQRdstWks5V3MvDwA%3D%3D)
+
 
 ####Step 1 - Create Accounts Apex Controller
 1. In Developer console, Click on New > Create Apex Class
@@ -353,4 +355,8 @@ Helper is used to interact with the server.
 	```
 3. Save it.
 
-Press `Update Preview` in the HelloSLDSX.app and you should see a table with SLDSX buttons in each row.
+4. Press `Update Preview` in the HelloSLDSX.app and you should see a table with SLDSX buttons in each row.
+
+5. Press the `Details` button and you should see the Account Id in an alert box.
+![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/accountsAppWithAccIdPic.png?token=AAmOoahZ4gIK2jx-72lVc-ipaSjw04SYks5V3M2KwA%3D%3D)
+
