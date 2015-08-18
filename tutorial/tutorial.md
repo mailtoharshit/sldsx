@@ -9,6 +9,7 @@ Note: All SLDSX components use `sldsx` namespace.
 In this tutorial we'll show how to use SLDS components in a Lightning app.
 
 #Step 0 - Enable Lightning Components
+
 1. Login to your Salesforce Org.
 2. Go to `Setup > Develop > Lightning Components`
 3. Check `Enable Lightning Components`
@@ -17,6 +18,7 @@ In this tutorial we'll show how to use SLDS components in a Lightning app.
 
 4. Register My Domain 
 In Winter '16 release, you may be asked to enable `my domain` to use Lightning Components. Follow the steps to enable 'My Domain'
+
 	4.1 Go to `Setup > Domain Management > My Domain`
 	4.2 Enter a unique domain name (some string) and check for availability
 	4.3 Agree to "Terms and Condition"
@@ -26,6 +28,8 @@ In Winter '16 release, you may be asked to enable `my domain` to use Lightning C
     4.5  Go back to `Setup > Domain Management > My Domain`
     4.6 Press `Push to users` button.
 
+    	![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/myDomainPic.png?token=AAmOodzO9e8SilKOtMrEK3Jju5FAtZ5sks5V3LrEwA%3D%3D
+)
 
 #Step 1 - Installation
 
