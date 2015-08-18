@@ -1,14 +1,9 @@
-<image src="https://login.salesforce.com/img/logo190.png"/>
+<image src="https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/sflabs.png?token=AAmOoRHwmOYSLYk7FmSx_pBZfaG629e4ks5V3LsGwA%3D%3D"/>
 
+In this tutorial we'll show how to use these sample components in a Lightning app.
 
-#SLDSX - SLDS For Lightning Components
-SLDSX is an open-source project to provide a set of common Lightning Components that conform and wrap [Salesforce Lightning Design System's (SLDS)](http://getslds.com) CSS framework. This is to help you not worry about SLDS specific CSS and markup for basic components. And also to provide JS support so you don't have to implement them.
-
-Note: All SLDSX components use `sldsx` namespace.
-
-In this tutorial we'll show how to use SLDS components in a Lightning app.
-
-#Step 0 - Enable Lightning Components
+#Part 1 - Installation And Documentation
+####Step 1 - Enable Lightning Components
 
 1. Login to your Salesforce Org.
 2. Go to `Setup > Develop > Lightning Components`
@@ -16,22 +11,31 @@ In this tutorial we'll show how to use SLDS components in a Lightning app.
 
 	![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/enableLightningComponentsPic.png?token=AAmOoXNBdvBa7YlhYyoaAF7Y3rpSMB2pks5V3LWIwA%3D%3D)
 
-4. Register My Domain 
-In Winter '16 release, you may be asked to enable `my domain` to use Lightning Components. Follow the steps to enable 'My Domain'
-
+4. Register My Domain
+ 
+	In Winter '16 release, you may be asked to enable `My Domain` to use Lightning Components.
+	 
+	Follow the steps to enable it:
+	
 	4.1 Go to `Setup > Domain Management > My Domain`
+	
 	4.2 Enter a unique domain name (some string) and check for availability
-	4.3 Agree to "Terms and Condition"
-	4.4 Press Register
+	
+	4.3 Agree to `Terms and Conditions`
+	
+	4.4 Press `Register`
+	
 	- You will get a notification when the registration is successful (It may take couple of minutes to an hour).
     - You then need to login with a new domain url, it may look like: `https://YOURDOMAIN-dev-ed.my.salesforce.com`
+    
     4.5  Go back to `Setup > Domain Management > My Domain`
+    
     4.6 Press `Push to users` button.
 
-    	![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/myDomainPic.png?token=AAmOodzO9e8SilKOtMrEK3Jju5FAtZ5sks5V3LrEwA%3D%3D
-)
+    ![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/myDomainPic.png?token=AAmOodzO9e8SilKOtMrEK3Jju5FAtZ5sks5V3LrEwA%3D%3D)
+    
 
-#Step 1 - Installation
+####Step 2 - Installation
 
 SLDSX is distributed as an [unmanaged package](https://help.salesforce.com/apex/HTViewHelpDoc?id=sharing_apps.htm&language=en). The package has all the components, and latest version of SLDS framework (CSS, fonts, icons etc). To use it, simply install the package, load SLDS static resource and use individual components in your app.
 
@@ -39,7 +43,7 @@ SLDSX is distributed as an [unmanaged package](https://help.salesforce.com/apex/
 2. Install the [unmanaged package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB00000001WWa) (w/ SLDS v0.5.2). 
 3. Keep the default settings and click `Install`.
 
-#Step 2 - Browse SLDS.app (Sample App)
+####Step 3 - Browse SLDS.app (Sample App)
 SLDS app is a sample app that contains a list of all the SLDSX components and source code for each one of them. The examples are identical to what you'll find in the [Salesforce Lightning Design System's (SLDS)](http://salesforce-design-system.herokuapp.com) website.
 
 1. Open SLDS.app by changing the url to: [{yourOrg}//{namespace}/SLDS.app](https://login.salesforce.com/c/SLDS.app)
@@ -47,7 +51,7 @@ SLDS app is a sample app that contains a list of all the SLDSX components and so
 
 <image src="https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/slds-app-small.png?token=AAmOoekMbrdWQ43C9FIzvFNR2f616IVMks5V3LkjwA%3D%3D"/>
 
-#Step 3 - Browse SLDSX Docs
+####Step 4 - Browse SLDSX Docs
 Lightning auto-generates documentation for all components based on the source code. Since you installed the SLDSX components package, you'll be able to browse the docs for SLDSX components along with all other components! 
 
 1. Open `{yourOrg}/auradocs/reference.app`
@@ -56,7 +60,8 @@ Lightning auto-generates documentation for all components based on the source co
 
 <image src="https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/auraDocsPic.png?token=AAmOoTO4_cqHfJtcvkz4oG5OiiBasPNBks5V3LlCwA%3D%3D"/>
 
-#Step 4 - Loading SLDS Framework
+#Part 2 - Building a Hello World App
+####Step 1 - Load SLDS Framework
 `SLDS.app` itself uses a lot of SLDSX components, so you can simply see the source code to get an idea about how you can use various SLDSX components.
 
 1. Click on {Your Name} > Developer Console (on the top-right)
@@ -69,7 +74,7 @@ Notice that the code loads SLDS as a static resource and also uses `slds` div pa
 
 Note: You don't need to load it in every component, you just need to load it in the main component or app that has all other components.
 
-#Step 5 - Build A Hello World Lightning App
+####Step 2 - Create a Standalone App
 1. In Developer Console, Click on `New > Lightning Application`
 2. Enter `HelloSLDSX` and press `Submit`
 3. Add the following under `<Application>` tag to load SLDS framework and add a button.
@@ -85,7 +90,7 @@ Note: You don't need to load it in every component, you just need to load it in 
 	![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/buttonPic.png?token=AAmOoS1AZNsJZcfOB9Vfy44ScYDyspBiks5V3LmJwA%3D%3D)
 
 
-##Step 5.1 - Change An Attribute
+####Step 3 - Change An Attribute
 Every SLDSX components has multiple attributes that can have various values. Component look and feel changes based on attribute values. 
 
 1. Let's change our button's `type` attribute to `brand`.
@@ -101,7 +106,7 @@ Note: You can use  AuraDocs app (Step 3) to see list of attributes and possible 
 
 
 
-##Step 5.2 - Add A JS Controller
+####Step 4 - Add A JS Controller
 Every SLDSX component has a `press` attribute that allows us to add interact with press(button click) event in JavaScript controller. 
 
 1. Add a `press="{!c.myButtonHandler}"` to our button. 
@@ -123,11 +128,10 @@ Every SLDSX component has a `press` attribute that allows us to add interact wit
 4. Click on the button
 5. You'll see `Button Clicked!` alert.
 
-
-#Step 6 - Build An App That's Responsive
+#Part 3 - Building Responsive App (Grid System)
 An App is said to be responsive if it can adapt and display its contents irrespective of the screen size (i.e. viewed from a mobile, tablet or a laptop). Since the screens on the mobile devices are literally smaller than screens in laptops and large monitors, the app needs to automatically show or hide or rearrange the content depending on the screen size. To figure out how much data to show can be tricky and that's where the `Grid System` comes in handy.
 
-## Grid System
+####Step 1 - Grid System
 
 ####Sizes
 Grid system helps arrange the content in grids of 1 cell (container) upto 12 cells in a given row. You can specify how many cells you want in a row using `{cellSize}-of-{totalContainers}` format. 
@@ -167,7 +171,7 @@ Note: Notice we are also using `wrap=true` attribute. This tells the Grid System
 
 ![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/wrapPic.png?token=AAmOoVUN-dxPJNfyY3CiEesDbW1NcNo3ks5V3LnkwA%3D%3D)
 	
-#### Multiple Sizes For Various Screensizes
+####Step 2 - Multiple Sizes For Various Screensizes
 In most apps you want to show different number of items depending on the screensize. 
 
 For example, if viewed from a mobile device you may want to show just one cell/item per row, but if viewed from a medium size screen like a tablet, you may want to show 6 cells/items in a single row. And finally if viewed from a large screen, you may want to show 12 cells/items in a single row.
@@ -206,14 +210,14 @@ In SLDSX components, they correspond to "size", "mdSize" and "lgSize" respective
 </sldsx:grid>
 
 ```
-
-#Step 7 - Using SLDS Directly In Lightning Components
+#Part 4 - Using SLDS and Sample Components togeather
+SLDS framework provides a whole host of components that are not part of these sample components like: tables, headers and so on but we can use both togeather.
 In this example, we will build a simple Accounts app that shows list of accounts in a table.
 We'll use raw CSS instead of SLDSX components just to show that you can use it directly as well. 
 
 ![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/accountsAppPic.png?token=AAmOofG7pWFzuR6ZR8WdDuE_p_MQGg1Jks5V3LpPwA%3D%3D)
 
-#### Create Accounts Apex Controller
+####Step 1 - Create Accounts Apex Controller
 1. In Developer console, Click on New > Create Apex Class
 2. Enter `AccountsController` as the name of the class.
 3. Paste the following code
@@ -229,7 +233,7 @@ We'll use raw CSS instead of SLDSX components just to show that you can use it d
 	```
 4. Save it.
 
-#### Create AccountList Component
+####Step 2 - Create AccountList Component
 
 1. In Developer console, Click on New > Lightning Components
 2. Enter `AccountList` as the Bundle name
@@ -270,7 +274,7 @@ We'll use raw CSS instead of SLDSX components just to show that you can use it d
 	```
 4. Save it.
 
-#### Create JS Controller
+####Step 3 - Create JS Controller
 1. While in AccountList component, click on the `Controller` menu in the right-side panel.
 2. Copy paste the below code:
 	
@@ -284,7 +288,7 @@ We'll use raw CSS instead of SLDSX components just to show that you can use it d
 	```
 3. Save it
 
-#### Create JS Helper
+####Step 4 - Create JS Helper
 
 1. While in AccountList component, click on the `Helper` menu in the right-side panel.
 2. Copy paste the below code:
@@ -307,7 +311,7 @@ We'll use raw CSS instead of SLDSX components just to show that you can use it d
 
 3. Save it.
 
-#### Update Hello SLDSX.app
+####Step 5 - Update Hello SLDSX.app
 1. Open `HelloSLDSX.app`
 2. Copy-paste the code below:
 	
@@ -327,3 +331,4 @@ We'll use raw CSS instead of SLDSX components just to show that you can use it d
 	```
 3. Save it.
 
+Press `Update Preview` in the HelloSLDSX.app and you should see a table with SLDSX buttons in each row.
