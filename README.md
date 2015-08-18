@@ -8,12 +8,12 @@ Note: All sldsx components use `sldsx` namespace.
 
 #Tutorial
 We've created a tutorial to explain how to use it. Please go through the <a href="https://github.com/ForceDotComLabs/sldsx/blob/master/tutorial/tutorial.md" target="_blank">tutorial here</a>.
-<image src="https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/slds-app-small.png?token=AAmOoZ0b2T0P3lRWXQEVQsxziDcEHqiLks5Vy5kkwA%3D%3D"/>
+<image src="https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/slds-app-small.png?token=AAmOoX_EdgYwpP90hsQsIUFJ6zzW3R2Yks5V3LQ_wA%3D%3D"/>
 
 #Installation
 SLDSX is distributed as a unmanaged package. The package has all the components, and latest version of SLDS framework (CSS, fonts, icons etc). To use it, simply install the package, load SLDS static resource and use individual components in your app.
 
-1. Install the [unmanaged package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB00000001WWa) (w/ SLDS v0.5). 
+1. Install the [unmanaged package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB00000001WWa) (w/ SLDS v0.5.2). 
 2. Load SLDS static resource
 
 	```    
