@@ -1,6 +1,11 @@
 <image src="https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/sflabs.png?token=AAmOoRHwmOYSLYk7FmSx_pBZfaG629e4ks5V3LsGwA%3D%3D"/>
 
-In this tutorial we'll show how to use these sample components in a Lightning app.
+#SLDS Sample Components
+SLDS Sample Components is an open-source project to provide a set of common Lightning Components that conform and wrap [Salesforce Lightning Design System's (SLDS)](http://getslds.com) CSS framework. This is to help you not worry about SLDS specific CSS, markup for basic components. And also to provide JS support so you don't have to implement them.
+
+Note: These components are complementary to SLDS and not a replacement.
+
+This tutorial is created to help you learn how to use SLDS framework in custom Lightning Components and also how to use these sample components.  
 
 #Part 1 - Installation And Documentation
 ####Step 1 - Enable Lightning Components
@@ -365,3 +370,7 @@ Helper is used to interact with the server.
 5. Press the `Details` button and you should see the Account Id in an alert box.
 ![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/accountsAppWithAccIdPic.png?token=AAmOoahZ4gIK2jx-72lVc-ipaSjw04SYks5V3M2KwA%3D%3D)
 
+#Summary
+Congratulations! You just learnt how to install SLDS framework, how to use the Sample components and also learnt how to use both SLDS framework and sample components togeather. From this point on, you can create your own SLDS component and use it in your Lightning projects.
+
+You can also contribute to the open-source project here: [https://github.com/ForceDotComLabs/sldsx](https://github.com/ForceDotComLabs/sldsx)
