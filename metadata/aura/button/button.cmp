@@ -21,7 +21,8 @@
     
     <aura:attribute name="class" type="String" access="GLOBAL" description="The class(es) to add."/>    
     <aura:attribute name="style" type="String" access="GLOBAL" description="The style(s) to add."/> 
-    
+    <aura:attribute name="data" type="String" access="GLOBAL" description="Custom data to be passed to the handler"/> 
+
     <aura:attribute name="iconCategory" type="String" access="GLOBAL" description="Icon category - action, custom, doctype, standard, utility."/>
     <aura:attribute name="iconName" type="String" access="GLOBAL" description="Name of the icon, category specific."/>
     <aura:attribute name="iconSize" type="String" access="GLOBAL" description="Size of the icon - none, small, x-small."/>
@@ -54,6 +55,7 @@
         onmouseout="{!c.handleMouseOut}"
         onfocus="{!c.handleOnFocus}"
         onblur="{!c.handleOnBlur}"
+        data-data="{!v.data}"    
         >
         
         <aura:if isTrue="{!v.stateful == true}">

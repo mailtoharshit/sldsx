@@ -1,0 +1,57 @@
+.THIS .slds-list--vertical.slds-has-dividers>.slds-list__item{padding:0.5rem;border-bottom:1px solid #d8dde6}
+
+.THIS .slds-list--vertical.slds-has-dividers>.slds-list__item:hover,
+.THIS .slds-list--vertical.slds-has-dividers>.slds-list__item:focus{background-color:#f4f6f9;border-color:#d8dde6}
+
+.THIS .slds-page-header {
+    padding: 1.5rem 1.5rem 0.75rem;
+    border-bottom: 1px solid #d8dde6;
+    background: #f4f6f9;
+}
+
+
+.THIS {
+    font-family: "Salesforce Sans" !important;
+}
+
+.THIS .greeting {
+    display: inline-block;
+    margin-top: 0.875em;
+}
+
+.THIS .border-box * {
+    box-sizing: border-box;
+}
+
+.THIS .global-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgb(22, 50, 92);
+    z-index: 8000;
+}
+
+.THIS .global-nav .global-nav__icon {
+    margin-left: 0.875rem;
+}
+
+.THIS .global-nav .slds-button-group {
+    display: inline;
+    margin-left: 1rem;
+}
+
+.THIS .main-content {
+    padding: 4rem 0;
+}
+
+.THIS .global-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: rgb(84, 105, 141);
+    background: rgb(238, 241, 246);
+    z-index: 8000;
+}

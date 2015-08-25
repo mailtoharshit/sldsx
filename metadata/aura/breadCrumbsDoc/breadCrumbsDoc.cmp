@@ -4,7 +4,7 @@
       <sldsx:breadCrumbs labels="Parent, Child, Grand Child"/>
       <br/>
       Code:
-      <sldsx:code>
+      <sldsx:code >
       
       	&lt;sldsx:breadCrumbs labels=&quot;Parent, Child, Grand Child&quot;/&gt;
      </sldsx:code>

@@ -1,0 +1,26 @@
+<aura:component Controller="RSSViewController" implements="flexipage:availableForAllPageTypes,force:appHostable">    
+    <aura:attribute required="true" name="URL" type="String" default="http://feeds.feedburner.com/blogs/RtdE" /> 
+    <aura:attribute name="includeDesc" type="Boolean" default="true" /> 
+    <aura:attribute name="includeDate" type="Boolean" default="true" /> 
+    <aura:attribute name="includeTitle" type="Boolean" default="false" /> 
+    <aura:attribute name="includeImage" type="Boolean" default="true" /> 
+    <aura:attribute name="numberOfEntries" type="Integer" default="13" /> 
+    <aura:attribute name="itemCollection" type="AttribItem" /> 
+    <aura:attribute name="eoutput" type="String" default="Loading..." />
+    <aura:attribute name="feedtitle" type="String"  /> 
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="show" type="Aura.Action" access="GLOBAL" default="{!c.show}" />
+
+    <ltng:require styles="/resource/design/assets/styles/salesforce-lightning-design-system.css" />
+    
+    <div class="_container">
+        <p><b>{!v.eoutput}</b></p>
+        <aura:renderIf isTrue="{!v.includeTitle}"> 
+    		<div><h1>{!v.feedtitle}</h1></div>
+        </aura:renderIf>
+        <aura:iteration aura:id="iterator" items="{!v.itemCollection}" var="obj">
+            <c:FeedItem imageLink="{!obj.imagelink}" content="{!obj.content}" title="{!obj.title}" creator="{!obj.creator}" host="{!this}" category="{!obj.category}" pubDate="{!obj.pubDate}" description="{!obj.description}" />
+        </aura:iteration>
+    </div>
+
+</aura:component>

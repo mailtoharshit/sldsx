@@ -18,7 +18,7 @@
                  <sldsx:listItem itemClass="item"><a onclick="{!c.scroll}" data-href="#buttons">Buttons</a></sldsx:listItem>
                  <sldsx:listItem itemClass="item"><a onclick="{!c.scroll}" data-href="#gridSystem">Grid System</a></sldsx:listItem>
                  <sldsx:listItem itemClass="item"><a onclick="{!c.scroll}" data-href="#images">Images</a></sldsx:listItem>
-                 <sldsx:listItem itemClass="item"><a onclick="{!c.scroll}" data-href="#labels">Labels</a></sldsx:listItem>
+                 <sldsx:listItem itemClass="item"><a onclick="{!c.scroll}" data-href="#badges">Badges</a></sldsx:listItem>
                  <sldsx:listItem itemClass="item"><a onclick="{!c.scroll}" data-href="#lists">Lists</a></sldsx:listItem>
                  <sldsx:listItem itemClass="item"><a onclick="{!c.scroll}" data-href="#mediaObjects">Media Objects</a></sldsx:listItem>
                  <sldsx:listItem itemClass="item"><a onclick="{!c.scroll}" data-href="#pills">Pills</a></sldsx:listItem>
@@ -37,8 +37,8 @@
             <sldsx:gridDoc />
             <sldsx:docHeader name="Images" anchorName="images"/>   
             <sldsx:imagesDoc />
-            <sldsx:docHeader name="Labels" anchorName="labels"/>        
-            <sldsx:labelsDoc />
+            <sldsx:docHeader name="Labels" anchorName="badges"/>        
+            <sldsx:badgesDoc />
             <sldsx:docHeader name="Lists" anchorName="lists"/>  
             <sldsx:listsDoc />
             <sldsx:docHeader name="Media Objects" anchorName="mediaObjects"/> 

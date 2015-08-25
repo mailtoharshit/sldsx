@@ -1,0 +1,9 @@
+<svg width="256" height="256" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>Layer 1</title>
+  <rect fill="#1798c1" y="0" x="0" ry="55" rx="55" height="256" width="256"/>
+  <circle fill="#FFFFFF" r="24" cy="189" cx="68"/>
+  <path fill="#FFFFFF" d="m160,213h-34a82,82 0 0 0-82,-82v-34a116,116 0 0 1116,116z"/>
+  <path fill="#FFFFFF" d="m184,213a140,140 0 0 0-140,-140v-35a175,175 0 0 1175,175l-35,0z"/>
+ </g>
+</svg>

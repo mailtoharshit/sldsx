@@ -1,0 +1,66 @@
+<aura:component >
+	<aura:attribute name="obj" type="Object" required="true" />
+	<aura:attribute name="imageLink" type="String" required="true" />
+	<aura:attribute name="content" type="String" required="true" />
+	<aura:attribute name="title" type="String" required="true" />
+	<aura:attribute name="creator" type="String" required="true" />
+	<aura:attribute name="category" type="String" required="true" />
+	<aura:attribute name="pubDate" type="String" required="true" />
+	<aura:attribute name="description" type="String" required="true" />
+	<aura:attribute name="host" type="Object" />
+
+    <ltng:require styles="/resource/design/assets/styles/salesforce-lightning-design-system.css" />
+
+	<div class="slds-p-around--medium">
+	    <div class="slds-media slds-tile">
+	      <div class="slds-media__figure">
+	        <img src="{!v.imageLink}" height="100px" alt="figure" />
+	      </div>
+	      <div class="slds-media__body">
+	        <p class="tile__title slds-truncate"><a onclick="{!c.showit}">{!v.title}</a></p>
+	        <div class="tile__detail slds-text-body--small">
+	          <p>by {!v.creator}</p>
+	          <ul class="slds-list--horizontal slds-has-dividers slds-tile__meta">
+	            <li class="slds-list__item slds-list__item">{!v.category}</li>
+	            <li class="slds-list__item slds-list__item">{!v.pubDate}</li>
+	          </ul>
+	        </div>
+	        <dl class="slds-m-top--medium slds-col slds-size--6-of-6">
+	          <dd>
+	            <p class="mytrunc">{!v.description}</p>
+	          </dd>
+	        </dl>
+	      </div>
+	    </div>
+	</div>
+
+    <!-- Modal Popup -->
+    <div>
+      <div aura:id="dialog" aria-hidden="false" role="dialog" class="slds-hide slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+          <div class="slds-modal__header">
+            <h2 aura:id="dialog_title" class="slds-text-heading--medium"></h2>
+            <button class="slds-button slds-modal__close">
+              <span aura:id="svg_content">
+                <![CDATA[
+                  <svg aria-hidden="true" class="slds-button__icon slds-button__icon--inverse slds-button__icon--large">
+                    <use xlink:href="/assets/icons/action-sprite/svg/symbols.svg#close"></use>
+                  </svg>
+                  ]]>
+              </span>
+              <span class="slds-assistive-text">Close</span>
+            </button>
+          </div>
+          <div class="slds-modal__content">
+            <div aura:id="dialog_body">
+            </div>
+          </div>
+          <div class="slds-modal__footer">
+            <button onclick="{!c.hideit}" class="slds-button slds-button--neutral slds-button--brand">Close</button>
+          </div>
+        </div>
+      </div>
+      <div aura:id="backdrop" class="slds-modal-backdrop slds-modal-backdrop--closed"></div>
+    </div>
+
+</aura:component>

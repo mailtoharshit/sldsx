@@ -1,0 +1,15 @@
+.THIS {
+
+}
+
+.THIS img {
+    width: 150px;
+}
+
+.THIS .mytrunc {
+overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}

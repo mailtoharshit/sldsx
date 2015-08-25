@@ -1,32 +1,22 @@
-/* Lightning Design System v0.5.0 */
-/*
-Copyright (c) 2015, salesforce.com, inc. All rights reserved.
+/* Lightning Design System v0.8.0 */
+// Copyright (c) 2015, salesforce.com, inc. All rights reserved.
+//
+// Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+// Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+// Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+// Neither the name of salesforce.com, inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
 
-Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
-Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
-Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
-Neither the name of salesforce.com, inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
 
-/* ---------------------------------------------------------------------------
- * COMPONENTS
- */
 
 @import
-
-  // Importing helpers that need to come first
-  "links/flavors/base/index",
-  "links/flavors/faux-links/index",
 
   // Activity Timeline
   "activity-timeline/flavors/base/index",
 
   // Anchor
-  "page-headers/flavors/home/index",
-  "page-headers/flavors/object-home/index",
-  "page-headers/flavors/related-list/index",
+  "page-headers/flavors/record-home/index",
 
   // Breadcrumbs
   "breadcrumbs/flavors/base/index",
@@ -45,7 +35,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   "buttons/flavors/stateful/index",
   "buttons/flavors/stateful-inverse/index",
   "buttons/flavors/icon/index",
-  "buttons/flavors/icon-sizing/index",
   "buttons/flavors/hint/index",
   "buttons/flavors/icon-more/index",
   "buttons/flavors/icon-stateful/index",
@@ -67,10 +56,9 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   "forms/flavors/inline-form/index",
   "forms/flavors/compound-form/index",
   "forms/flavors/read-only-state/index",
-  "forms/flavors/field-level-help/index",
 
   // Grid
-  "grid-system/flavors/base/index",
+  "grid-system/flavors/automatic-sizing/index",
   "grid-system/flavors/containers/index",
   "grid-system/flavors/manual-sizing/index",
   "grid-system/flavors/horizontal-alignment-center/index",
@@ -78,13 +66,13 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   "grid-system/flavors/horizontal-alignment-spread/index",
   "grid-system/flavors/vertical-alignment/index",
   "grid-system/flavors/order/index",
-  "grid-system/flavors/overflow/index", 
+  "grid-system/flavors/overflow/index",
 
   // Tooltip
   "tooltips/flavors/base/index",
 
-  // Dialog
-  "dialogs/flavors/base/index",
+  // Popovers
+  "popovers/flavors/base/index",
 
    // Picklists
   "picklists/flavors/base/index",
@@ -94,7 +82,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   // Menus
   "dropdowns/flavors/base/index",
   "dropdowns/flavors/menu/index",
-  "dropdowns/flavors/menu-with-search/index",
+  //"dropdowns/flavors/menu-with-search/index",
   "dropdowns/flavors/menu-with-icons/index",
   "dropdowns/flavors/action-overflow/index",
   "dropdowns/flavors/search-overflow/index",
@@ -114,8 +102,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
   // Pills
   "pills/flavors/base/index",
-  "pills/flavors/unlink/index",
-  "pills/flavors/icon/index",
   "pills/flavors/portrait/index",
 
   // Spinners
@@ -127,11 +113,9 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   "tiles/flavors/base/index",
   "tiles/flavors/with-icon/index",
   "tiles/flavors/with-actions/index",
-  "tiles/flavors/with-label/index",
-  "tiles/flavors/list/index",
+  "tiles/flavors/with-badge/index",
   "tiles/flavors/board/index",
   "tiles/flavors/generic/index",
-  "tiles/flavors/task/index",
   "tiles/flavors/author/index",
 
   // Tree
@@ -153,7 +137,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   "lookups/flavors/single-scope/index",
   "lookups/flavors/multi-scope/index",
   "lookups/flavors/advanced-modal/index",
-  "lookups/flavors/popup/index",
 
   // Objects
   "media-objects/flavors/base/index",
@@ -165,22 +148,15 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   // Images
   "images/flavors/avatars/index",
 
-  // Labels
-  "labels/flavors/base/index",
+  // Badges
+  "badges/flavors/base/index",
 
   // Icons
   "icons/flavors/base/index",
   "icons/flavors/colors/index",
   "icons/flavors/sizes/index",
 
-  // Lists
-  "lists/flavors/base/index",
-  "lists/flavors/description-list/index",
-  "lists/flavors/horizontal-list/index",
-  "lists/flavors/vertical-list/index",
-
   // Tables
-  "tables/flavors/base/index",
-  "tables/flavors/responsive-stacked/index",
-  "tables/flavors/responsive-stacked-horizontal/index",
-  "tables/flavors/compact/index";
+  "data-tables/flavors/base/index",
+  "data-tables/flavors/responsive-stacked/index",
+  "data-tables/flavors/responsive-stacked-horizontal/index";

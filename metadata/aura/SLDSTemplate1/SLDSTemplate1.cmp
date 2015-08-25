@@ -1,0 +1,158 @@
+<aura:component >
+    <ltng:require styles="/resource/slds/assets/styles/salesforce-lightning-design-system.css"/>
+    <div class="slds slds-template-a slds-border-box">
+        <div class="global-nav">
+            <c:grid wrap="true">
+                <c:col size="1-of-1" lgSize="1-of-2">
+                    <div class="slds-p-around--large slds-text-align--left">
+                        <strong>SLDS TEMPLATE A</strong>&nbsp;&nbsp;|&nbsp;&nbsp;Basic Layout
+                    </div>
+                </c:col>
+                <c:col size="1-of-1" lgSize="1-of-2">
+                    <div class="slds-p-horizontal--large slds-p-top--x-small slds-text-align--right">
+                        <span class="greeting">
+                            Welcome, Angela
+                        </span>
+                        <c:buttonGroup >
+                            <c:button type="inverse" label="Pages" />
+                            <c:button type="inverse" label="Components" />
+                            <c:button type="inverse" label="Styles" />
+                        </c:buttonGroup>
+                        <c:button type="icon" class=" global-nav__icon " iconType="bare" iconInverse="true" iconCategory="utility" iconName="setup" iconSize="large" />
+                        <c:button type="icon" class=" global-nav__icon " iconType="bare" iconInverse="true" iconCategory="utility" iconName="logout" iconSize="large" />
+                    </div>
+                </c:col>
+            </c:grid>
+        </div>
+
+        <div class="main-content">
+            <c:grid >
+                <c:col size="1-of-6">
+                    <ul class="slds-list--vertical slds-has-dividers">
+                    	<li class="slds-list__item">
+                            <div class="slds-tile">
+                              <p class="slds-tile__title slds-truncate"><a href="#">New Accounts</a></p>
+                              <div class="tile__detail">
+                                <p class="slds-truncate slds-text-body--small">3 items</p>
+                              </div>
+                            </div>
+                        </li>
+                        <li class="slds-list__item">
+                            <div class="slds-tile">
+                              <p class="slds-tile__title slds-truncate"><a href="#">Top Accounts</a></p>
+                              <div class="tile__detail">
+                                <p class="slds-truncate slds-text-body--small">15 items</p>
+                              </div>
+                            </div>
+                        </li>
+                        <li class="slds-list__item">
+                            <div class="slds-tile">
+                              <p class="slds-tile__title slds-truncate"><a href="#">Needs Attention</a></p>
+                              <div class="tile__detail">
+                                <p class="slds-truncate slds-text-body--small">1 item</p>
+                              </div>
+                            </div>
+                        </li>
+                    </ul>
+                </c:col>
+                <c:col size="5-of-6" padded="true">
+
+                    <div class="slds-page-header slds-m-bottom--large">
+                        <nav class="slds-m-bottom--xx-small" role="navigation">
+                            <p id="bread-crumb-label" class="slds-assistive-text">You are here:</p>
+                            <ol class="slds-breadcrumb slds-list--horizontal" aria-labelledby="bread-crumb-label">
+                                <li class="slds-list__item slds-text-heading--label"><a href="#" title="My Corporation">My Corporation</a></li>
+                                <li class="slds-list__item slds-text-heading--label"><a href="#" title="Accounts">Accounts</a></li>
+                            </ol>
+                        </nav>
+                        <div class="slds-grid">
+                            <div class="slds-col slds-has-flexi-truncate">
+                                <h1 class="slds-text-heading--medium slds-truncate" title="Contacts (will truncate)">Top Accounts</h1>
+                            </div>
+                            <div class="slds-col slds-no-flex slds-align-bottom">
+                            </div>
+                        </div>
+                        <p class="slds-text-body--small slds-page-header__detail">15 items, sorted by name</p>
+                    </div>
+
+                    <c:grid wrap="true">
+                        <c:col size="1-of-1" lgSize="1-of-3" padded="true" class="slds-m-bottom--large">
+                            <div class="slds-card slds-card--empty">
+                              <header class="slds-card__header slds-grid grid--flex-spread">
+                                <h3 class="slds-text-heading--small slds-truncate">Chart A</h3>
+                              </header>
+                              <section class="slds-card__body slds-p-bottom--large">
+                                <h3 class="slds-text-heading--small slds-p-top--large slds-p-bottom--large">Content</h3>
+                              </section>
+                            </div>
+                        </c:col>
+                        <c:col size="1-of-1" lgSize="1-of-3" padded="true" class="slds-m-bottom--large">
+                            <div class="slds-card slds-card--empty">
+                              <header class="slds-card__header slds-grid grid--flex-spread">
+                                <h3 class="slds-text-heading--small slds-truncate">Chart B</h3>
+                              </header>
+                              <section class="slds-card__body slds-p-bottom--large">
+                                <h3 class="slds-text-heading--small slds-p-top--large slds-p-bottom--large">Content</h3>
+                              </section>
+                            </div>
+                        </c:col>
+                        <c:col size="1-of-1" lgSize="1-of-3" padded="true" class="slds-m-bottom--large">
+                            <div class="slds-scrollable--x">
+
+  <header class="slds-card__header slds-grid">
+    <div class="slds-media slds-media--center slds-has-flexi-truncate">
+      <div class="slds-media__figure">
+          <c:icon category="standard" name="contact" size="large" />
+        </div>
+      <div class="slds-media__body">
+        <h3 class="slds-text-heading--small slds-truncate">Card Header (2)</h3>
+      </div>
+    </div>
+    <div class="slds-no-flex">
+    </div>
+  </header>
+  <section class="slds-card__body">
+    <table class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal slds-no-row-hover">
+      <thead>
+        <tr>
+          <th class="slds-text-heading--label slds-size--1-of-4" scope="col">Name</th>
+          <th class="slds-text-heading--label slds-size--1-of-4" scope="col">Company</th>
+          <th class="slds-text-heading--label slds-size--1-of-4" scope="col">Title</th>
+          <th class="slds-text-heading--label slds-size--1-of-4" scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="slds-hint-parent">
+          <td class="slds-size--1-of-4" data-label="Name">Adam Choi</td>
+          <td class="slds-size--1-of-4" data-label="Company">Company One</td>
+          <td class="slds-size--1-of-4" data-label="Title">Director of Operations</td>
+          <td class="slds-size--1-of-4" data-label="Email">adam@company.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <footer class="slds-card__footer"><a href="#">View All</a></footer>
+                            </div>
+                        </c:col>
+                    </c:grid>
+
+                </c:col>
+            </c:grid>
+        </div>
+
+        <div class="global-footer">
+            <c:grid wrap="true">
+                <c:col size="1-of-2">
+                    <div class="slds-p-around--medium slds-text-align--left">
+                        (c) Your Company 2015
+                    </div>
+                </c:col>
+                <c:col size="1-of-2">
+                    <div class="slds-p-around--medium slds-text-align--right">
+                        About Us | Feedback
+                    </div>
+                </c:col>
+            </c:grid>            
+        </div>
+    </div>
+</aura:component>

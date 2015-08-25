@@ -1,0 +1,8 @@
+<design:component label="RSS Viewer">
+	<design:attribute name="URL" label="URL" description="The URL of the RSS Feed that you would like to display. Please ensure the URL is a valid RSS feed and that the domain has been added as a remote site in Salesforce (Under Setup | Security Controls | Remote Sites)" />
+    <design:attribute name="includeDesc" label="Include Text-only Description" description="If checked, a short description will be displayed with the title for each item in the RSS feed." />
+    <design:attribute name="includeDate" label="Include Published Date" description="If checked, the date the feed item was published will display under the title." />
+    <design:attribute name="includeTitle" label="Display Feed Name" description="If checked, the name of the feed will be displayed at the top." />
+    <design:attribute name="includeImage" label="Display Image" description="If checked, a thumbnail image will be displayed for each feed item if available." />
+    <design:attribute name="numberOfEntries" label="Number of Items to Include" description="Allows for limiting the number of items displayed.  If the number in the source is less than the limit specified then it will display all. Value must be between 1 and 20." min="1" max="20" />
+</design:component>

@@ -2,5 +2,5 @@
 <StaticResource xmlns="http://soap.sforce.com/2006/04/metadata">
     <cacheControl>Private</cacheControl>
     <contentType>application/zip</contentType>
-    <description>SLDS v0.5</description>
+    <description>SLDS v0.8</description>
 </StaticResource>
