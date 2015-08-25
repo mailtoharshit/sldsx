@@ -12,7 +12,7 @@ In this tutorial we'll show how to use these sample components in a Lightning ap
 
 	![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/enableLightningComponentsPic.png?token=AAmOoXNBdvBa7YlhYyoaAF7Y3rpSMB2pks5V3LWIwA%3D%3D)
 
-4. Register My Domain
+4. **Register My Domain**
  
 	In Winter '16 release, you may be asked to enable `My Domain` to use Lightning Components.
 	 
@@ -26,7 +26,7 @@ In this tutorial we'll show how to use these sample components in a Lightning ap
 	
 	4.4 Press `Register`
 	
-	- You will get a notification when the registration is successful (It may take couple of minutes to an hour).
+	- You will get a notification when the registration is successful (It may take couple of minutes to 30 mins).
     - You then need to login with a new domain url, it may look like: `https://YOURDOMAIN-dev-ed.my.salesforce.com`
     
     4.5  Go back to `Setup > Domain Management > My Domain`
@@ -47,8 +47,13 @@ SLDSX is distributed as an [unmanaged package](https://help.salesforce.com/apex/
 ####Step 3 - Browse SLDS.app (Sample App)
 SLDS app is a sample app that contains a list of all the SLDSX components and source code for each one of them. The examples are identical to what you'll find in the [Salesforce Lightning Design System's (SLDS)](http://salesforce-design-system.herokuapp.com) website.
 
-1. Open SLDS.app by changing the url to: [{yourOrg}//{namespace}/SLDS.app](https://login.salesforce.com/c/SLDS.app)
-2. Scroll down or Click on `Buttons`, `Grid System` etc to understand how the SLDSX code look for various elements.
+1. Open SLDS.app by changing the url to: [{yourOrg}//{namespace}/SLDS.app](https://login.salesforce.com/c/SLDS.app) or [https://login.salesforce.com/c/SLDS.app](https://login.salesforce.com/c/SLDS.app)
+
+	You can also open SLDS.app by following the steps below:
+	1. Click on {Your Name} > Developer Console (on the top-right)
+	2. In Developer Console, Click on `File > Open Lightning Components`
+	3. Find `SLDS.app`in the dialog
+	2. Press 'Preview' button on the right hand panel
 
 <image src="https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/slds-app-small.png?token=AAmOoekMbrdWQ43C9FIzvFNR2f616IVMks5V3LkjwA%3D%3D"/>
 
