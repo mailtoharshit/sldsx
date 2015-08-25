@@ -60,4 +60,4 @@ Please see the details in the `LICENSE` file above.
 
 
 ## Support
-This project is built as a 'labs' project and while a small team within Salesforce will try to maintain it, it is so not officially supported.
+This project is built as a 'labs' project and while a small team within Salesforce will try to maintain it, but it is so not officially supported.
